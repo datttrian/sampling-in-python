@@ -4,7 +4,7 @@
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/datttrian/sampling-in-python)
 
-This is the repository for the DataCamp course Sampling in Python. The
+This is a repository for the DataCamp course Sampling in Python. The
 full course is available from [DataCamp](https://www.datacamp.com/courses/sampling-in-python).
 
 ![Clear as Data](http://drive.google.com/uc?export=view&id=1PJVtMhPE_h3g2c9wXm9tf6_pIhvMyDRI)
