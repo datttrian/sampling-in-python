@@ -1,4 +1,8 @@
-# Simple sampling with pandas
+# Sampling in Python
+
+## Introduction to Sampling
+
+### Simple sampling with pandas
 
 Throughout this chapter, you'll be exploring song data from Spotify.
 Each row of this population dataset represents a song, and there are
@@ -19,7 +23,11 @@ duration of the population with the sample.
 
 **Answer**
 
-# Simple sampling and calculating with NumPy
+```{python}
+
+```
+
+### Simple sampling and calculating with NumPy
 
 You can also use `numpy` to calculate parameters or statistics from a
 list or `pandas` Series.
@@ -38,7 +46,11 @@ of each song.
 
 **Answer**
 
-# Are findings from the sample generalizable?
+```{python}
+
+```
+
+### Are findings from the sample generalizable?
 
 You just saw how convenience sampling—collecting data using the easiest
 method—can result in samples that aren't representative of the
@@ -64,7 +76,11 @@ loaded.
 
 **Answer**
 
-# Are these findings generalizable?
+```{python}
+
+```
+
+### Are these findings generalizable?
 
 Let's look at another sample to see if it is representative of the
 population. This time, you'll look at the `duration_minutes` column of
@@ -81,7 +97,11 @@ standard aliases.
 
 **Answer**
 
-# Generating random numbers
+```{python}
+
+```
+
+### Generating random numbers
 
 You've used `.sample()` to generate pseudo-random numbers from a set of
 values in a DataFrame. A related task is to generate random numbers that
@@ -101,19 +121,13 @@ generate.
 
 **Answer**
 
-# Understanding random seeds
+```{python}
 
-While random numbers are important for many analyses, they create a
-problem: the results you get can vary slightly. This can cause awkward
-conversations with your boss when your script for calculating the sales
-forecast gives different answers each time.
+```
 
-Setting the seed for `numpy`'s random number generator helps avoid such
-problems by making the random number generation reproducible.
+## Sampling Methods
 
-**InstructionsAnswer**
-
-# Simple random sampling
+### Simple random sampling
 
 The simplest method of sampling a population is the one you've seen
 already. It is known as *simple random sampling* (sometimes abbreviated
@@ -135,7 +149,11 @@ this context means leaving the company.
 
 **Answer**
 
-# Systematic sampling
+```{python}
+
+```
+
+### Systematic sampling
 
 One sampling method that avoids randomness is called *systematic
 sampling*. Here, you pick rows from the population at regular intervals.
@@ -154,7 +172,11 @@ wanted a sample size of five, you could pick rows `0`, `200`, `400`,
 
 **Answer**
 
-# Is systematic sampling OK?
+```{python}
+
+```
+
+### Is systematic sampling OK?
 
 Systematic sampling has a problem: if the data has been sorted, or there
 is some sort of pattern or meaning behind the row order, then the
@@ -176,7 +198,11 @@ Here you'll look at how to determine whether or not there is a problem.
 
 **Answer**
 
-# Proportional stratified sampling
+```{python}
+
+```
+
+### Proportional stratified sampling
 
 If you are interested in subgroups within the population, then you may
 need to carefully control the counts of each subgroup within the
@@ -194,7 +220,11 @@ each subgroup.
 
 **Answer**
 
-# Equal counts stratified sampling
+```{python}
+
+```
+
+### Equal counts stratified sampling
 
 If one subgroup is larger than another subgroup in the population, but
 you don't want to reflect that difference in your analysis, then you can
@@ -212,7 +242,11 @@ to have equal amounts of O, A, B, and AB in your sample.
 
 **Answer**
 
-# Weighted sampling
+```{python}
+
+```
+
+### Weighted sampling
 
 Stratified sampling provides rules about the probability of picking rows
 from your dataset at the subgroup level. A generalization of this is
@@ -230,7 +264,11 @@ are loaded with their usual aliases.
 
 **Answer**
 
-# Performing cluster sampling
+```{python}
+
+```
+
+### Performing cluster sampling
 
 Now that you know when to use cluster sampling, it's time to put it into
 action. In this exercise, you'll explore the `JobRole` column of the
@@ -249,7 +287,11 @@ been set with `random.seed()`.
 
 **Answer**
 
-# 3 kinds of sampling
+```{python}
+
+```
+
+### 3 kinds of sampling
 
 You're going to compare the performance of point estimates using simple,
 stratified, and cluster sampling. Before doing that, you'll have to set
@@ -284,7 +326,11 @@ loaded.
 
 **Answer**
 
-# Comparing point estimates
+```{python}
+
+```
+
+### Comparing point estimates
 
 Now that you have three types of sample (simple, stratified, and
 cluster), you can compare point estimates from each sample to the
@@ -319,7 +365,13 @@ satisfaction group, this time on the cluster sample, `attrition_clust`.
 
 **Answer**
 
-# Calculating relative errors
+```{python}
+
+```
+
+## Sampling Distributions
+
+### Calculating relative errors
 
 The size of the sample you take affects how accurately the point
 estimates reflect the corresponding population parameter. For example,
@@ -350,7 +402,11 @@ column of `attrition_pop`) are available; `pandas` is loaded as `pd`.
 
 **Answer**
 
-# Replicating samples
+```{python}
+
+```
+
+### Replicating samples
 
 When you calculate a point estimate such as a sample mean, the value you
 calculate depends on the rows that were included in the sample. That
@@ -368,7 +424,11 @@ loaded with their usual aliases.
 
 **Answer**
 
-# Exact sampling distribution
+```{python}
+
+```
+
+### Exact sampling distribution
 
 To quantify how the point estimate (sample statistic) you are interested
 in varies, you need to know all the possible values it can take and how
@@ -400,7 +460,11 @@ documentation](https://pandas.pydata.org/pandas-docs/version/0.17.1/cookbook.htm
 
 **Answer**
 
-# Generating an approximate sampling distribution
+```{python}
+
+```
+
+### Generating an approximate sampling distribution
 
 Calculating the exact sampling distribution is only possible in very
 simple situations. With just five eight-sided dice, the number of
@@ -425,7 +489,11 @@ aliases.
 
 **Answer**
 
-# Population & sampling distribution means
+```{python}
+
+```
+
+### Population & sampling distribution means
 
 One of the useful features of sampling distributions is that you can
 quantify them. Specifically, you can calculate summary statistics on
@@ -450,7 +518,11 @@ loaded.
 
 **Answer**
 
-# Population & sampling distribution variation
+```{python}
+
+```
+
+### Population & sampling distribution variation
 
 You just calculated the mean of the sampling distribution and saw how it
 is an estimate of the corresponding population parameter. Similarly, as
@@ -470,7 +542,13 @@ its usual alias.
 
 **Answer**
 
-# Generating a bootstrap distribution
+```{python}
+
+```
+
+## Bootstrap Distributions
+
+### Generating a bootstrap distribution
 
 The process for generating a bootstrap distribution is similar to the
 process for generating a sampling distribution; only the first step is
@@ -497,7 +575,11 @@ To make it easier to see how resampling works, a row index column called
 
 **Answer**
 
-# Sampling distribution vs. bootstrap distribution
+```{python}
+
+```
+
+### Sampling distribution vs. bootstrap distribution
 
 The sampling distribution and bootstrap distribution are closely linked.
 In situations where you can repeatedly sample from a population (these
@@ -526,7 +608,11 @@ and `numpy` are loaded with their usual aliases.
 
 **Answer**
 
-# Compare sampling and bootstrap means
+```{python}
+
+```
+
+### Compare sampling and bootstrap means
 
 To make calculation easier, distributions similar to those calculated
 from the previous exercise have been included, this time using a sample
@@ -547,7 +633,11 @@ Calculate the mean `popularity` in 4 ways:
 
 **Answer**
 
-# Compare sampling and bootstrap standard deviations
+```{python}
+
+```
+
+### Compare sampling and bootstrap standard deviations
 
 In the same way that you looked at how the sampling distribution and
 bootstrap distribution could be used to estimate the population mean,
@@ -575,7 +665,11 @@ Calculate the standard deviation of `popularity` in 4 ways.
 
 **Answer**
 
-# Calculating confidence intervals
+```{python}
+
+```
+
+### Calculating confidence intervals
 
 You have learned about two methods for calculating confidence intervals:
 the *quantile method* and the *standard error method*. The standard
@@ -606,3 +700,7 @@ the bootstrap distribution.
 - Calculate `upper_se` as the `0.975` quantile of that same inv. CDF.
 
 **Answer**
+
+```{python}
+
+```
