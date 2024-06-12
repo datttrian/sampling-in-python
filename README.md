@@ -1,5 +1,9 @@
 # Sampling in Python
 
+[![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/datttrian/sampling-in-python/blob/main/src/notebook.ipynb)
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/datttrian/sampling-in-python)
+
 This is the repository for the DataCamp course Sampling in Python. The
 full course is available from [DataCamp](https://www.datacamp.com/courses/sampling-in-python).
 
