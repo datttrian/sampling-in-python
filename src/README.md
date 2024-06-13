@@ -1,5 +1,7 @@
 # Sampling in Python
 
+[![View On GitHub](github.svg)](https://github.com/datttrian/sampling-in-python)
+
 ## Introduction to Sampling
 
 ### Simple sampling with pandas
@@ -53,74 +55,74 @@ print(mean_dur_pop)
 print(mean_dur_samp)
 ```
 
-           acousticness                   artists  danceability  duration_ms  \
-    2403        0.00037           ['The Rapture']         0.738     304739.0   
-    3955        0.25900           ['Riley Green']         0.606     250253.0   
-    38183       0.58000     ['Montez de Durango']         0.687     225173.0   
-    11613       0.09450                ['Tyrese']         0.335     229320.0   
-    25449       0.00024             ['Sevendust']         0.570     183400.0   
-    ...             ...                       ...           ...          ...   
-    39640       0.09890  ['DJ Quik', 'Suga Free']         0.845     250040.0   
-    13402       0.40000                 ['Cabas']         0.716     237336.0   
-    29199       0.04240                  ['P!nk']         0.742     298960.0   
-    3218        0.01040           ['St. Vincent']         0.570     214987.0   
-    35133       0.04200            ['Seth Ennis']         0.687     195418.0   
+           acousticness                                            artists  \
+    14634        0.2480                 ['Lenny Tavárez', 'Justin Quiles']   
+    24221        0.0744                           ['Florida Georgia Line']   
+    312          0.2190                                      ['Nicky Jam']   
+    40883        0.8380                                     ['King Krule']   
+    21085        0.4160                        ['Aventura', 'Judy Santos']   
+    ...             ...                                                ...   
+    5745         0.1560                                   ['Jason Isbell']   
+    13711        0.9650  ['Marcus Gilmore', 'Danny Grissett', 'Vicente ...   
+    11769        0.0305                               ['Pitbull', 'Kesha']   
+    38232        0.4790                                ['Aretha Franklin']   
+    25450        0.0515                                  ['Darryl Worley']   
     
-           duration_minutes  energy  explicit                      id  \
-    2403           5.078983   0.764       0.0  0MrkkxbgfHfbxrTg12oHd4   
-    3955           4.170883   0.455       0.0  3QE9qyQrIgefznSchAYJPB   
-    38183          3.752883   0.425       0.0  3UtxfzWaBpi91suTUNw3jD   
-    11613          3.822000   0.398       0.0  7m24jIM7r9LuzILUqO3zrA   
-    25449          3.056667   0.990       1.0  1BU4ky3CgfqdYmSBfJeV9j   
-    ...                 ...     ...       ...                     ...   
-    39640          4.167333   0.618       1.0  3N3bbZga5ifQWxnzCrm3m2   
-    13402          3.955600   0.552       0.0  6HNsJQihjxODgGWQafAJau   
-    29199          4.982667   0.732       0.0  635PqgECfFbL0MNLogX7Yv   
-    3218           3.583117   0.704       0.0  3j5DVpcCELigVZrmwGOw3X   
-    35133          3.256967   0.625       0.0  7AK5vh1cRnO3YxAjOjL4Yy   
+           danceability  duration_ms  duration_minutes  energy  explicit  \
+    14634         0.777     154286.0          2.571433  0.6560       1.0   
+    24221         0.494     199320.0          3.322000  0.9360       0.0   
+    312           0.825     179093.0          2.984883  0.9360       0.0   
+    40883         0.563     169693.0          2.828217  0.4080       0.0   
+    21085         0.804     254720.0          4.245333  0.5600       0.0   
+    ...             ...          ...               ...     ...       ...   
+    5745          0.568     193613.0          3.226883  0.5270       0.0   
+    13711         0.445     396520.0          6.608667  0.0978       0.0   
+    11769         0.589     204200.0          3.403333  0.9660       0.0   
+    38232         0.821     147227.0          2.453783  0.4960       0.0   
+    25450         0.478     242293.0          4.038217  0.6250       0.0   
     
-           instrumentalness  key  liveness  loudness  mode  \
-    2403           0.278000  1.0    0.2920    -4.290   1.0   
-    3955           0.000003  6.0    0.1590    -7.317   1.0   
-    38183          0.000000  7.0    0.1180    -5.910   1.0   
-    11613          0.000000  4.0    0.2650    -8.284   0.0   
-    25449          0.000379  1.0    0.1110    -2.272   1.0   
-    ...                 ...  ...       ...       ...   ...   
-    39640          0.000000  4.0    0.1080    -6.516   0.0   
-    13402          0.000000  9.0    0.2320    -8.316   1.0   
-    29199          0.004440  2.0    0.1010    -6.046   0.0   
-    3218           0.446000  1.0    0.0905    -8.320   1.0   
-    35133          0.000000  1.0    0.1510    -6.942   0.0   
+                               id  instrumentalness   key  liveness  loudness  \
+    14634  2w8SKQCnT2YQK1qCqKl2uW          0.000002   2.0    0.1390    -5.823   
+    24221  3grPZ1iQg2tEdh0ZCh3HTt          0.000000   1.0    0.1480    -2.989   
+    312    634SIK3O65qhslx5DLX44X          0.000000   6.0    0.0572    -4.148   
+    40883  35rf8iduzQ7vd8hFbDlv0o          0.000010   4.0    0.1080    -8.972   
+    21085  65H6t1WQBim6q93yM8fEwn          0.000000   1.0    0.0608    -6.912   
+    ...                       ...               ...   ...       ...       ...   
+    5745   3TWffuE2fuzzl1qC2W2V6j          0.000000   4.0    0.1360   -10.206   
+    13711  75A0vJQiBzAxkC7pMjoSeX          0.915000   3.0    0.1210   -26.924   
+    11769  3tgZ9vmhuAY9wEoNUJskzV          0.000000  11.0    0.1470    -4.106   
+    38232  1LI7vkkJ5EKLl6MpZBWZF2          0.000023   0.0    0.3280    -8.400   
+    25450  5JWuz7zukN8z9JLNm29U5K          0.000000   7.0    0.1160    -5.975   
     
-                                                        name  popularity  \
-    2403                             House Of Jealous Lovers        43.0   
-    3955                         When She Comes Home Tonight        60.0   
-    38183                               Lágrimas Del Corazón        49.0   
-    11613                                               Stay        43.0   
-    25449                                              Enemy        53.0   
-    ...                                                  ...         ...   
-    39640  Do I Love Her? (feat. Suga Free) - Dirty Versi...        40.0   
-    13402                                             Bonita        61.0   
-    29199                                         Most Girls        53.0   
-    3218                                               Cruel        50.0   
-    35133                                        Look At You        63.0   
+           mode                  name  popularity release_date  speechiness  \
+    14634   0.0          La Pared 360        78.0   2020-02-06       0.1580   
+    24221   1.0                  Stay        61.0   2012-01-01       0.0418   
+    312     1.0     Me Voy Pa'l Party        52.0   2003-08-05       0.0435   
+    40883   1.0             Easy Easy        51.0   2013-08-24       0.0365   
+    21085   0.0              Obsesion        74.0   2002-06-01       0.0397   
+    ...     ...                   ...         ...          ...          ...   
+    5745    0.0             24 Frames        53.0   2015-07-17       0.0249   
+    13711   1.0     Two Sleepy People        50.0   2011-06-06       0.0397   
+    11769   1.0  Timber (feat. Ke$ha)        61.0         2012       0.0980   
+    38232   1.0               Respect        45.0   2007-04-09       0.0462   
+    25450   1.0   Have You Forgotten?        52.0   2003-01-01       0.0341   
     
-          release_date  speechiness    tempo  valence    year  
-    2403    2003-01-01       0.0347  130.011    0.777  2003.0  
-    3955    2018-06-01       0.0288  144.836    0.329  2018.0  
-    38183   2007-01-01       0.0444  144.025    0.740  2007.0  
-    11613   2011-01-01       0.0399   79.884    0.162  2011.0  
-    25449   2003-10-07       0.0876  106.909    0.374  2003.0  
-    ...            ...          ...      ...      ...     ...  
-    39640         2000       0.3080   94.405    0.703  2000.0  
-    13402   2008-04-01       0.0347  108.045    0.785  2008.0  
-    29199   2000-04-04       0.0311   97.923    0.695  2000.0  
-    3218    2011-09-12       0.0314  115.037    0.437  2011.0  
-    35133   2017-08-11       0.0284  104.027    0.866  2017.0  
+             tempo  valence    year  
+    14634  168.103    0.833  2020.0  
+    24221  141.939    0.582  2012.0  
+    312     95.033    0.780  2003.0  
+    40883  146.908    0.234  2013.0  
+    21085  133.682    0.768  2002.0  
+    ...        ...      ...     ...  
+    5745   104.930    0.761  2015.0  
+    13711  117.283    0.173  2011.0  
+    11769  129.984    0.803  2012.0  
+    38232  114.605    0.955  2007.0  
+    25450  160.196    0.343  2003.0  
     
     [1000 rows x 20 columns]
     3.8521519140900073
-    3.90690535
+    3.96381525
 
 ### Simple sampling and calculating with NumPy
 
@@ -168,20 +170,20 @@ print(mean_loudness_pop)
 print(mean_loudness_samp)
 ```
 
-    11825    -4.056
-    34198    -3.325
-    25408    -2.762
-    14628   -14.853
-    36305    -3.707
+    5860     -4.118
+    2821     -4.757
+    24252    -7.327
+    32814    -5.148
+    11347    -6.487
               ...  
-    39130    -4.283
-    34263    -2.643
-    18514    -5.797
-    41454   -12.390
-    11757    -7.087
+    29380    -5.066
+    2883    -24.789
+    26014    -2.403
+    9116    -13.325
+    35617    -6.839
     Name: loudness, Length: 100, dtype: float64
     -7.366856851353947
-    -7.09517
+    -7.433510000000002
 
 ### Are findings from the sample generalizable?
 
@@ -226,7 +228,7 @@ spotify_population['acousticness'].hist(bins=np.arange(0, 1.01, 0.01))
 plt.show()
 ```
 
-![png](notebook_files/notebook_10_0.png)
+![png](notebook_files/notebook_12_0.png)
 
 ```python
 # Update the histogram to use spotify_mysterious_sample
@@ -234,7 +236,7 @@ spotify_mysterious_sample['acousticness'].hist(bins=np.arange(0, 1.01, 0.01))
 plt.show()
 ```
 
-![png](notebook_files/notebook_11_0.png)
+![png](notebook_files/notebook_13_0.png)
 
 ### Are these findings generalizable?
 
@@ -265,7 +267,7 @@ spotify_population['duration_minutes'].hist(bins=np.arange(0, 15.5, 0.5))
 plt.show()
 ```
 
-![png](notebook_files/notebook_14_0.png)
+![png](notebook_files/notebook_16_0.png)
 
 ```python
 # Update the histogram to use spotify_mysterious_sample2
@@ -273,7 +275,7 @@ spotify_mysterious_sample2['duration_minutes'].hist(bins=np.arange(0, 15.5, 0.5)
 plt.show()
 ```
 
-![png](notebook_files/notebook_15_0.png)
+![png](notebook_files/notebook_17_0.png)
 
 ### Generating random numbers
 
@@ -313,9 +315,9 @@ normals = np.random.normal(loc=5, scale=2, size=5000)
 print(normals)
 ```
 
-    [-2.94788158 -1.33044237 -1.27130426 ...  0.87379311  0.3151701
-      1.58434735]
-    [4.61215582 3.98134143 3.29329956 ... 5.74804703 4.0644388  5.2814828 ]
+    [-1.8421194   0.64404365 -1.92788746 ... -2.57639818  1.59173031
+     -0.11919233]
+    [6.24654043 4.44286574 2.85788322 ... 4.99755308 4.32760378 2.80415531]
 
 ```python
 # Generate random numbers from a Uniform(-3, 3)
@@ -326,7 +328,7 @@ plt.hist(uniforms, bins=np.arange(-3, 3.25, 0.25))
 plt.show()
 ```
 
-![png](notebook_files/notebook_18_0.png)
+![png](notebook_files/notebook_20_0.png)
 
 ```python
 # Generate random numbers from a Normal(5, 2)
@@ -337,7 +339,7 @@ plt.hist(normals, bins=np.arange(-2, 13.5, 0.5))
 plt.show()
 ```
 
-![png](notebook_files/notebook_19_0.png)
+![png](notebook_files/notebook_21_0.png)
 
 ## Sampling Methods
 
@@ -607,7 +609,7 @@ attrition_pop_id.plot(x="index", y="YearsAtCompany", kind="scatter")
 plt.show()
 ```
 
-![png](notebook_files/notebook_26_0.png)
+![png](notebook_files/notebook_29_0.png)
 
 ```python
 # Shuffle the rows of attrition_pop
@@ -621,7 +623,7 @@ attrition_shuffled.plot(x="index", y="YearsAtCompany", kind="scatter")
 plt.show()
 ```
 
-![png](notebook_files/notebook_27_0.png)
+![png](notebook_files/notebook_30_0.png)
 
 ### Proportional stratified sampling
 
@@ -749,7 +751,7 @@ print(attrition_strat)
     [588 rows x 31 columns]
 
 
-    /tmp/ipykernel_24176/385919107.py:2: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+    /tmp/ipykernel_4815/385919107.py:2: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
       attrition_strat = attrition_pop.groupby('Education')\
 
 ```python
@@ -877,7 +879,7 @@ print(attrition_eq)
     [150 rows x 31 columns]
 
 
-    /tmp/ipykernel_24176/38261059.py:2: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+    /tmp/ipykernel_4815/38261059.py:2: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
       attrition_eq = attrition_pop.groupby('Education')\
 
 ```python
@@ -922,7 +924,7 @@ attrition_pop['YearsAtCompany'].hist(bins=np.arange(0, 41, 1))
 plt.show()
 ```
 
-![png](notebook_files/notebook_36_0.png)
+![png](notebook_files/notebook_39_0.png)
 
 ```python
 # Sample 400 employees weighted by YearsAtCompany
@@ -933,82 +935,82 @@ print(attrition_weight)
 ```
 
           Age  Attrition     BusinessTravel  DailyRate            Department  \
-    1140   34        0.0  Travel_Frequently        829  Research_Development   
-    234    28        0.0         Non-Travel        120                 Sales   
-    1232   55        0.0      Travel_Rarely        836  Research_Development   
-    392    29        0.0      Travel_Rarely        942  Research_Development   
-    1274   39        0.0  Travel_Frequently       1218  Research_Development   
+    1269   45        0.0      Travel_Rarely       1385  Research_Development   
+    1422   53        0.0  Travel_Frequently        124                 Sales   
+    1283   39        1.0  Travel_Frequently        203  Research_Development   
+    1449   52        0.0      Travel_Rarely        699  Research_Development   
+    1225   41        0.0         Non-Travel        256                 Sales   
     ...   ...        ...                ...        ...                   ...   
-    1440   50        0.0  Travel_Frequently        333  Research_Development   
-    1038   31        0.0      Travel_Rarely        196                 Sales   
-    1124   36        0.0      Travel_Rarely       1396  Research_Development   
-    502    36        0.0      Travel_Rarely        559  Research_Development   
-    902    31        0.0      Travel_Rarely        311  Research_Development   
+    617    32        1.0  Travel_Frequently        238  Research_Development   
+    137    22        0.0      Travel_Rarely        604  Research_Development   
+    475    33        0.0      Travel_Rarely       1075       Human_Resources   
+    1228   48        1.0  Travel_Frequently        708                 Sales   
+    285    28        0.0      Travel_Rarely        640  Research_Development   
     
           DistanceFromHome      Education    EducationField  \
-    1140                15       Bachelor           Medical   
-    234                  4       Bachelor           Medical   
-    1232                 2         Master  Technical_Degree   
-    392                 15  Below_College     Life_Sciences   
-    1274                 1  Below_College     Life_Sciences   
+    1269                20        College           Medical   
+    1422                 2       Bachelor         Marketing   
+    1283                 2       Bachelor     Life_Sciences   
+    1449                 1         Master     Life_Sciences   
+    1225                10        College           Medical   
     ...                ...            ...               ...   
-    1440                22         Doctor           Medical   
-    1038                29         Master         Marketing   
-    1124                 5        College     Life_Sciences   
-    502                 12         Master     Life_Sciences   
-    902                 20       Bachelor     Life_Sciences   
+    617                  5        College     Life_Sciences   
+    137                  6  Below_College           Medical   
+    475                  3        College   Human_Resources   
+    1228                 7        College           Medical   
+    285                  1       Bachelor  Technical_Degree   
     
          EnvironmentSatisfaction  Gender  ...  PerformanceRating  \
-    1140                  Medium    Male  ...          Excellent   
-    234                   Medium    Male  ...          Excellent   
-    1232                  Medium    Male  ...        Outstanding   
-    392                   Medium  Female  ...          Excellent   
-    1274                  Medium    Male  ...          Excellent   
+    1269                    High    Male  ...          Excellent   
+    1422                    High  Female  ...          Excellent   
+    1283                     Low    Male  ...          Excellent   
+    1449                    High    Male  ...          Excellent   
+    1225                    High    Male  ...          Excellent   
     ...                      ...     ...  ...                ...   
-    1440                    High    Male  ...          Excellent   
-    1038                     Low  Female  ...          Excellent   
-    1124               Very_High    Male  ...          Excellent   
-    502                     High  Female  ...          Excellent   
-    902                   Medium    Male  ...          Excellent   
+    617                      Low  Female  ...          Excellent   
+    137                      Low    Male  ...        Outstanding   
+    475                Very_High    Male  ...          Excellent   
+    1228               Very_High  Female  ...          Excellent   
+    285                Very_High    Male  ...          Excellent   
     
          RelationshipSatisfaction  StockOptionLevel TotalWorkingYears  \
-    1140                Very_High                 2                16   
-    234                    Medium                 0                 5   
-    1232                   Medium                 1                19   
-    392                       Low                 1                 6   
-    1274                     High                 1                21   
+    1269                   Medium                 0                21   
+    1422                      Low                 1                30   
+    1283                Very_High                 3                21   
+    1449                      Low                 1                34   
+    1225                      Low                 0                19   
     ...                       ...               ...               ...   
-    1440                Very_High                 0                32   
-    1038                      Low                 2                13   
-    1124                Very_High                 0                16   
-    502                    Medium                 2                 7   
-    902                       Low                 1                10   
+    617                       Low                 0                 8   
+    137                 Very_High                 0                 3   
+    475                      High                 1                 7   
+    1228                     High                 2                19   
+    285                    Medium                 0                 5   
     
          TrainingTimesLastYear WorkLifeBalance  YearsAtCompany  \
-    1140                     3            Good              14   
-    234                      3            Best               5   
-    1232                     2            Best               5   
-    392                      2            Good               5   
-    1274                     3          Better              21   
+    1269                     2          Better              20   
+    1422                     2          Better              15   
+    1283                     4          Better              18   
+    1449                     5          Better              33   
+    1225                     4          Better              19   
     ...                    ...             ...             ...   
-    1440                     2          Better              32   
-    1038                     3          Better              12   
-    1124                     3            Best              13   
-    502                      2          Better               3   
-    902                      2          Better              10   
+    617                      2          Better               4   
+    137                      3          Better               2   
+    475                      4            Best               4   
+    1228                     3          Better               9   
+    285                      2            Good               3   
     
           YearsInCurrentRole  YearsSinceLastPromotion YearsWithCurrManager  
-    1140                   8                        6                    9  
-    234                    4                        0                    4  
-    1232                   2                        0                    4  
-    392                    4                        1                    3  
-    1274                   8                        1                    6  
+    1269                   7                        4                   10  
+    1422                   7                        6                   12  
+    1283                   7                       11                    5  
+    1449                  18                       11                    9  
+    1225                   2                       11                    9  
     ...                  ...                      ...                  ...  
-    1440                   6                       13                    9  
-    1038                   7                        5                    7  
-    1124                  11                        3                    7  
-    502                    2                        1                    1  
-    902                    8                        0                    2  
+    617                    1                        0                    3  
+    137                    2                        2                    2  
+    475                    3                        0                    3  
+    1228                   7                        7                    7  
+    285                    2                        1                    2  
     
     [400 rows x 31 columns]
 
@@ -1018,7 +1020,7 @@ attrition_weight['YearsAtCompany'].hist(bins=np.arange(0, 41, 1))
 plt.show()
 ```
 
-![png](notebook_files/notebook_38_0.png)
+![png](notebook_files/notebook_41_0.png)
 
 ### Performing cluster sampling
 
@@ -1058,7 +1060,7 @@ job_roles_samp = random.sample(job_roles_pop, k=4)
 print(job_roles_samp)
 ```
 
-    ['Manager', 'Manufacturing_Director', 'Human_Resources', 'Laboratory_Technician']
+    ['Sales_Executive', 'Sales_Representative', 'Healthcare_Representative', 'Manager']
 
 ```python
 # Filter for rows where JobRole is in job_roles_samp
@@ -1069,85 +1071,85 @@ attrition_filtered = attrition_pop[jobrole_condition]
 print(attrition_filtered)
 ```
 
-          Age  Attrition BusinessTravel  DailyRate            Department  \
-    2      18        1.0  Travel_Rarely        230  Research_Development   
-    7      18        1.0     Non-Travel        247  Research_Development   
-    8      18        0.0     Non-Travel       1124  Research_Development   
-    11     30        0.0  Travel_Rarely       1358  Research_Development   
-    12     22        0.0     Non-Travel       1123  Research_Development   
-    ...   ...        ...            ...        ...                   ...   
-    1462   54        0.0  Travel_Rarely        584  Research_Development   
-    1463   56        0.0  Travel_Rarely       1400  Research_Development   
-    1464   55        0.0  Travel_Rarely        452  Research_Development   
-    1465   55        0.0  Travel_Rarely       1117                 Sales   
-    1466   58        0.0     Non-Travel        350                 Sales   
+          Age  Attrition     BusinessTravel  DailyRate            Department  \
+    1      19        1.0      Travel_Rarely        528                 Sales   
+    3      18        0.0      Travel_Rarely        812                 Sales   
+    4      18        1.0  Travel_Frequently       1306                 Sales   
+    9      18        1.0  Travel_Frequently        544                 Sales   
+    23     19        1.0  Travel_Frequently        602                 Sales   
+    ...   ...        ...                ...        ...                   ...   
+    1464   55        0.0      Travel_Rarely        452  Research_Development   
+    1465   55        0.0      Travel_Rarely       1117                 Sales   
+    1466   58        0.0         Non-Travel        350                 Sales   
+    1467   58        0.0      Travel_Rarely        682                 Sales   
+    1468   58        1.0      Travel_Rarely        147  Research_Development   
     
-          DistanceFromHome      Education EducationField EnvironmentSatisfaction  \
-    2                    3       Bachelor  Life_Sciences                    High   
-    7                    8  Below_College        Medical                    High   
-    8                    1       Bachelor  Life_Sciences               Very_High   
-    11                  24  Below_College  Life_Sciences               Very_High   
-    12                  16        College        Medical               Very_High   
-    ...                ...            ...            ...                     ...   
-    1462                22         Doctor        Medical                  Medium   
-    1463                 7       Bachelor  Life_Sciences               Very_High   
-    1464                 1       Bachelor        Medical               Very_High   
-    1465                18         Doctor  Life_Sciences                     Low   
-    1466                 2       Bachelor        Medical                  Medium   
+          DistanceFromHome      Education    EducationField  \
+    1                   22  Below_College         Marketing   
+    3                   10       Bachelor           Medical   
+    4                    5       Bachelor         Marketing   
+    9                    3        College           Medical   
+    23                   1  Below_College  Technical_Degree   
+    ...                ...            ...               ...   
+    1464                 1       Bachelor           Medical   
+    1465                18         Doctor     Life_Sciences   
+    1466                 2       Bachelor           Medical   
+    1467                10         Master           Medical   
+    1468                23         Master           Medical   
     
-          Gender  ...  PerformanceRating RelationshipSatisfaction  \
-    2       Male  ...          Excellent                     High   
-    7       Male  ...          Excellent                Very_High   
-    8     Female  ...          Excellent                     High   
-    11      Male  ...        Outstanding                   Medium   
-    12      Male  ...          Excellent                   Medium   
-    ...      ...  ...                ...                      ...   
-    1462  Female  ...        Outstanding                     High   
-    1463    Male  ...          Excellent                      Low   
-    1464    Male  ...          Excellent                     High   
-    1465  Female  ...        Outstanding                Very_High   
-    1466    Male  ...        Outstanding                Very_High   
+         EnvironmentSatisfaction  Gender  ...  PerformanceRating  \
+    1                  Very_High    Male  ...          Excellent   
+    3                  Very_High  Female  ...          Excellent   
+    4                     Medium    Male  ...          Excellent   
+    9                     Medium  Female  ...          Excellent   
+    23                      High  Female  ...        Outstanding   
+    ...                      ...     ...  ...                ...   
+    1464               Very_High    Male  ...          Excellent   
+    1465                     Low  Female  ...        Outstanding   
+    1466                  Medium    Male  ...        Outstanding   
+    1467               Very_High    Male  ...          Excellent   
+    1468               Very_High  Female  ...          Excellent   
     
-          StockOptionLevel TotalWorkingYears TrainingTimesLastYear  \
-    2                    0                 0                     2   
-    7                    0                 0                     0   
-    8                    0                 0                     5   
-    11                   1                 1                     2   
-    12                   2                 1                     2   
-    ...                ...               ...                   ...   
-    1462                 1                36                     6   
-    1463                 0                37                     3   
-    1464                 0                37                     2   
-    1465                 0                37                     2   
-    1466                 1                37                     0   
+         RelationshipSatisfaction  StockOptionLevel TotalWorkingYears  \
+    1                   Very_High                 0                 0   
+    3                         Low                 0                 0   
+    4                   Very_High                 0                 0   
+    9                        High                 0                 0   
+    23                        Low                 0                 1   
+    ...                       ...               ...               ...   
+    1464                     High                 0                37   
+    1465                Very_High                 0                37   
+    1466                Very_High                 1                37   
+    1467                     High                 0                38   
+    1468                Very_High                 1                40   
     
-         WorkLifeBalance  YearsAtCompany  YearsInCurrentRole  \
-    2             Better               0                   0   
-    7             Better               0                   0   
-    8               Best               0                   0   
-    11            Better               1                   0   
-    12              Good               1                   0   
-    ...              ...             ...                 ...   
-    1462          Better              10                   8   
-    1463            Good               6                   4   
-    1464          Better              36                  10   
-    1465          Better              10                   9   
-    1466            Good              16                   9   
+         TrainingTimesLastYear WorkLifeBalance  YearsAtCompany  \
+    1                        2            Good               0   
+    3                        2          Better               0   
+    4                        3          Better               0   
+    9                        2            Best               0   
+    23                       5            Best               0   
+    ...                    ...             ...             ...   
+    1464                     2          Better              36   
+    1465                     2          Better              10   
+    1466                     0            Good              16   
+    1467                     1            Good              37   
+    1468                     3            Good              40   
     
-          YearsSinceLastPromotion YearsWithCurrManager  
-    2                           0                    0  
-    7                           0                    0  
-    8                           0                    0  
-    11                          0                    0  
-    12                          0                    0  
-    ...                       ...                  ...  
-    1462                        4                    7  
-    1463                        0                    2  
-    1464                        4                   13  
-    1465                        7                    7  
-    1466                       14                   14  
+          YearsInCurrentRole  YearsSinceLastPromotion YearsWithCurrManager  
+    1                      0                        0                    0  
+    3                      0                        0                    0  
+    4                      0                        0                    0  
+    9                      0                        0                    0  
+    23                     0                        0                    0  
+    ...                  ...                      ...                  ...  
+    1464                  10                        4                   13  
+    1465                   9                        7                    7  
+    1466                   9                       14                   14  
+    1467                  10                        1                    8  
+    1468                  10                       15                    6  
     
-    [558 rows x 31 columns]
+    [642 rows x 31 columns]
 
 ```python
 # Remove categories with no rows
@@ -1162,267 +1164,267 @@ print(attrition_clust)
 ```
 
           Age  Attrition     BusinessTravel  DailyRate            Department  \
-    1348   44        1.0      Travel_Rarely       1376       Human_Resources   
-    886    41        0.0         Non-Travel        552       Human_Resources   
-    983    39        0.0      Travel_Rarely        141       Human_Resources   
-    88     27        1.0  Travel_Frequently       1337       Human_Resources   
-    189    34        0.0      Travel_Rarely        829       Human_Resources   
-    160    24        0.0  Travel_Frequently        897       Human_Resources   
-    839    46        0.0      Travel_Rarely        991       Human_Resources   
-    966    30        0.0      Travel_Rarely       1240       Human_Resources   
-    162    28        0.0         Non-Travel        280       Human_Resources   
-    1231   37        0.0      Travel_Rarely       1239       Human_Resources   
-    599    33        0.0      Travel_Rarely       1099  Research_Development   
-    620    40        0.0      Travel_Rarely        543  Research_Development   
-    853    36        0.0      Travel_Rarely        172  Research_Development   
-    159    23        0.0      Travel_Rarely        160  Research_Development   
-    317    35        0.0      Travel_Rarely        809  Research_Development   
-    815    32        0.0         Non-Travel       1109  Research_Development   
-    80     22        1.0      Travel_Rarely       1294  Research_Development   
-    335    52        0.0      Travel_Rarely       1323  Research_Development   
-    19     20        1.0  Travel_Frequently        871  Research_Development   
-    296    23        0.0      Travel_Rarely        507  Research_Development   
-    1377   52        0.0      Travel_Rarely       1053  Research_Development   
-    1416   58        0.0      Travel_Rarely        605                 Sales   
-    1385   54        0.0  Travel_Frequently       1050  Research_Development   
-    1317   40        0.0      Travel_Rarely       1137  Research_Development   
+    812    31        0.0      Travel_Rarely        616  Research_Development   
+    1190   38        0.0      Travel_Rarely       1495  Research_Development   
+    378    33        0.0      Travel_Rarely       1069  Research_Development   
+    920    35        0.0  Travel_Frequently       1199  Research_Development   
+    917    33        0.0      Travel_Rarely        501  Research_Development   
+    1058   34        0.0      Travel_Rarely        404  Research_Development   
+    1264   46        0.0  Travel_Frequently        638  Research_Development   
+    1340   44        0.0      Travel_Rarely        477  Research_Development   
+    655    34        0.0      Travel_Rarely       1442  Research_Development   
+    896    42        0.0      Travel_Rarely       1128  Research_Development   
+    1106   51        0.0      Travel_Rarely        942  Research_Development   
+    1307   41        0.0      Travel_Rarely       1276                 Sales   
+    1359   43        0.0  Travel_Frequently        394                 Sales   
+    1266   50        0.0      Travel_Rarely       1452  Research_Development   
+    1310   53        0.0      Travel_Rarely       1376                 Sales   
     1417   59        0.0         Non-Travel       1420       Human_Resources   
-    1294   39        0.0         Non-Travel        105  Research_Development   
-    1292   43        0.0      Travel_Rarely        823  Research_Development   
-    1304   41        0.0      Travel_Rarely        334                 Sales   
-    1429   55        0.0         Non-Travel        444  Research_Development   
-    1442   52        0.0         Non-Travel        771                 Sales   
-    932    31        0.0      Travel_Rarely       1232  Research_Development   
-    1056   37        0.0      Travel_Rarely        977  Research_Development   
-    821    29        0.0      Travel_Rarely        718  Research_Development   
-    220    35        0.0      Travel_Rarely        219  Research_Development   
-    1328   55        0.0  Travel_Frequently       1091  Research_Development   
-    242    25        0.0      Travel_Rarely        685  Research_Development   
-    1248   47        0.0  Travel_Frequently       1379  Research_Development   
-    933    30        0.0      Travel_Rarely        317  Research_Development   
-    855    45        0.0      Travel_Rarely       1448  Research_Development   
-    1397   52        0.0      Travel_Rarely        319  Research_Development   
+    1044   34        0.0      Travel_Rarely       1354  Research_Development   
+    1336   48        0.0  Travel_Frequently        365  Research_Development   
+    1280   42        0.0      Travel_Rarely        265                 Sales   
+    1285   39        0.0      Travel_Rarely        412  Research_Development   
+    1096   34        0.0      Travel_Rarely       1326                 Sales   
+    1454   53        0.0      Travel_Rarely        661                 Sales   
+    432    35        0.0      Travel_Rarely        682                 Sales   
+    187    24        1.0      Travel_Rarely        693                 Sales   
+    653    31        1.0      Travel_Rarely       1365                 Sales   
+    207    32        0.0      Travel_Rarely        499                 Sales   
+    713    34        0.0      Travel_Rarely       1239                 Sales   
+    512    39        0.0  Travel_Frequently        766                 Sales   
+    961    32        0.0      Travel_Rarely       1093                 Sales   
+    845    41        0.0  Travel_Frequently       1018                 Sales   
+    92     35        0.0      Travel_Rarely        890                 Sales   
+    101    29        0.0      Travel_Rarely       1090                 Sales   
+    153    31        1.0  Travel_Frequently       1060                 Sales   
+    1008   53        0.0      Travel_Rarely       1436                 Sales   
+    140    38        0.0      Travel_Rarely        395                 Sales   
+    23     19        1.0  Travel_Frequently        602                 Sales   
+    1150   52        0.0         Non-Travel        585                 Sales   
+    104    20        1.0  Travel_Frequently        769                 Sales   
+    148    33        0.0         Non-Travel       1038                 Sales   
+    188    50        0.0      Travel_Rarely        316                 Sales   
     
           DistanceFromHome      Education    EducationField  \
-    1348                 1        College           Medical   
-    886                  4       Bachelor   Human_Resources   
-    983                  3       Bachelor   Human_Resources   
-    88                  22       Bachelor   Human_Resources   
-    189                  3        College   Human_Resources   
-    160                 10       Bachelor           Medical   
-    839                  1        College     Life_Sciences   
-    966                  9       Bachelor   Human_Resources   
-    162                  1        College     Life_Sciences   
-    1231                 8        College             Other   
-    599                  4         Master           Medical   
-    620                  1         Master     Life_Sciences   
-    853                  4         Master     Life_Sciences   
-    159                  4  Below_College           Medical   
-    317                 16       Bachelor           Medical   
-    815                 29         Master           Medical   
-    80                   8  Below_College           Medical   
-    335                  2       Bachelor     Life_Sciences   
-    19                   6       Bachelor     Life_Sciences   
-    296                 20  Below_College     Life_Sciences   
-    1377                 1        College     Life_Sciences   
-    1416                21       Bachelor     Life_Sciences   
-    1385                11         Master           Medical   
-    1317                 1         Master     Life_Sciences   
+    812                 12       Bachelor           Medical   
+    1190                10       Bachelor           Medical   
+    378                  1       Bachelor     Life_Sciences   
+    920                 18         Master     Life_Sciences   
+    917                 15        College           Medical   
+    1058                 2         Master  Technical_Degree   
+    1264                 1       Bachelor           Medical   
+    1340                 7         Master           Medical   
+    655                  9       Bachelor           Medical   
+    896                 13       Bachelor           Medical   
+    1106                 3       Bachelor  Technical_Degree   
+    1307                 2         Doctor     Life_Sciences   
+    1359                26        College     Life_Sciences   
+    1266                11       Bachelor     Life_Sciences   
+    1310                 2        College           Medical   
     1417                 2         Master   Human_Resources   
-    1294                 9       Bachelor     Life_Sciences   
-    1292                 6       Bachelor           Medical   
-    1304                 2         Master     Life_Sciences   
-    1429                 2  Below_College           Medical   
-    1442                 2         Master     Life_Sciences   
-    932                  7         Master           Medical   
-    1056                 1       Bachelor     Life_Sciences   
-    821                  8  Below_College           Medical   
-    220                 16        College             Other   
-    1328                 2  Below_College     Life_Sciences   
-    242                  1       Bachelor     Life_Sciences   
-    1248                16         Master           Medical   
-    933                  2       Bachelor     Life_Sciences   
-    855                 29       Bachelor  Technical_Degree   
-    1397                 3       Bachelor           Medical   
+    1044                 5       Bachelor           Medical   
+    1336                 4         Doctor           Medical   
+    1280                 5        College         Marketing   
+    1285                13         Master           Medical   
+    1096                 3       Bachelor             Other   
+    1454                 7        College         Marketing   
+    432                 18         Master           Medical   
+    187                  3        College     Life_Sciences   
+    653                 13         Master           Medical   
+    207                  2  Below_College         Marketing   
+    713                 13         Master           Medical   
+    512                 20       Bachelor     Life_Sciences   
+    961                  6         Master           Medical   
+    845                  1       Bachelor         Marketing   
+    92                   2       Bachelor         Marketing   
+    101                 10       Bachelor         Marketing   
+    153                  1       Bachelor     Life_Sciences   
+    1008                 6        College         Marketing   
+    140                  9       Bachelor         Marketing   
+    23                   1  Below_College  Technical_Degree   
+    1150                29         Master     Life_Sciences   
+    104                  9       Bachelor         Marketing   
+    148                  8  Below_College     Life_Sciences   
+    188                  8         Master         Marketing   
     
          EnvironmentSatisfaction  Gender  ...  PerformanceRating  \
-    1348                  Medium    Male  ...          Excellent   
-    886                     High    Male  ...          Excellent   
-    983                     High  Female  ...          Excellent   
-    88                       Low  Female  ...          Excellent   
-    189                     High    Male  ...          Excellent   
-    160                      Low    Male  ...          Excellent   
-    839                Very_High  Female  ...          Excellent   
-    966                     High    Male  ...          Excellent   
-    162                     High    Male  ...          Excellent   
-    1231                    High    Male  ...          Excellent   
-    599                      Low  Female  ...          Excellent   
-    620                      Low    Male  ...          Excellent   
-    853                      Low    Male  ...          Excellent   
-    159                     High  Female  ...          Excellent   
-    317                      Low    Male  ...          Excellent   
-    815                Very_High  Female  ...          Excellent   
-    80                      High  Female  ...          Excellent   
-    335                     High  Female  ...          Excellent   
-    19                 Very_High  Female  ...          Excellent   
-    296                      Low    Male  ...          Excellent   
-    1377               Very_High    Male  ...          Excellent   
-    1416               Very_High  Female  ...          Excellent   
-    1385                  Medium  Female  ...        Outstanding   
-    1317                     Low    Male  ...          Excellent   
+    812                Very_High  Female  ...          Excellent   
+    1190                    High  Female  ...          Excellent   
+    378                   Medium  Female  ...          Excellent   
+    920                     High    Male  ...          Excellent   
+    917                   Medium  Female  ...          Excellent   
+    1058                    High  Female  ...          Excellent   
+    1264                    High    Male  ...          Excellent   
+    1340                     Low  Female  ...          Excellent   
+    655                Very_High  Female  ...          Excellent   
+    896                   Medium    Male  ...          Excellent   
+    1106                     Low  Female  ...          Excellent   
+    1307                  Medium  Female  ...          Excellent   
+    1359                    High    Male  ...          Excellent   
+    1266                    High  Female  ...          Excellent   
+    1310                    High    Male  ...          Excellent   
     1417                    High  Female  ...        Outstanding   
-    1294               Very_High    Male  ...          Excellent   
-    1292                     Low  Female  ...          Excellent   
-    1304               Very_High    Male  ...          Excellent   
-    1429                    High    Male  ...          Excellent   
-    1442                     Low    Male  ...          Excellent   
-    932                     High  Female  ...          Excellent   
-    1056               Very_High  Female  ...          Excellent   
-    821                   Medium    Male  ...          Excellent   
-    220                Very_High  Female  ...          Excellent   
-    1328               Very_High    Male  ...          Excellent   
-    242                      Low  Female  ...          Excellent   
-    1248                    High    Male  ...          Excellent   
-    933                     High  Female  ...        Outstanding   
-    855                   Medium    Male  ...          Excellent   
-    1397               Very_High    Male  ...          Excellent   
+    1044                    High  Female  ...          Excellent   
+    1336                    High    Male  ...        Outstanding   
+    1280               Very_High    Male  ...          Excellent   
+    1285                    High  Female  ...          Excellent   
+    1096               Very_High    Male  ...          Excellent   
+    1454                     Low  Female  ...          Excellent   
+    432                   Medium    Male  ...          Excellent   
+    187                      Low  Female  ...          Excellent   
+    653                   Medium    Male  ...          Excellent   
+    207                     High    Male  ...          Excellent   
+    713                Very_High    Male  ...          Excellent   
+    512                     High    Male  ...          Excellent   
+    961                   Medium    Male  ...          Excellent   
+    845                     High  Female  ...          Excellent   
+    92                 Very_High  Female  ...          Excellent   
+    101                Very_High    Male  ...          Excellent   
+    153                Very_High  Female  ...          Excellent   
+    1008                  Medium    Male  ...        Outstanding   
+    140                   Medium    Male  ...          Excellent   
+    23                      High  Female  ...        Outstanding   
+    1150                     Low    Male  ...          Excellent   
+    104                Very_High  Female  ...          Excellent   
+    148                   Medium  Female  ...          Excellent   
+    188                Very_High    Male  ...          Excellent   
     
          RelationshipSatisfaction  StockOptionLevel TotalWorkingYears  \
-    1348                Very_High                 1                24   
-    886                    Medium                 1                10   
-    983                      High                 1                12   
-    88                        Low                 0                 1   
-    189                      High                 1                 4   
-    160                 Very_High                 1                 3   
-    839                      High                 0                10   
-    966                 Very_High                 0                12   
-    162                    Medium                 1                 3   
-    1231                     High                 0                19   
-    599                 Very_High                 0                 8   
-    620                      High                 2                 8   
-    853                      High                 0                10   
-    159                      High                 0                 3   
-    317                      High                 1                 6   
-    815                    Medium                 0                10   
-    80                       High                 0                 1   
-    335                    Medium                 0                 6   
-    19                     Medium                 0                 1   
-    296                    Medium                 0                 5   
-    1377                   Medium                 1                26   
-    1416                     High                 1                29   
-    1385                      Low                 1                26   
-    1317                      Low                 1                22   
+    812                      High                 2                10   
+    1190                     High                 1                18   
+    378                       Low                 0                 6   
+    920                 Very_High                 2                10   
+    917                       Low                 1                10   
+    1058                Very_High                 0                14   
+    1264                     High                 1                21   
+    1340                Very_High                 1                24   
+    655                    Medium                 0                 9   
+    896                      High                 2                10   
+    1106                Very_High                 0                15   
+    1307                   Medium                 1                22   
+    1359                Very_High                 2                25   
+    1266                   Medium                 0                21   
+    1310                     High                 1                22   
     1417                Very_High                 1                30   
-    1294                     High                 0                21   
-    1292                Very_High                 0                21   
-    1304                   Medium                 0                22   
-    1429                   Medium                 0                31   
-    1442                Very_High                 0                33   
-    932                      High                 0                11   
-    1056                   Medium                 1                14   
-    821                      High                 1                10   
-    220                 Very_High                 0                 4   
-    1328                   Medium                 1                23   
-    242                 Very_High                 2                 5   
-    1248                     High                 0                20   
-    933                      High                 0                11   
-    855                 Very_High                 2                10   
-    1397                     High                 0                28   
+    1044                Very_High                 0                14   
+    1336                   Medium                 1                23   
+    1280                   Medium                 0                21   
+    1285                Very_High                 2                21   
+    1096                Very_High                 0                15   
+    1454                Very_High                 1                35   
+    432                 Very_High                 1                 6   
+    187                       Low                 0                 4   
+    653                      High                 0                 9   
+    207                       Low                 3                 4   
+    713                      High                 1                 9   
+    512                 Very_High                 1                 7   
+    961                       Low                 0                12   
+    845                 Very_High                 1                10   
+    92                        Low                 0                 2   
+    101                 Very_High                 2                 2   
+    153                       Low                 0                 3   
+    1008                Very_High                 1                13   
+    140                 Very_High                 1                 3   
+    23                        Low                 0                 1   
+    1150                   Medium                 2                16   
+    104                    Medium                 0                 2   
+    148                 Very_High                 0                 3   
+    188                 Very_High                 1                 4   
     
          TrainingTimesLastYear WorkLifeBalance  YearsAtCompany  \
-    1348                     1          Better              20   
-    886                      4          Better               3   
-    983                      3             Bad               8   
-    88                       2          Better               1   
-    189                      1             Bad               3   
-    160                      2          Better               2   
-    839                      3            Best               7   
-    966                      2             Bad              11   
-    162                      2          Better               3   
-    1231                     4            Good              10   
-    599                      5          Better               5   
-    620                      3            Good               1   
-    853                      2            Good              10   
-    159                      3             Bad               3   
-    317                      5          Better               5   
-    815                      2          Better               8   
-    80                       6          Better               1   
-    335                      3            Good               2   
-    19                       5          Better               1   
-    296                      2          Better               4   
-    1377                     2            Good               9   
-    1416                     2            Good               1   
-    1385                     2          Better              14   
-    1317                     3          Better              19   
+    812                      2             Bad               9   
+    1190                     4          Better               1   
+    378                      3          Better               5   
+    920                      2            Best              10   
+    917                      6          Better               9   
+    1058                     2            Best              14   
+    1264                     5            Good              10   
+    1340                     4          Better              22   
+    655                      3            Best               8   
+    896                      2            Good               0   
+    1106                     2          Better               2   
+    1307                     2          Better              18   
+    1359                     3            Best              25   
+    1266                     5          Better               5   
+    1310                     3            Best              17   
     1417                     3          Better               3   
-    1294                     3            Good               6   
-    1292                     2          Better              16   
-    1304                     2          Better              22   
-    1429                     3            Best               9   
-    1442                     2            Best              33   
-    932                      2            Good              11   
-    1056                     2            Good              14   
-    821                      2            Good              10   
-    220                      2          Better               3   
-    1328                     4          Better               3   
-    242                      3          Better               4   
-    1248                     3            Best              19   
-    933                      2          Better               5   
-    855                      4            Best               3   
-    1397                     4          Better               5   
+    1044                     6          Better              11   
+    1336                     3          Better               2   
+    1280                     3            Best               1   
+    1285                     4          Better              19   
+    1096                     2          Better              13   
+    1454                     3          Better               5   
+    432                      2             Bad               5   
+    187                      3          Better               2   
+    653                      2             Bad               3   
+    207                      3            Good               3   
+    713                      2            Good               8   
+    512                      6          Better               2   
+    961                      0          Better              11   
+    845                      2          Better               9   
+    92                       3          Better               2   
+    101                      2          Better               2   
+    153                      2            Best               3   
+    1008                     3             Bad               7   
+    140                      3          Better               2   
+    23                       5            Best               0   
+    1150                     3            Good               9   
+    104                      3          Better               2   
+    148                      2            Good               2   
+    188                      2          Better               2   
     
           YearsInCurrentRole  YearsSinceLastPromotion YearsWithCurrManager  
-    1348                   6                        3                    6  
-    886                    2                        1                    2  
-    983                    3                        3                    6  
-    88                     0                        0                    0  
-    189                    2                        0                    2  
-    160                    2                        2                    1  
-    839                    6                        5                    7  
-    966                    9                        4                    7  
-    162                    2                        2                    2  
-    1231                   0                        4                    7  
-    599                    4                        0                    2  
-    620                    0                        0                    0  
-    853                    4                        1                    8  
-    159                    2                        1                    2  
-    317                    4                        0                    3  
-    815                    7                        7                    7  
-    80                     0                        0                    0  
-    335                    2                        2                    2  
-    19                     0                        1                    0  
-    296                    3                        1                    2  
-    1377                   8                        7                    8  
-    1416                   0                        0                    0  
-    1385                   9                        1                   12  
-    1317                   7                       11                   16  
+    812                    7                        8                    5  
+    1190                   0                        0                    0  
+    378                    0                        1                    4  
+    920                    2                        0                    2  
+    917                    7                        8                    1  
+    1058                  11                        4                   11  
+    1264                   9                        9                    5  
+    1340                   6                        5                   17  
+    655                    7                        7                    7  
+    896                    0                        0                    0  
+    1106                   2                        2                    2  
+    1307                  16                       11                    8  
+    1359                  12                        4                   12  
+    1266                   4                        4                    4  
+    1310                  13                       15                    2  
     1417                   2                        2                    2  
-    1294                   0                        1                    3  
-    1292                  12                        6                   14  
-    1304                  10                        0                    4  
-    1429                   7                        6                    2  
-    1442                   7                       15                   12  
-    932                    9                        4                   10  
-    1056                   8                        3                   11  
-    821                    7                        1                    2  
-    220                    2                        0                    2  
-    1328                   2                        1                    2  
-    242                    2                        1                    2  
-    1248                  10                        2                    7  
-    933                    4                        0                    2  
-    855                    1                        1                    2  
-    1397                   4                        0                    4  
+    1044                  10                        5                    8  
+    1336                   2                        2                    2  
+    1280                   0                        0                    0  
+    1285                   9                       15                    2  
+    1096                   9                        3                   12  
+    1454                   2                        0                    4  
+    432                    3                        0                    4  
+    187                    2                        2                    0  
+    653                    1                        1                    2  
+    207                    2                        1                    2  
+    713                    7                        1                    1  
+    512                    1                        2                    2  
+    961                    8                        5                    7  
+    845                    3                        1                    7  
+    92                     2                        2                    2  
+    101                    2                        2                    2  
+    153                    2                        2                    2  
+    1008                   7                        4                    5  
+    140                    2                        1                    2  
+    23                     0                        0                    0  
+    1150                   8                        0                    0  
+    104                    2                        0                    2  
+    148                    2                        2                    2  
+    188                    2                        2                    2  
     
     [40 rows x 31 columns]
 
 
-    /tmp/ipykernel_24176/1642936327.py:2: SettingWithCopyWarning: 
+    /tmp/ipykernel_4815/1642936327.py:2: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     
     See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
       attrition_filtered['JobRole'] = attrition_filtered['JobRole'].cat.remove_unused_categories()
-    /tmp/ipykernel_24176/1642936327.py:5: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+    /tmp/ipykernel_4815/1642936327.py:5: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
       attrition_clust = attrition_filtered.groupby("JobRole")\
 
 ### 3 kinds of sampling
@@ -1471,7 +1473,7 @@ attrition_strat = attrition_pop.groupby("RelationshipSatisfaction")\
     .sample(frac=0.25, random_state=2022)
 ```
 
-    /tmp/ipykernel_24176/1183472179.py:2: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+    /tmp/ipykernel_4815/1183472179.py:2: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
       attrition_strat = attrition_pop.groupby("RelationshipSatisfaction")\
 
 ```python
@@ -1492,13 +1494,13 @@ attrition_clust = attrition_clust_prep.groupby("RelationshipSatisfaction")\
 
 ```
 
-    /tmp/ipykernel_24176/1225069142.py:10: SettingWithCopyWarning: 
+    /tmp/ipykernel_4815/1225069142.py:10: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     
     See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
       attrition_clust_prep['RelationshipSatisfaction'] = attrition_clust_prep['RelationshipSatisfaction'].cat.remove_unused_categories()
-    /tmp/ipykernel_24176/1225069142.py:13: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+    /tmp/ipykernel_4815/1225069142.py:13: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
       attrition_clust = attrition_clust_prep.groupby("RelationshipSatisfaction")\
 
 ### Comparing point estimates
@@ -1589,13 +1591,13 @@ print(mean_attrition_clust)
     Name: Attrition, dtype: float64
 
 
-    /tmp/ipykernel_24176/3036671708.py:2: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+    /tmp/ipykernel_4815/3036671708.py:2: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
       mean_attrition_pop = attrition_pop.groupby('RelationshipSatisfaction')['Attrition'].mean()
-    /tmp/ipykernel_24176/3036671708.py:9: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+    /tmp/ipykernel_4815/3036671708.py:9: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
       mean_attrition_srs = attrition_srs.groupby('RelationshipSatisfaction')['Attrition'].mean()
-    /tmp/ipykernel_24176/3036671708.py:16: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+    /tmp/ipykernel_4815/3036671708.py:16: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
       mean_attrition_strat = attrition_strat.groupby('RelationshipSatisfaction')['Attrition'].mean()
-    /tmp/ipykernel_24176/3036671708.py:23: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+    /tmp/ipykernel_4815/3036671708.py:23: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
       mean_attrition_clust = attrition_clust.groupby('RelationshipSatisfaction')['Attrition'].mean()
 
 ## Sampling Distributions
@@ -1699,7 +1701,7 @@ for i in range(500):
 print(mean_attritions[0:5])
 ```
 
-    [0.1, 0.13333333333333333, 0.18333333333333332, 0.21666666666666667, 0.2]
+    [0.21666666666666667, 0.2, 0.21666666666666667, 0.23333333333333334, 0.1]
 
 ```python
 # Create an empty list
@@ -1716,7 +1718,7 @@ plt.show()
 
 ```
 
-![png](notebook_files/notebook_55_0.png)
+![png](notebook_files/notebook_59_0.png)
 
 ### Exact sampling distribution
 
@@ -1821,7 +1823,7 @@ dice['mean_roll'].value_counts(sort=False).plot(kind="bar")
 plt.show()
 ```
 
-![png](notebook_files/notebook_60_0.png)
+![png](notebook_files/notebook_64_0.png)
 
 ### Generating an approximate sampling distribution
 
@@ -1870,7 +1872,7 @@ print(sample_means_1000[0:10])
 ```
 
     4.8
-    [4.0, 4.2, 3.6, 5.8, 4.0, 3.0, 4.6, 5.6, 3.0, 4.8]
+    [4.2, 5.8, 4.8, 5.2, 3.4, 3.0, 3.6, 5.6, 6.2, 5.6]
 
 ```python
 # Draw a histogram of sample_means_1000 with 20 bins
@@ -1878,7 +1880,7 @@ plt.hist(sample_means_1000, bins=20)
 plt.show()
 ```
 
-![png](notebook_files/notebook_63_0.png)
+![png](notebook_files/notebook_67_0.png)
 
 ### Population & sampling distribution means
 
@@ -1924,9 +1926,9 @@ print(mean_of_means_50)
 print(mean_of_means_500)
 ```
 
-    0.15619999999999998
-    0.16186
-    0.161374
+    0.1516
+    0.15776
+    0.161136
 
 ### Population & sampling distribution variation
 
@@ -1960,9 +1962,9 @@ print(sd_of_means_50)
 print(sd_of_means_500)
 ```
 
-    0.15041337767693466
-    0.05040914085244343
-    0.013351493788576108
+    0.15975907787341212
+    0.05167642453627043
+    0.012850316518850212
 
 ## Bootstrap Distributions
 
@@ -2009,31 +2011,31 @@ spotify_1_resample = spotify_sample.sample(frac=1, replace=True)
 print(spotify_1_resample)
 ```
 
-                                     artists  \
-    28192            ['Swedish House Mafia']   
-    18726                   ['JayDaYoungan']   
-    6452                     ['Babasónicos']   
-    17580                    ['Eric Church']   
-    10381   ['$uicideBoy$', 'Travis Barker']   
-    ...                                  ...   
-    31286                  ['George Strait']   
-    14473                         ['SuperM']   
-    5992   ['Gigolo Y La Exce', 'Bad Bunny']   
-    1266                          ['ODESZA']   
-    39169            ['NAV', 'Lil Uzi Vert']   
+                             artists  \
+    36544            ['Neon Indian']   
+    11257            ['Chuck Wicks']   
+    32854        ['Chris Stapleton']   
+    16980  ['Brian Stokes Mitchell']   
+    22023          ['Blake Shelton']   
+    ...                          ...   
+    32160                 ['Weezer']   
+    21041                    ['D12']   
+    5436    ['Thousand Foot Krutch']   
+    8847                 ['Haystak']   
+    15389             ['Los Cafres']   
     
-                                                      name  danceability  
-    28192                                   Save The World         0.507  
-    18726                                            Draco         0.573  
-    6452                                           El Loco         0.687  
-    17580                                Hell On The Heart         0.637  
-    10381  Aliens Are Ghosts ($UICIDEBOY$ X TRAVIS BARKER)         0.760  
-    ...                                                ...           ...  
-    31286                                     The Best Day         0.647  
-    14473                                          Jopping         0.740  
-    5992                   Sexto Sentido (feat. Bad Bunny)         0.715  
-    1266                                        Don't Stop         0.449  
-    39169                  Wanted You (feat. Lil Uzi Vert)         0.795  
+                                                        name  danceability  
+    36544                                    Deadbeat Summer         0.635  
+    11257                                Stealing Cinderella         0.512  
+    32854                            When The Stars Come Out         0.471  
+    16980                   The Impossible Dream (The Quest)         0.386  
+    22023                                          Honey Bee         0.481  
+    ...                                                  ...           ...  
+    32160  (If You're Wondering If I Want You To) I Want ...         0.695  
+    21041                                       Purple Pills         0.780  
+    5436                           The End Is Where We Begin         0.463  
+    8847                                        My First Day         0.911  
+    15389                                            Momento         0.720  
     
     [41656 rows x 3 columns]
 
@@ -2045,7 +2047,7 @@ mean_danceability_1 = np.mean(spotify_1_resample['danceability'])
 print(mean_danceability_1)
 ```
 
-    0.5920298708469367
+    0.5910867774150184
 
 ```python
 # Replicate this 1000 times
@@ -2059,7 +2061,7 @@ for i in range(1000):
 print(mean_danceability_1000)
 ```
 
-    [0.5913303509698483, 0.590769701843672, 0.5910680574227002, 0.5914628864989439, 0.5919076651622815, 0.5909301613212983, 0.5913323794891492, 0.5893750192049165, 0.590730466199347, 0.5919559679277895, 0.5926986556558479, 0.5904088846744766, 0.5905084453620126, 0.591185548300365, 0.5911669051277127, 0.5903387075091223, 0.5908597416938737, 0.5915278543307086, 0.5898295491645861, 0.5917189024390243, 0.5903919051277127, 0.5901589830996734, 0.590839490109468, 0.5908267020357212, 0.5920536465335126, 0.5926680886306893, 0.5908068825619359, 0.5925730867101978, 0.5910940008642211, 0.5923359059919339, 0.5928598977338199, 0.5909197666602649, 0.5904054565968888, 0.5913032384290376, 0.590169826675629, 0.5911191208949491, 0.5914872191280969, 0.5899140003840984, 0.5908350945842135, 0.5923610236220472, 0.5917224937584022, 0.5913960821970424, 0.5912103346456693, 0.5914491309775303, 0.5905099001344345, 0.591167944593816, 0.590625770597273, 0.5909528399270213, 0.5913993230266948, 0.5891351401958902, 0.5900634626464375, 0.59088289082005, 0.5903511907048204, 0.5921969440176685, 0.5897005497407337, 0.5917911225273671, 0.5905592591703476, 0.589202011714999, 0.5917806318417516, 0.591891708277319, 0.5900745822930671, 0.5931779359516036, 0.5912746759170348, 0.5924986940656808, 0.5905977050124832, 0.5925371159016708, 0.5920721984828116, 0.5917466439408489, 0.5919889571730363, 0.5925156472056846, 0.5908943825619358, 0.5928127736700596, 0.5916179734011907, 0.5911243638371423, 0.5901078644132899, 0.5905136955060496, 0.5926423420395621, 0.5910835749951988, 0.5917902679085847, 0.5905114533320529, 0.5906433695025928, 0.591096648742078, 0.5916050724985596, 0.5922064120414825, 0.5928341295371615, 0.5914156736124448, 0.5920620366813905, 0.5905177333397349, 0.5904773958133283, 0.5916394829076244, 0.5920012699251008, 0.591059984155944, 0.5910935279431535, 0.5903207821202228, 0.5916486076435569, 0.5916366093719994, 0.592917125984252, 0.5915644420971767, 0.5902024366237757, 0.591866437007874, 0.5888581236796621, 0.5919791194545804, 0.5910052693489534, 0.5909881193585559, 0.5921127184559247, 0.590186702995967, 0.5897674980795083, 0.5897414298060304, 0.5902073146725562, 0.5926219656231996, 0.5897738501056271, 0.5905671139811793, 0.5900532936431726, 0.5913960821970424, 0.5903011474937585, 0.5891887555214135, 0.590734007105819, 0.5906018844824273, 0.5917642212406377, 0.5901786969464182, 0.5905724577491839, 0.5897679037833685, 0.5922881049548685, 0.5897898237948915, 0.5903969656231995, 0.5928953356059151, 0.5919649558286921, 0.5920033920683695, 0.5894318081428845, 0.5918225825811407, 0.5927601545995775, 0.5911819737852891, 0.591164691761091, 0.5915077827923949, 0.5907057374687921, 0.5914316977146149, 0.5913214398886114, 0.5908360812367968, 0.5922566905127713, 0.590709067121183, 0.591192586902247, 0.5912548636450932, 0.589057994046476, 0.5917236652583061, 0.5915271053389668, 0.5899643652775111, 0.5910396725561744, 0.5907613597080853, 0.5902728898598041, 0.5920325883426157, 0.5921866621855196, 0.5913688688304206, 0.5921773261955061, 0.5915049956788937, 0.5903996951219512, 0.5909168067025157, 0.5912719272133666, 0.5928624807950834, 0.5920188760322642, 0.5923297748223546, 0.5906581476858076, 0.5907002184559248, 0.5917634266372191, 0.5909333085269829, 0.5907067577299789, 0.5910161777415017, 0.5906875096024582, 0.5905234876128289, 0.5914494598617246, 0.5902945626080276, 0.5918569233723834, 0.591056155175725, 0.591046274246207, 0.5895024486268484, 0.5905343455924716, 0.5910241621855193, 0.5914373127520646, 0.5913584477626272, 0.5892515844056078, 0.5902184511234876, 0.591960449875168, 0.5904363621086998, 0.5911751200307278, 0.5895333253312848, 0.5911453380065297, 0.5909731131169579, 0.5916980050893028, 0.5919687728058384, 0.5909211110044171, 0.5918762627232572, 0.5915673084309583, 0.5902453788169771, 0.5917547652198963, 0.5920205060495488, 0.5915820674092568, 0.5918168259074322, 0.5926561575763395, 0.5916304085845977, 0.5908634098329173, 0.5913893940848858, 0.591235781159977, 0.5926118182254657, 0.589970916554638, 0.5915602362204724, 0.592411616573843, 0.5905590191088919, 0.5898678989821394, 0.591207499519877, 0.5909834021509506, 0.5909846888803534, 0.591226425965047, 0.5901311263683504, 0.5907808286921451, 0.5929185831572883, 0.5905061623775687, 0.5912658920683695, 0.5907180070097944, 0.5913015555982332, 0.5902053389667754, 0.591486122047244, 0.5911885370654888, 0.5911753192817361, 0.5916491237756866, 0.5912461374111773, 0.5934289658152488, 0.5916474265411945, 0.5917895357211446, 0.5908923612444787, 0.5912625288073747, 0.5907764667754946, 0.5902873223545229, 0.5900925941040907, 0.5919242029959669, 0.5912382585942001, 0.5911648141924332, 0.5921361580564625, 0.5907384602458229, 0.590370330804686, 0.5917460773958133, 0.5928907600345689, 0.5921225177645477, 0.5913406256001537, 0.5907721504705205, 0.5906817313232188, 0.5912695962166314, 0.5906683959093527, 0.5909742966199347, 0.5912672844248128, 0.5925506337622432, 0.5907443129441138, 0.5920738813136163, 0.5918676157096217, 0.5912612636835031, 0.5904675652967161, 0.5896385994814672, 0.5896551853274439, 0.5902301421163818, 0.592510341847513, 0.5902771845592472, 0.591177136546956, 0.59093072066449, 0.5920763227386211, 0.5905815200691377, 0.5909632129825235, 0.5921801853274438, 0.593013090551181, 0.591367630113309, 0.5910395117149991, 0.591629414730171, 0.5922857571538314, 0.5905029503552909, 0.5915497143268676, 0.5909327755905511, 0.5913019276934895, 0.5906115349529479, 0.5912841631457654, 0.5913134338390629, 0.5910964542922988, 0.5920241333781449, 0.5917777270981371, 0.5908565872863454, 0.5913907888419435, 0.5918347681006338, 0.590849603898598, 0.5912035385058575, 0.5916431774534282, 0.5914308118878433, 0.5918561599769541, 0.5925310783560591, 0.591595602074131, 0.5911175220856539, 0.591721485500288, 0.5911228706548877, 0.5905715119070482, 0.5916888251392356, 0.5914680598233147, 0.5910076555598233, 0.5898836470136355, 0.5911908920683696, 0.5911858915882466, 0.5924389979834838, 0.590180194929902, 0.5902164730170923, 0.5915527847128865, 0.5923694713846744, 0.5908777415018244, 0.5910632777991167, 0.590959592855771, 0.5906888731515268, 0.5890116189744574, 0.590513275398502, 0.5925624303821778, 0.5902677069329749, 0.5926086206068754, 0.5906099169387363, 0.5903512843287881, 0.5899735668331092, 0.5904365685615518, 0.5914484876128289, 0.5918142716535434, 0.5920873007489917, 0.5932144060879585, 0.5904338198578836, 0.5910900326483581, 0.591831844152103, 0.5918118806414442, 0.590454613981179, 0.5922383042058768, 0.5918266540234299, 0.5894648646053389, 0.591860905991934, 0.5918242270021126, 0.5913330348569233, 0.5905792995006722, 0.5917384722488958, 0.5922468503937007, 0.5905201339542923, 0.5903618734396007, 0.589282093816017, 0.5924859251968503, 0.591499409448819, 0.59154707125024, 0.5903803965815249, 0.5918093239869406, 0.589935617918187, 0.5929683334933742, 0.5914417490877665, 0.5914415522373727, 0.5896950259266371, 0.591331659304782, 0.5925565536777415, 0.5937553773766083, 0.5913420323602843, 0.5909825691376992, 0.5915626320338007, 0.5916982523526022, 0.5910648886114845, 0.5915971504705205, 0.5903201963702708, 0.5922426229114653, 0.5900027703091991, 0.5918869430574227, 0.5917194425772999, 0.5915556438448242, 0.5907092375648165, 0.5921216103322451, 0.5905014139619742, 0.5908345616477818, 0.5915627688688305, 0.5908891612252736, 0.5926203620126753, 0.5910340167082775, 0.5917031256001537, 0.5916938376224312, 0.5903349577491838, 0.5911080372575379, 0.5920211566160937, 0.5905255881505665, 0.5906918379105051, 0.5911091055310159, 0.5910530103706549, 0.5906487012675244, 0.5907027054926062, 0.5915985884386403, 0.5913158800652967, 0.5902315344728251, 0.5916920707701172, 0.5921940104666794, 0.591183567793355, 0.5915277631073554, 0.5902043451123488, 0.5896296235836375, 0.5915525110428269, 0.5907298060303438, 0.5910867942193201, 0.5908915882465912, 0.5914938160169003, 0.5902988020933359, 0.5899261210869983, 0.5898374927981563, 0.5915514139619743, 0.5903106059151142, 0.5918490349529479, 0.5910183695025926, 0.5907063376224313, 0.5935450091223353, 0.5914516588246591, 0.5902726666026502, 0.5902355218936048, 0.5902639067601305, 0.5905594368158249, 0.5908419363357019, 0.5902476618014212, 0.5904999135778759, 0.5925900950643364, 0.5916651334741693, 0.5915996999231804, 0.5919765964086806, 0.5902586206068754, 0.592790536777415, 0.5918324467063568, 0.5910167178797772, 0.591825417706933, 0.5925277631073554, 0.5902493206260803, 0.5909653543307086, 0.5913025446514307, 0.5908133690224698, 0.590756800941041, 0.5915582389091608, 0.5920739245246783, 0.5911594224121375, 0.5925226930094104, 0.5917588486652584, 0.5912632777991166, 0.5900490877664684, 0.5913496086998271, 0.5903846072594584, 0.5903168643172653, 0.5914668955252544, 0.5910377112540811, 0.5911834765700019, 0.5904204244286537, 0.5930578067985404, 0.5913298948530824, 0.5905751272325716, 0.5881238236988671, 0.5906757681966583, 0.5913416122527367, 0.5913718431918571, 0.5930394781063952, 0.5892850201651623, 0.5915402535048973, 0.5906523117918187, 0.588953416074515, 0.5907584789706166, 0.5909764787785673, 0.5911717543691185, 0.5917540282312271, 0.5912123439600537, 0.5913184487228731, 0.5911033152487036, 0.591650835413866, 0.5923986940656807, 0.590701990109468, 0.5918711422124064, 0.5909591127328596, 0.5928215311119647, 0.5901203019973112, 0.5902448266756289, 0.5909032240253504, 0.590855591031304, 0.5913524414250048, 0.5903167322834645, 0.5904757033800654, 0.5912966823506818, 0.5913536369310544, 0.5912108123679664, 0.5907930646245438, 0.5912808070866141, 0.5910586854234685, 0.5922086806222392, 0.5918712622431342, 0.5924934031111965, 0.592785785961206, 0.5912337142308431, 0.5920272949875168, 0.5907989317265221, 0.5921318249471865, 0.5907316641060111, 0.5914878840983292, 0.5926020021125408, 0.5918011426925294, 0.592168616765892, 0.5926663385826771, 0.5900210797964278, 0.5919044723449204, 0.5912310831572882, 0.590679630785481, 0.5914164033992703, 0.5903150998655655, 0.5915994622623393, 0.591439463702708, 0.5910802837526407, 0.5913790402343001, 0.5910061359708086, 0.5920183767044364, 0.5918242438064145, 0.5902495630881506, 0.5910784904935664, 0.5915235068177453, 0.5898027967159593, 0.5907058743038218, 0.5906040522373728, 0.5902567217207605, 0.5915775662569618, 0.5910264259650471, 0.5914487540810448, 0.5913519108891877, 0.5895620318801613, 0.59207353562512, 0.5922121351065873, 0.5912662641636259, 0.5907007033800652, 0.5911130929517957, 0.5898925148838103, 0.590429755617438, 0.5916290690416747, 0.5901122407336279, 0.5916560063376224, 0.5903901166698675, 0.5921247431342422, 0.5903939048396389, 0.5909197522565777, 0.5915093503937009, 0.5917300652967159, 0.5912902511042826, 0.5915642812560017, 0.5905807206644902, 0.5918115325523333, 0.5916749087766469, 0.5922439624543883, 0.5910653855386979, 0.5900419963510658, 0.5914842303629729, 0.5908887507201843, 0.5908866141732284, 0.5907226714038794, 0.5915181438448243, 0.5922243782408296, 0.5904976041866717, 0.5922297772229691, 0.5906527391012099, 0.5914102794315343, 0.5912789274054158, 0.5904610236220473, 0.5906344224121374, 0.5916148886114845, 0.5926605026886882, 0.5905586710197809, 0.592446670347609, 0.5918672868254272, 0.5909986508546187, 0.5912149870366814, 0.5916011450931439, 0.5918191953140004, 0.590869245726906, 0.5913322282504321, 0.5906900830612637, 0.5919774630305359, 0.5913547100057616, 0.5907154695602074, 0.5909145669291339, 0.5891502784712885, 0.5893721624735933, 0.5914709333589399, 0.5913005785481084, 0.5926599865565585, 0.5911968359900135, 0.5915684295179566, 0.589179669195314, 0.5917604258690223, 0.5905460269829077, 0.5900846912809679, 0.5892861340503168, 0.5914116333781448, 0.5925008042058767, 0.5915602938352219, 0.5898714590935279, 0.5913368518340696, 0.5922503192817361, 0.5912167754945267, 0.5917393964855002, 0.5906842543691185, 0.5906623295563664, 0.5911290522373729, 0.5910907360284233, 0.5914845472440944, 0.5935154479546765, 0.5922472416938737, 0.5917492005953525, 0.5909633282120221, 0.5926844968311887, 0.5908890195890147, 0.591469745054734, 0.5919389787785674, 0.5920699395045131, 0.5918429637987326, 0.5923420011522949, 0.592805521413482, 0.5903912617630114, 0.5909417658920684, 0.5921671715959286, 0.5905991741885923, 0.5913059343191857, 0.5916144036873439, 0.5927238164970231, 0.5898558526982908, 0.5904382081812943, 0.5916951723641252, 0.5913250408104475, 0.5931894829076243, 0.5898906424044554, 0.5923991237756866, 0.5911912833685424, 0.5926815248703668, 0.5914837838486653, 0.590325194449779, 0.5918357331476858, 0.5933078236028423, 0.5916749567889379, 0.5917260490685615, 0.5920756361628577, 0.5923777367005953, 0.5915948506817744, 0.5928100153639331, 0.5904652463030535, 0.5915371591127329, 0.5916924932782792, 0.5910844536201267, 0.590592044363357, 0.5901269468984061, 0.5911249807950837, 0.5898263611484539, 0.5905950115229499, 0.5918270477242175, 0.5917934727290187, 0.5908731467255618, 0.5907037401574803, 0.5912794075283272, 0.5922998175532938, 0.5891944041674669, 0.5923297556174381, 0.5913260802765509, 0.5917706572882658, 0.5913858003648935, 0.5912323842903784, 0.5913798876512386, 0.5920907168235068, 0.5915530799884771, 0.5903700571346264, 0.5902699371038985, 0.5917652991165738, 0.5923349553485693, 0.5904201147493758, 0.5935463198578835, 0.5909620846936816, 0.591725667370847, 0.5907118974457461, 0.5909463894757058, 0.5929815992894181, 0.589861117246015, 0.5897880713462647, 0.5922862444785865, 0.5923503768964855, 0.5911253840983292, 0.5901723353178413, 0.591750998655656, 0.5927324154983675, 0.5904709309583254, 0.5914272277703091, 0.5912884266372191, 0.5921218431918571, 0.5909604450739389, 0.591784967351642, 0.5914268940848857, 0.5921957269060879, 0.5891359083925486, 0.5902122863453044, 0.5915560807566738, 0.5908442505281353, 0.5910955708661417, 0.5915688520261186, 0.5897910721144611, 0.5908673564432495, 0.5903086830228539, 0.5907125792202804, 0.5919021341463415, 0.5919632826003457, 0.5913849937584021, 0.5901151550797004, 0.5912420707701171, 0.5918979114653352, 0.5894324034952948, 0.5918912593623967, 0.5898427021317457, 0.5911400158440561, 0.592239197234492, 0.5931928941809104, 0.5922793811215671, 0.5919284640868062, 0.5903084525638563, 0.5901125984251969, 0.5920123847705012, 0.591878428077588, 0.5904238477050125, 0.5910863909160745, 0.591621480699059, 0.5916346600729786, 0.5906650302477434, 0.5900606131169579, 0.5901519132898021, 0.5926195434031111, 0.591865851257922, 0.5908394781063953, 0.591415162281544, 0.5909868446322258, 0.5913271293451123, 0.591620856539274, 0.5921884698482812, 0.5901001224313425, 0.5904311191665067, 0.5917917922988285, 0.5905814720568466, 0.5902025230458998, 0.5907751944497791, 0.5915830660649127, 0.5922287953716151, 0.5905749975993854, 0.5909336518148646, 0.5904583997503361, 0.5910590935279432, 0.5912009458421356, 0.5913115229498752, 0.5907600729786826, 0.5906948914922221, 0.5913640483963896, 0.5914474865565585, 0.5906993182254657, 0.5908487228730556, 0.5901822978682544, 0.5910778759362398, 0.5901356611292491, 0.5913380209333589, 0.5919825955444594, 0.5923215383138084, 0.5913662617630113, 0.5912167394853083, 0.5912853394468984, 0.5898897037641637, 0.5945666554637988, 0.5892474793547148, 0.5906850993854427, 0.591128540906472, 0.5912879705204533, 0.5918668067025159, 0.5912993542346842, 0.5925424116573844, 0.5908591871519109, 0.5922278975417707, 0.590785445073939, 0.5907458661417322, 0.5900818081428846, 0.5897595400422508, 0.5925830708661417, 0.5921272229690802, 0.5917803845784521, 0.5911008666218552, 0.5918823218743998, 0.5922373319569809, 0.5903396485500287, 0.5921122359323987, 0.5910857379489148, 0.5917315320722104, 0.5897514091607452, 0.5913431390435951, 0.5916219920299596, 0.59167573218744, 0.5914640147877858, 0.5911991453812177, 0.5922633402150951, 0.5896970736508547, 0.5919350225657768, 0.5920396629537161, 0.5913381889763779, 0.5917217519685039, 0.5918108363741118, 0.5908594440176684, 0.5900810015363934, 0.5897891492222008, 0.5903538001728442, 0.590828372863453, 0.591116225753793, 0.5928916458613406, 0.5926063040138274, 0.5913493254273094, 0.5903414082004994, 0.5910525878624927, 0.5917732547532168, 0.5901534064720568, 0.5908310063376224, 0.5917472056846552, 0.5914509098329173, 0.5908369454580372, 0.5920106683310928, 0.5913443849625504, 0.5906941713078548, 0.5895695698098713, 0.5919173996543116, 0.5904978250432109, 0.5911649006145573, 0.5914462694449779, 0.5899841151334742, 0.5919487660841175, 0.5911407720376416, 0.5917957125024006, 0.5925849913577874, 0.591703096792779, 0.5910123703668139, 0.5906662497599385, 0.5923308574995199, 0.5905801709237565, 0.5937003961014021, 0.5912514307662762, 0.5892459213558671, 0.590879544363357, 0.5909008930286153, 0.5917758810255426, 0.5909226185903591, 0.5918028975417707, 0.5919916362588823, 0.590175628961014, 0.5918770885346649, 0.5915579052237373, 0.5902784040714423, 0.5910324755137316, 0.5918662521605531, 0.5906885586710198, 0.5907178749759938, 0.5915900278471289, 0.5920610380257346, 0.5910042322834645, 0.5909433767044363, 0.5915608363741117, 0.5925854090647207, 0.5930786825427309, 0.5897018076627616, 0.5898560303437681, 0.5908681534472826, 0.5907638515459958, 0.5903480290954485, 0.5930241141732283, 0.5915860404263492, 0.5923212646437488, 0.5900433046859997, 0.593167440464759, 0.5923745630881505, 0.5904802477434223, 0.5908263683502977, 0.5918182686767812, 0.591823595640484, 0.5917302597464952, 0.5915109371999231, 0.5902445001920491, 0.5911041290570386, 0.5922516948338775, 0.5915004105050892, 0.591591268964855, 0.5914309247167275, 0.5907318105434991, 0.5923210317841368, 0.5894345760514692, 0.5909926757249856, 0.5902796835990014, 0.5906245582869214, 0.5918060495486844, 0.5905847993086231, 0.5912508474169388, 0.5908914802189361, 0.5900890531976186, 0.58952592183599, 0.590320873343576, 0.5906765772037641, 0.5906201531592089, 0.5903400422508162, 0.5906060063376224, 0.589974159784905, 0.5931322090455156, 0.5906381409640868, 0.592114089206837, 0.591506810543499, 0.5899796451891685, 0.5919287761666987, 0.590563373823699, 0.5911636883042058, 0.5898685015363934, 0.5894931678509698, 0.5914238405031689, 0.591579918859228, 0.5910136642980603, 0.5915975825811407, 0.5924550941040907, 0.5924577899942386, 0.5911222632994046, 0.591135992414058, 0.5913327131745727, 0.5915439144420972, 0.5918972849049355, 0.5899061143652775, 0.5891016900326483, 0.5922683695025927, 0.5914645093143845, 0.5920257633954293, 0.5913721288649894, 0.5918052669483388, 0.5926537161513348, 0.5916194497791435, 0.5889838030535817, 0.5926928413673902, 0.5903005137315154, 0.5937765435951604, 0.592439175628961, 0.591153058382946, 0.5916053869790667, 0.590599500672172, 0.5921925028807375, 0.5919948146725561, 0.5908111412521606, 0.5910912137507202, 0.5902738212982525, 0.5900301973305164, 0.5909620174764739, 0.5906874495870943, 0.5913111556558479, 0.5920486220472441, 0.5926731107163433, 0.5915160169003265, 0.5917585389859804, 0.591572001632418, 0.5909575691376993, 0.5915469800268869, 0.5923708133282121, 0.5917246183022855, 0.5921926133090072, 0.5901679782024198, 0.5903918739197234, 0.5920815488765123, 0.5896807902823122, 0.5901601978106396, 0.5906102626272325, 0.5910935807566737, 0.5918743494334548, 0.5899576747647397, 0.5899167971000576, 0.5913091223353178, 0.5910341367390052, 0.5918534352794316, 0.5907881505665451, 0.5917552693489534, 0.591036979066641, 0.5917694761859036, 0.59163565632802, 0.5921158392548492, 0.5918173420395623, 0.5914211326099482, 0.5916714254849241, 0.5935765964086807, 0.589235905991934, 0.5899907024198194, 0.5910672340119071, 0.5918319665834454, 0.5898273093912041, 0.5903939792586902, 0.591796127808719, 0.5906383762243135, 0.5909730819089686, 0.5915327803917804, 0.5920876296331861, 0.5915623199539082, 0.5909252616669868, 0.59085311839831, 0.591777619070482, 0.590192754945266, 0.5930268892836567, 0.5921745414826196, 0.5912395741309775, 0.5914010730747071, 0.5900950691376993, 0.5917856803341656, 0.590572570578068]
+    [0.5904832773189936, 0.5913621663145765, 0.5900986028423276, 0.5905381817745344, 0.5930551997311311, 0.5921350057614749, 0.5915282288265796, 0.5903228034376802, 0.5916797076051469, 0.5913512027078932, 0.5904753648934128, 0.5904020069137699, 0.5920672748223546, 0.5902138131361628, 0.5923683238909161, 0.5919732259458421, 0.5916186647781831, 0.5915103106395238, 0.5907257105819089, 0.5900108387747264, 0.5915321226233916, 0.5919121999231804, 0.5913817361244479, 0.591548492414058, 0.5906278351257922, 0.5916459429613982, 0.589737142308431, 0.592048677261379, 0.5910523165930479, 0.5904263635490685, 0.5913645933358939, 0.5914446754369119, 0.5900231299212599, 0.5903838006529671, 0.5907538601882081, 0.591140786441329, 0.5901308382946034, 0.5896519036873439, 0.5903136690992894, 0.5927458493374304, 0.589624599097369, 0.5911874663913962, 0.591475434511235, 0.5923185687536009, 0.591359131937776, 0.590478540906472, 0.592409364797388, 0.5902524870366813, 0.5912395165162282, 0.5907730939120415, 0.5907289178029577, 0.591156306414442, 0.5918330468599962, 0.5913952755905513, 0.5897655871903207, 0.5903791890724025, 0.5922401166698674, 0.5920755497407336, 0.5924950547340119, 0.5921004057038601, 0.5903730699058959, 0.5910546739965431, 0.5930155007681966, 0.5914223065104667, 0.5923608555790283, 0.5905184439216438, 0.5904566256961782, 0.5917979354714806, 0.5920102986364509, 0.5916771653543308, 0.5913872767428461, 0.5916369022469752, 0.5922124927981564, 0.5914890483963894, 0.5925698962934511, 0.5916137771269445, 0.5918084309583254, 0.5898779239485308, 0.5903952971960823, 0.5923821226233916, 0.5907190368734396, 0.5920030679854043, 0.5905140628000768, 0.5890988741117726, 0.5913012867294027, 0.5921654383522181, 0.5902063904359517, 0.5904932134626463, 0.591419680238141, 0.5896741717879778, 0.5914068537545613, 0.5899188760322642, 0.5927475249663913, 0.5923182422700211, 0.5921214662953715, 0.5928632417898982, 0.5918749135778758, 0.5908296715959286, 0.5920378192817362, 0.5905234347993086, 0.5920720640483964, 0.5899042658920685, 0.5897471840791242, 0.5915836590167084, 0.5906831188784328, 0.5907866645861342, 0.5921760058574996, 0.5916359948146726, 0.5897575499327828, 0.592358791050509, 0.5916631457653159, 0.5916293355098905, 0.592049013347417, 0.5919747479354714, 0.5918134338390628, 0.5902727026118687, 0.5910721240637603, 0.5917459933743039, 0.5911953764163626, 0.591135553101594, 0.5914182734780103, 0.5916119670635684, 0.5920934415210294, 0.5916908824659112, 0.5906950571346266, 0.5913002040522373, 0.5909335893988861, 0.5900854738813135, 0.590873237948915, 0.5919345400422508, 0.591064674956789, 0.5908707581140772, 0.5922247287305549, 0.5917525926637219, 0.5917047532168234, 0.5922896461494143, 0.5906823362780872, 0.5916190968888035, 0.5907955156520069, 0.5925713318609563, 0.5908108363741119, 0.5923985500288074, 0.5916065488765124, 0.5924048660457076, 0.5911416602650279, 0.5924547388131362, 0.5920987300748993, 0.5904042154791627, 0.5904591775494527, 0.5895627520645285, 0.5924556798540427, 0.5896188256193584, 0.5914466511426926, 0.5912973569233723, 0.5912358411753409, 0.5911484011907049, 0.5913605723065105, 0.5915528783368543, 0.5917585605915114, 0.5920867149990398, 0.5921764979834838, 0.5908438016132129, 0.5894642692529287, 0.5900457821202229, 0.5916212190320722, 0.5894987708853466, 0.5905484299980794, 0.5915508378144806, 0.5891443681582486, 0.5913908488573075, 0.5896524102170155, 0.5918501728442482, 0.5916593263875551, 0.5924154311503744, 0.592710358651815, 0.591338215383138, 0.5906444161705396, 0.5923693849625504, 0.5912614845400422, 0.5926662209525638, 0.5906650230458996, 0.5907738549068562, 0.5907106203188017, 0.5914775950643365, 0.591847277703092, 0.5902916914730171, 0.5920472657000192, 0.5926184463222586, 0.5911366885922796, 0.5896768844824275, 0.5905353658536585, 0.5907644661033223, 0.5909612708853467, 0.590370107547532, 0.5905025950643363, 0.5910026286729403, 0.5912540762435182, 0.593195167562896, 0.5921138275398502, 0.5916718599961589, 0.5905263683502977, 0.5916313568273478, 0.5921575211254081, 0.591737560015364, 0.5921280823890915, 0.591289972632994, 0.5904983723833301, 0.5916871735164203, 0.5895689792586901, 0.5906049572690609, 0.5910513947570578, 0.5918021485500289, 0.5895366789898214, 0.5929524918379105, 0.590689701363549, 0.5893784928941809, 0.5929567769348953, 0.5912896005377376, 0.5914077851930094, 0.5906727506241598, 0.5910920299596697, 0.5922718719992319, 0.5898690656808143, 0.5908801373151528, 0.5911205780679855, 0.5915573290762436, 0.591242987804878, 0.5909604810831572, 0.5911857043403111, 0.5918410697138468, 0.5914789970232379, 0.5889998607643556, 0.5914601113885154, 0.5914371543115038, 0.5909444665834455, 0.5919988789130017, 0.5913364893412716, 0.5896376728442481, 0.5920864557326676, 0.5909875144036874, 0.5902108051661226, 0.5916272085653927, 0.5911097945073939, 0.5929610812367966, 0.5924649246207029, 0.5897899366237758, 0.5916090623199539, 0.5899920539658152, 0.5914983627808718, 0.5911182782792395, 0.5926587238333014, 0.5917499615901671, 0.5909758282120223, 0.590581947378529, 0.5910964446898407, 0.5900391780295756, 0.5898580444593815, 0.5913701531592087, 0.5914907768388706, 0.5902549068561552, 0.5902258474169388, 0.5922378720952564, 0.5908522229690801, 0.5900444689840598, 0.5905641420203572, 0.5910331284808911, 0.5914867222008834, 0.5917375624159785, 0.5901196490301517, 0.5900733291722681, 0.5926754825235261, 0.5921738741117726, 0.5900491741885924, 0.5910017620510851, 0.589170710101786, 0.5903479834837718, 0.590470671691953, 0.591103166410601, 0.5907768988861148, 0.590709799308623, 0.589774479066641, 0.5910628024774343, 0.590603600921836, 0.5914778615325523, 0.5912203452083733, 0.5902909808911081, 0.5905774390243903, 0.5916571922412138, 0.5918162017476474, 0.5913298276358748, 0.5898638995582871, 0.5894717495678895, 0.5918100417706933, 0.5898451531592087, 0.5891922196082198, 0.5912663289802189, 0.5930372191280968, 0.5923428269637028, 0.5918683647013636, 0.5918531448050701, 0.5903828884194354, 0.5915098089110813, 0.5921305814288459, 0.5911986964662954, 0.5924450691376992, 0.5911646869598617, 0.5912362324755137, 0.5910852050124832, 0.5909655535817169, 0.5907678365661608, 0.5907256337622432, 0.5915086854234683, 0.5904451483579797, 0.5893630329364317, 0.5917255017284425, 0.5931404623583638, 0.5898314408488572, 0.5901673948530824, 0.5905790234299979, 0.5902494646629537, 0.5898498295563663, 0.59080330804686, 0.5913244502592664, 0.5919703091991549, 0.5921447210485883, 0.5904210389859804, 0.5912809775302478, 0.5909333493374305, 0.5913779839638947, 0.5913244286537355, 0.5902360140195889, 0.5919529335509891, 0.5923058767044364, 0.5893797172076052, 0.5918232043403111, 0.5928163865949684, 0.5902684919339353, 0.5914397301709239, 0.5917977770309198, 0.5918354834837718, 0.5908931774534281, 0.5917331188784329, 0.5909505881505667, 0.5920850201651623, 0.5909491597849049, 0.5925820746111005, 0.590247217687728, 0.5910764187632033, 0.5912397253696947, 0.5923187872095257, 0.591640726425965, 0.5907609948146725, 0.5922856707317072, 0.5907923780487805, 0.5920727842327637, 0.5910420419627425, 0.5899135346648743, 0.5912088798732476, 0.5908260754753217, 0.5923036177261377, 0.5914079028231227, 0.5915132129825235, 0.5922223785289035, 0.5906516012099098, 0.5901489965431151, 0.5907184439216439, 0.5920137387171116, 0.5893574058959095, 0.5912918787209526, 0.5913235116189743, 0.5913579652391012, 0.5900302261378914, 0.5905078860188208, 0.5911350417706934, 0.5905881361628578, 0.590902158152487, 0.5916355458997504, 0.5907732835605914, 0.5905153951411561, 0.5913280727866334, 0.5909203596120607, 0.5917131193585559, 0.5919441136931054, 0.5919797724217399, 0.5908836470136356, 0.589338628288842, 0.5910906424044556, 0.5921332797196082, 0.5919957893220664, 0.5921546019781063, 0.5919729642788554, 0.5910902799116574, 0.5921844584213558, 0.5916362300748992, 0.5915281015940081, 0.590163004129057, 0.5911690272709814, 0.5915273405991934, 0.5917579436335703, 0.5923474337430381, 0.590587711254081, 0.5913340119070482, 0.5901678389667754, 0.5916295899750336, 0.5903278279239487, 0.5912790450355291, 0.5918726281928174, 0.5913120702899942, 0.5906665042250816, 0.5909019348953333, 0.5909666890724026, 0.5898924740733628, 0.590969012867294, 0.5893375360092183, 0.5932667058767044, 0.5902896149414251, 0.5902999495870943, 0.5917911465335126, 0.5899393844824274, 0.5913077851930094, 0.5912149054157865, 0.592189773381986, 0.5915650470520453, 0.5906236508546188, 0.589812039082005, 0.5908749231803342, 0.5908491357787593, 0.5903736268484733, 0.5911747359323988, 0.5926867582101017, 0.590919680238141, 0.5921013035337046, 0.5936474649510275, 0.5892090287113501, 0.5913220544459382, 0.5916915930478203, 0.5913270837334358, 0.5906346072594584, 0.5914360596312654, 0.5906868518340695, 0.5917406400038411, 0.5924978538505857, 0.5909106851353947, 0.5903478802573459, 0.5910671547916266, 0.5921510274630306, 0.5918073746879201, 0.5917937536009218, 0.5924592279623584, 0.5919778351257922, 0.591948470808527, 0.5915865205492606, 0.590699251008258, 0.5897704028231229, 0.5911213006529671, 0.5892321562319955, 0.5918927309391203, 0.5906680070097946, 0.5916809823314768, 0.5927818681582485, 0.5931186695794123, 0.5893693081428846, 0.591035385058575, 0.5933872263299405, 0.5903254465143076, 0.5907201507585942, 0.5916856323218744, 0.5911584237564816, 0.5903412161513347, 0.5918124207797195, 0.5902987708853467, 0.5913649630305359, 0.5906304469944306, 0.5916613765123871, 0.5904834669675437, 0.592378264835798, 0.5914941809103131, 0.5907038193777608, 0.5917628624927982, 0.5912103538505856, 0.5911267500480122, 0.5917723161129249, 0.5909969320145958, 0.5910079124255809, 0.5922134722488958, 0.5911900302477434, 0.590699896773574, 0.5917571178221626, 0.5912849721528711, 0.5917390003840983, 0.5922338270597274, 0.5913095496447089, 0.5906240013443441, 0.5918767884578452, 0.5921601281928175, 0.5902856131169578, 0.5910236964662954, 0.5905632297868254, 0.5910176973305166, 0.5918283800652967, 0.5918621038985981, 0.591180358171692, 0.5895208709429614, 0.5912244694641828, 0.590458606203188, 0.5913488645093143, 0.5906131265603994, 0.5923008666218552, 0.5912350609756097, 0.5907235956404838, 0.5910798780487805, 0.5897406712118303, 0.5911452155751873, 0.5922011426925293, 0.5920964830996736, 0.5897988765123872, 0.5905571274246207, 0.5916419171307855, 0.5912285769156903, 0.5916107067409258, 0.590851925292875, 0.5924900062415979, 0.5903158200499328, 0.5901537785673133, 0.5927825259266372, 0.5894671980026887, 0.5911143268676781, 0.5908451219512195, 0.5905410433070868, 0.5917963054541963, 0.5921850369694642, 0.5907336518148646, 0.5913030631841751, 0.591281512867294, 0.5925963030535818, 0.5903796956020742, 0.5908932902823123, 0.5903139571730364, 0.5905643916842712, 0.5903807062608027, 0.5901917850969848, 0.5923831956980987, 0.5908897973881314, 0.590823785289034, 0.5909050989053197, 0.5904301853274438, 0.5917854522757826, 0.5913855434991357, 0.590897445746111, 0.5909560495486844, 0.5914863597080852, 0.5892219104090648, 0.5912561959861725, 0.5915486700595354, 0.5911534496831188, 0.5907647349721529, 0.5914116069713847, 0.5905520837334357, 0.5910324803149605, 0.5903221696754369, 0.5895300893028615, 0.5902359444017669, 0.5911393820818129, 0.590938460245823, 0.5912115085461879, 0.5922611244478586, 0.5924137939312464, 0.590714468503937, 0.5903414466103322, 0.5904160841175341, 0.5907436407720376, 0.5897416242558094, 0.5922141804301901, 0.5910058382946035, 0.5912000744190513, 0.592735389859804, 0.5920073290762435, 0.5914622215287114, 0.5917395501248319, 0.5898290522373728, 0.5907417802957557, 0.5919756937776071, 0.5910708205300558, 0.5901777511042826, 0.5896256433647014, 0.5914056486460534, 0.5924654575571345, 0.5902890748031496, 0.5925741981947378, 0.5930200403303245, 0.5917165690416746, 0.590944809871327, 0.5918345976570002, 0.590706767332437, 0.5905817049164587, 0.5905273309967352, 0.5919590791242557, 0.5918386282888419, 0.5913449082965239, 0.590506318417515, 0.5912237516804302, 0.5907482043403112, 0.5912116981947378, 0.5913172412137507, 0.5895859828115997, 0.59218031496063, 0.5910701123487613, 0.5915788697906663, 0.5916713414634146, 0.5908037185519494, 0.591814300460918, 0.5915465479162666, 0.5914474001344345, 0.5903872527367006, 0.5909844608219705, 0.5921679493950452, 0.5905505353370464, 0.5919126104282696, 0.5907511162857692, 0.5915687223929326, 0.5914637723257153, 0.5912749543883233, 0.5917729858843864, 0.5918900854618783, 0.5911661417322833, 0.5912246207028999, 0.5898272157672364, 0.5923154239485308, 0.59046119886691, 0.5915591367390052, 0.5911270573266757, 0.5917182038601881, 0.5908415258306126, 0.5915349601497983, 0.591108390147878, 0.5914992606107163, 0.5902647709813713, 0.5919689000384099, 0.5923743902439025, 0.590360553101594, 0.5907594272133666, 0.5916975465719224, 0.5927992270021125, 0.5927374735932398, 0.5909915426349146, 0.5922494118494334, 0.5909895813328212, 0.5911837670443634, 0.5899159064720568, 0.591471778375264, 0.5905607859612061, 0.591973199539082, 0.5927668235068178, 0.5897241429806029, 0.5913718599961592, 0.5918488260994815, 0.5917903567313231, 0.5906900110428269, 0.5905448026694834, 0.5918715647205685, 0.5911325331284808, 0.5905902991165739, 0.590627266180142, 0.5922920395621278, 0.5922624519877089, 0.5904545155559823, 0.591161328500096, 0.5911340023045899, 0.5912042202803919, 0.5907323218743998, 0.5925752808719033, 0.5920173396389475, 0.5907495990973689, 0.5901652294987516, 0.5908514955828692, 0.5901617990205493, 0.59080349769541, 0.5905721168619166, 0.5901626152294988, 0.58951306894565, 0.5914764355675053, 0.5922987660841176, 0.59098199539082, 0.5913083181294411, 0.5907915450355291, 0.5917382777991165, 0.5909415570386019, 0.5917278111196466, 0.591113400230459, 0.5915106347224891, 0.5903749015748032, 0.5895739413289803, 0.5891706260802765, 0.5897838462646438, 0.5902705804686, 0.5905983963894756, 0.5918592471672748, 0.5913440440752833, 0.5911477698290764, 0.5914910937199923, 0.5910516636258883, 0.5906569665834455, 0.5913493686383715, 0.5911547820241982, 0.5919586854234683, 0.5927859492029961, 0.5908259794507393, 0.5919121135010562, 0.5910562584021509, 0.5912748055502209, 0.5905279335509891, 0.5905314312463992, 0.5924389475705781, 0.5901952779911657, 0.5916709045515652, 0.5889162713654695, 0.5906843840023046, 0.5917031111964663, 0.5908601305934319, 0.5931750888227386, 0.5912835365853658, 0.5913185879585174, 0.5913952755905513, 0.5918359660072978, 0.5901517164394086, 0.5907223929325907, 0.5914282720376417, 0.5924513035337047, 0.5904577563856346, 0.5911147901862875, 0.5910225321682351, 0.5919315464758979, 0.5903774270213175, 0.591558980699059, 0.5915754153063184, 0.5926885130593431, 0.5905076747647398, 0.5915503864989438, 0.5920508282120222, 0.5913191857115421, 0.592431443249472, 0.5902169123295564, 0.5917637675244862, 0.590042992606107, 0.5911381697714615, 0.5906696946418283, 0.5889463678701747, 0.5907671859996159, 0.5902544171307855, 0.591535867582101, 0.5903141900326483, 0.5915265315920877, 0.5906589951027463, 0.5924393124639907, 0.5916067025158439, 0.5923754777222969, 0.5917039130017285, 0.591700460917995, 0.59095862300749, 0.5894952251776455, 0.5907227866333782, 0.5908456068753601, 0.5919217879777223, 0.5908045659688881, 0.5915206932974842, 0.5922471768772807, 0.5912743830420586, 0.5909122191280968, 0.5916728994622623, 0.590833231707317, 0.5926038169771461, 0.5911497983483773, 0.5905778471288651, 0.5914501296331861, 0.590883123679662, 0.5929111820626081, 0.5918488837142308, 0.5918705348569233, 0.5910901046667947, 0.5909919435375457, 0.5901634914538122, 0.5905371279047437, 0.5911426373151527, 0.5916323098713271, 0.5905331044747455, 0.5895569521797581, 0.5911861436527752, 0.5916450115229499, 0.5902508906280007, 0.5921167634914538, 0.59082410457077, 0.5922980170923757, 0.5926719728250432, 0.5914537833685424, 0.5898345952563856, 0.5905705900710582, 0.589666204148262, 0.5926694593816016, 0.5911882826003457, 0.5903213582677165, 0.5902422676205108, 0.5903099385442673, 0.5907500984251968, 0.590956908968696, 0.59163823218744, 0.5912416170539656, 0.5909986676589206, 0.5919641300172844, 0.5898807278663338, 0.5908259986556559, 0.5912593479930863, 0.591672949875168, 0.5929127112540811, 0.5892284136739004, 0.5904119550604955, 0.5923577563856347, 0.5921519396965623, 0.5901745870942963, 0.591922678605723, 0.5919776934895333, 0.5922229090647205, 0.5915901478778567, 0.5902100657768389, 0.5901466367390051, 0.5914918259074323, 0.5903973665258306, 0.5924844584213559, 0.5910196322258499, 0.5915491237756866, 0.5905317601305936, 0.5906377592663722, 0.5918401550797003, 0.592267673324371, 0.5907611604570772, 0.5907186719800269, 0.5901091079316305, 0.5922834141540235, 0.5908578284040714, 0.5909972464951027, 0.5928875264067601, 0.5922587550412906, 0.591867358843864, 0.5929746543115038, 0.5915178629729211, 0.5919309991357787, 0.5920348857307471, 0.5915403567313233, 0.590376068273478, 0.5912691016900327, 0.5910870030727867, 0.5901725441713078, 0.5908154575571347, 0.5898679902054927, 0.590630401382754, 0.5905790498367581, 0.5917595784520837, 0.5922606299212598, 0.591809820914154, 0.5912776718840023, 0.5917186695794123, 0.5923147013635491, 0.5897221648742078, 0.5898429277895141, 0.5915817097176878, 0.5916955804686, 0.5898644973113116, 0.590032765988093, 0.5915836518148647, 0.5903874063760322, 0.5910479834837717, 0.5910085077779912, 0.590113633090071, 0.5930848617246015, 0.5906305406183984, 0.5907654455540619, 0.5915424068561551, 0.5906768724793547, 0.5921079532360285, 0.5930382633954292, 0.5921289706164778, 0.5926954100249665, 0.5907358435759555, 0.5907942433262915, 0.591347148069906, 0.5914871399078164, 0.5921851377952757, 0.592485569905896, 0.5918931702515844, 0.5905834021509506, 0.5914241909928941, 0.5914567481275207, 0.5909028159208757, 0.5914612012675246, 0.5915330612636835, 0.5917372071250241, 0.5912737948914921, 0.5919954676397158, 0.591094490589591, 0.5917958373343577, 0.5906191088918763, 0.5905231827347802, 0.5916223041098522, 0.59075973449203, 0.5919043067025159, 0.5914110980410985, 0.5913626008258115, 0.5901190632801997, 0.5916955780679853, 0.5907580948722874, 0.5931632874015748, 0.5926394444977915, 0.5915298276358747, 0.5924043139043597, 0.5913470352410217, 0.5914081524870367, 0.5896477290186287, 0.5926900374495871, 0.5909242774150182, 0.5902421331860958, 0.5915037017476473, 0.591567961398118, 0.5907774918379105, 0.5914618206260802, 0.592013822738621, 0.5915318321490302, 0.5911244118494334, 0.5899057302669484, 0.5915226545995774, 0.5897361244478586, 0.5915301445169964, 0.5915520213174572, 0.5929825187247936, 0.5912830204532361, 0.5906530223737276, 0.589741182542731, 0.5916811071634338, 0.590975628961014, 0.5914945818129441, 0.5908822474553486, 0.5900442001152295, 0.5919150782600346, 0.5910303701747648, 0.5920796547916266, 0.5915977362204725, 0.5908253672940272, 0.5927746014979833, 0.5913638995582869, 0.5899234948146724, 0.590129441136931, 0.5913435039370079, 0.5914221648742078, 0.5909184439216439, 0.5913370606875359, 0.5910621783176494, 0.5927747383330132, 0.5908786633378145, 0.5917759458421356, 0.5904179806030343, 0.5920447978682543, 0.5916216967543692, 0.5913136450931438, 0.591582516324179, 0.5933729762819281, 0.5907876968503937, 0.5908844272133665, 0.5902402967159592, 0.5898390772037642, 0.5917083901478779, 0.5922032744382562, 0.5919466607451508, 0.5901147949875167, 0.5914866861916649, 0.590289658152487, 0.590450900230459, 0.5905990445554062, 0.5933620270789322, 0.5900572882657961, 0.5899880137315153, 0.5905335605915114, 0.5912624615901669, 0.5919886931054349, 0.5919942001152294, 0.5908987900902631, 0.590823622047244, 0.5934161825427309, 0.5908748583637412, 0.590442983003649, 0.5914128768964856, 0.5926596576723643, 0.5902695169963511, 0.5918666146533513, 0.5918392524486269, 0.5894006673708468, 0.5906669963510659, 0.5906520237180719, 0.5917478298444402, 0.5906291146533512, 0.5908409784904936, 0.5913112924908778, 0.5917522109660073]
 
 ```python
 # Draw a histogram of the resample means
@@ -2067,7 +2069,7 @@ plt.hist(mean_danceability_1000)
 plt.show()
 ```
 
-![png](notebook_files/notebook_74_0.png)
+![png](notebook_files/notebook_79_0.png)
 
 ### Sampling distribution vs. bootstrap distribution
 
@@ -2131,8 +2133,8 @@ print(mean_popularity_2000_boot)
 
 ```
 
-    [54.626, 55.044, 54.21, 55.29, 53.746, 55.494, 54.74, 54.696, 54.252, 54.456, 54.006, 55.086, 53.806, 54.532, 54.188, 55.182, 54.662, 53.794, 55.152, 55.0, 54.288, 54.896, 54.342, 54.436, 54.844, 53.85, 55.034, 54.72, 55.054, 54.812, 53.89, 55.006, 54.798, 54.638, 54.484, 54.836, 54.142, 54.502, 54.204, 55.26, 54.754, 54.55, 55.04, 55.054, 55.12, 54.582, 54.056, 53.994, 55.342, 55.094, 54.112, 55.394, 54.846, 55.022, 54.958, 54.688, 54.534, 55.148, 55.102, 54.676, 55.17, 54.9, 53.328, 55.102, 55.166, 55.354, 54.6, 54.95, 55.11, 55.556, 53.756, 55.38, 55.87, 54.998, 55.48, 54.802, 54.2, 55.49, 55.048, 54.702, 54.446, 54.834, 54.196, 55.13, 54.49, 54.668, 54.226, 54.504, 55.024, 55.462, 54.762, 54.464, 54.63, 54.348, 55.854, 53.966, 55.458, 54.832, 54.868, 55.218, 54.352, 55.716, 54.582, 54.698, 54.266, 53.88, 54.286, 55.928, 54.91, 55.114, 55.042, 55.14, 55.378, 54.354, 54.702, 53.91, 54.454, 56.08, 55.316, 55.262, 55.37, 54.37, 56.048, 54.596, 54.53, 55.094, 54.328, 54.854, 55.178, 55.24, 55.386, 54.834, 54.398, 54.734, 54.73, 54.67, 54.508, 55.362, 55.138, 54.628, 54.224, 55.354, 53.914, 54.832, 54.42, 54.356, 54.508, 54.916, 55.66, 55.274, 54.744, 53.412, 55.218, 55.414, 54.914, 54.404, 54.484, 54.654, 54.868, 53.746, 55.172, 54.716, 55.302, 54.814, 53.93, 54.366, 54.976, 55.05, 54.296, 54.64, 55.446, 55.378, 54.81, 55.194, 54.284, 55.236, 54.594, 55.018, 54.534, 55.362, 55.05, 54.932, 54.394, 55.14, 55.056, 54.594, 55.328, 54.786, 53.97, 54.526, 54.562, 54.678, 55.016, 54.058, 54.818, 54.76, 54.676, 54.85, 55.13, 54.88, 55.272, 55.444, 55.126, 54.854, 55.274, 55.162, 53.994, 54.74, 54.582, 55.59, 54.626, 54.174, 54.506, 55.016, 54.296, 54.526, 54.972, 54.966, 54.56, 55.194, 55.314, 54.914, 54.64, 54.156, 55.53, 54.35, 55.436, 54.206, 54.834, 54.316, 54.186, 55.414, 54.698, 55.182, 54.996, 54.596, 55.146, 55.05, 54.142, 55.868, 54.39, 55.002, 54.688, 54.986, 54.766, 54.804, 55.602, 54.37, 55.11, 54.422, 54.946, 54.228, 54.018, 54.376, 55.372, 54.792, 54.91, 54.568, 54.828, 55.176, 54.53, 54.974, 54.966, 54.904, 55.05, 55.19, 55.436, 55.634, 55.278, 54.806, 55.098, 55.158, 54.834, 54.606, 54.942, 54.71, 55.744, 54.806, 54.102, 54.37, 55.07, 54.74, 54.05, 54.838, 54.27, 55.038, 54.574, 54.71, 54.936, 53.938, 55.57, 54.924, 55.332, 54.506, 55.212, 55.286, 54.908, 54.86, 54.392, 54.782, 54.674, 54.584, 54.894, 54.136, 55.704, 54.522, 56.19, 55.122, 54.504, 54.726, 54.068, 54.508, 55.15, 55.186, 54.22, 54.488, 54.908, 54.002, 54.778, 54.87, 54.75, 54.694, 54.008, 55.176, 55.128, 55.552, 55.106, 54.538, 55.196, 55.25, 55.006, 55.062, 55.048, 54.686, 54.922, 55.38, 53.854, 54.94, 54.956, 55.602, 54.84, 54.928, 54.578, 54.51, 54.522, 55.236, 54.866, 55.472, 55.004, 55.508, 55.038, 54.684, 55.29, 54.876, 54.86, 55.306, 54.788, 54.374, 54.538, 54.276, 54.852, 54.644, 54.848, 55.184, 54.876, 54.674, 54.2, 54.272, 53.948, 55.56, 54.81, 55.008, 54.824, 54.44, 54.802, 54.966, 53.956, 55.006, 55.062, 54.646, 54.93, 55.12, 54.568, 55.256, 54.812, 54.804, 54.828, 54.982, 54.25, 54.786, 54.54, 54.664, 54.368, 55.216, 54.332, 55.148, 54.99, 55.34, 54.108, 55.3, 54.514, 54.442, 54.472, 55.572, 54.728, 54.32, 54.622, 55.196, 55.088, 55.368, 54.762, 54.586, 53.338, 54.444, 54.506, 55.006, 54.684, 54.766, 54.54, 54.526, 54.838, 55.02, 54.642, 54.894, 55.246, 54.466, 55.376, 55.324, 54.182, 55.344, 54.608, 54.834, 54.606, 55.15, 54.896, 55.29, 54.424, 54.528, 55.578, 55.046, 55.574, 55.052, 55.468, 54.574, 54.266, 55.404, 55.532, 55.294, 55.414, 55.648, 54.348, 55.294, 55.622, 54.836, 54.676, 54.18, 55.072, 54.832, 54.902, 55.122, 53.898, 55.164, 55.254, 54.704, 54.452, 54.482, 55.554, 54.492, 55.582, 55.284, 55.09, 55.568, 54.374, 55.126, 55.1, 53.886, 54.602, 54.352, 55.814, 54.672, 54.98, 54.772, 54.944, 54.398, 54.788, 55.144, 55.146, 55.768, 54.96, 55.054, 55.05, 54.386, 54.494, 54.198, 54.08, 55.25, 54.512, 55.222, 54.942, 53.65, 54.266, 54.28, 54.512, 55.056, 55.096, 54.386, 54.87, 55.144, 54.778, 55.15, 55.02, 55.198, 54.522, 55.526, 54.86, 55.698, 54.672, 54.778, 55.082, 54.54, 55.278, 54.608, 54.732, 54.5, 55.364, 55.754, 55.934, 54.872, 55.494, 54.762, 55.054, 54.904, 55.102, 55.244, 54.084, 54.384, 55.414, 53.896, 55.016, 54.666, 53.904, 54.964, 54.966, 55.046, 55.494, 54.026, 54.56, 54.564, 54.926, 55.256, 53.998, 55.278, 53.922, 54.994, 54.806, 54.56, 55.118, 54.798, 55.2, 54.262, 55.088, 53.788, 54.226, 54.448, 54.792, 53.99, 55.332, 55.426, 54.638, 54.006, 54.914, 53.912, 54.832, 54.026, 55.186, 55.272, 54.642, 54.148, 54.966, 54.122, 55.522, 54.64, 55.362, 55.33, 54.578, 55.324, 54.658, 55.238, 54.874, 54.976, 53.942, 55.306, 54.392, 54.722, 55.284, 54.406, 54.778, 54.59, 54.998, 54.742, 55.778, 55.652, 55.176, 54.272, 53.91, 55.276, 54.83, 54.376, 55.264, 55.418, 53.866, 54.992, 54.186, 54.918, 55.02, 54.462, 55.512, 54.938, 54.702, 54.838, 55.152, 55.196, 55.386, 55.086, 54.96, 55.45, 55.428, 54.098, 55.076, 55.258, 54.806, 54.776, 55.082, 55.374, 55.554, 54.974, 55.16, 54.812, 54.792, 54.8, 54.892, 55.118, 54.584, 54.818, 53.736, 54.118, 54.922, 54.662, 55.218, 55.474, 55.116, 55.09, 55.138, 56.236, 54.396, 54.3, 54.784, 54.536, 54.726, 55.428, 54.966, 55.02, 55.238, 55.658, 54.904, 55.454, 55.436, 54.228, 54.624, 55.018, 55.398, 54.328, 55.132, 53.66, 55.132, 54.456, 55.342, 55.034, 55.49, 54.506, 54.818, 55.524, 55.356, 56.044, 55.166, 54.934, 55.03, 54.99, 54.702, 54.57, 54.636, 55.292, 53.392, 54.904, 54.664, 54.942, 55.552, 54.238, 54.898, 54.736, 55.158, 54.85, 55.076, 54.724, 54.836, 54.992, 54.002, 55.07, 54.902, 55.33, 54.764, 54.748, 54.34, 55.33, 54.282, 54.172, 54.45, 54.372, 54.374, 54.588, 55.612, 54.398, 54.182, 55.004, 54.802, 54.728, 54.566, 54.216, 55.08, 54.564, 54.198, 54.292, 55.366, 54.972, 54.806, 54.346, 54.934, 54.41, 53.28, 54.432, 54.418, 54.84, 55.226, 54.808, 55.308, 55.932, 54.572, 55.53, 54.992, 54.46, 54.754, 55.718, 54.082, 54.868, 54.076, 54.348, 55.794, 55.08, 53.53, 54.692, 54.928, 53.994, 54.458, 55.002, 54.984, 55.4, 53.856, 54.85, 55.056, 54.992, 54.484, 54.826, 54.66, 54.68, 54.908, 54.706, 55.38, 54.61, 54.542, 55.118, 54.886, 54.912, 54.544, 54.49, 54.756, 55.09, 54.428, 54.756, 55.61, 54.67, 55.282, 55.344, 54.06, 55.312, 55.322, 54.102, 54.67, 55.072, 54.412, 55.024, 56.164, 54.62, 55.826, 54.2, 55.534, 54.688, 55.0, 54.798, 54.58, 55.076, 55.154, 54.676, 54.724, 54.152, 54.542, 55.56, 55.164, 55.188, 55.89, 54.68, 54.824, 55.57, 55.166, 54.158, 54.924, 55.168, 54.582, 55.1, 55.018, 54.174, 55.632, 54.97, 56.006, 55.02, 54.336, 55.718, 55.194, 54.314, 54.816, 54.574, 54.404, 54.618, 55.294, 54.51, 54.82, 54.936, 54.15, 54.882, 54.136, 54.334, 54.886, 54.102, 54.692, 54.714, 54.848, 54.264, 55.526, 55.344, 54.606, 55.272, 55.02, 54.096, 54.408, 54.508, 54.958, 54.784, 54.776, 54.586, 55.698, 54.426, 55.028, 54.916, 54.5, 55.096, 54.404, 54.806, 54.82, 54.494, 55.006, 54.636, 54.994, 54.61, 55.288, 54.942, 54.388, 54.948, 54.252, 54.498, 54.342, 55.194, 54.408, 54.672, 54.126, 54.964, 54.136, 55.32, 54.478, 55.622, 54.894, 55.018, 53.632, 55.904, 54.804, 54.53, 54.394, 54.726, 55.712, 55.296, 54.266, 55.518, 54.92, 53.406, 55.014, 53.546, 54.664, 55.278, 54.686, 54.616, 55.02, 54.886, 55.936, 55.108, 55.232, 55.406, 55.162, 55.33, 55.132, 54.076, 54.054, 54.72, 54.116, 55.404, 54.25, 54.836, 54.29, 54.986, 55.068, 55.034, 54.972, 54.608, 54.476, 54.448, 54.832, 55.466, 54.17, 54.554, 54.032, 54.56, 54.324, 55.3, 54.45, 55.172, 54.488, 55.64, 54.908, 54.908, 54.952, 55.016, 55.108, 54.952, 54.502, 55.162, 54.752, 54.144, 55.532, 54.81, 55.116, 55.424, 55.228, 55.076, 55.512, 55.032, 56.24, 55.12, 55.346, 54.808, 54.608, 55.144, 54.362, 55.1, 54.42, 55.104, 55.13, 55.484, 53.502, 55.032, 54.782, 54.458, 53.862, 54.282, 54.914, 55.108, 55.042, 54.846, 55.002, 54.57, 54.26, 54.8, 55.942, 54.856, 55.27, 55.456, 55.076, 54.67, 54.646, 54.656, 55.436, 55.91, 55.454, 55.352, 54.71, 55.048, 55.132, 54.766, 54.016, 54.486, 54.648, 55.462, 55.158, 54.748, 55.082, 54.274, 54.322, 55.124, 54.432, 55.226, 55.256, 54.352, 54.492, 54.97, 54.998, 54.118, 53.636, 54.184, 55.31, 55.168, 54.764, 53.658, 55.362, 54.634, 55.468, 55.14, 54.292, 54.354, 54.406, 54.038, 54.278, 54.538, 53.898, 54.722, 55.266, 54.646, 54.702, 54.396, 55.098, 54.574, 54.604, 55.612, 55.264, 55.216, 55.262, 54.158, 55.016, 54.424, 55.368, 55.234, 55.674, 54.67, 54.794, 54.48, 55.09, 55.38, 55.404, 54.462, 54.524, 55.414, 54.806, 54.888, 54.722, 54.468, 55.104, 53.976, 54.656, 54.372, 54.848, 54.534, 55.368, 55.266, 55.246, 54.48, 54.77, 54.514, 54.546, 54.562, 55.22, 54.768, 54.78, 54.216, 54.148, 55.77, 54.658, 54.778, 54.022, 55.09, 54.748, 54.428, 54.566, 55.314, 54.72, 54.09, 55.02, 54.62, 55.856, 54.102, 54.788, 55.384, 54.748, 54.84, 54.776, 54.6, 55.374, 55.442, 54.496, 54.128, 54.698, 55.268, 55.324, 53.984, 54.954, 55.77, 54.374, 54.188, 54.572, 54.648, 54.4, 54.138, 54.27, 55.5, 56.068, 54.21, 55.134, 55.702, 55.09, 55.166, 54.766, 54.634, 53.78, 55.062, 55.09, 55.072, 55.018, 54.332, 55.308, 54.656, 55.166, 55.09, 55.164, 55.17, 54.336, 55.02, 55.068, 54.512, 54.698, 54.524, 54.884, 55.446, 55.284, 54.308, 55.008, 53.814, 54.56, 55.094, 55.302, 54.292, 55.19, 54.822, 55.496, 54.474, 54.122, 55.73, 54.296, 55.258, 54.928, 54.932, 54.326, 54.958, 55.36, 54.14, 55.01, 54.94, 55.044, 54.678, 55.37, 54.964, 54.516, 54.97, 55.076, 55.4, 54.43, 53.828, 54.32, 55.358, 55.686, 54.688, 53.794, 54.832, 55.226, 55.264, 54.828, 54.506, 53.614, 54.926, 54.972, 55.174, 54.748, 54.476, 54.576, 54.406, 54.91, 55.334, 54.478, 54.844, 54.254, 55.286, 55.368, 54.532, 55.904, 55.614, 55.398, 54.888, 54.788, 55.236, 55.172, 54.278, 54.568, 55.372, 54.346, 54.412, 54.364, 54.426, 54.84, 54.486, 54.49, 54.856, 55.022, 55.442, 55.112, 54.968, 55.64, 55.122, 55.116, 55.64, 55.204, 54.564, 54.272, 54.69, 54.646, 55.492, 54.42, 54.848, 54.95, 54.67, 54.104, 54.102, 54.432, 55.146, 55.312, 54.892, 54.592, 54.81, 53.8, 54.206, 54.876, 55.08, 55.316, 55.734, 54.354, 54.79, 54.858, 55.47, 54.26, 54.772, 55.4, 55.168, 54.78, 55.068, 54.858, 55.194, 55.056, 54.428, 54.206, 53.7, 54.758, 55.84, 54.608, 55.118, 54.35, 55.008, 56.032, 55.23, 54.486, 55.156, 54.814, 53.988, 54.458, 55.394, 54.616, 54.98, 55.326, 54.208, 54.5, 54.888, 54.608, 55.152, 54.354, 54.702, 54.626, 54.696, 54.612, 54.918, 54.456, 55.682, 54.876, 54.968, 54.502, 55.526, 55.584, 53.756, 54.302, 55.314, 54.7, 53.948, 54.948, 54.946, 55.252, 54.136, 54.266, 54.92, 54.326, 54.71, 54.714, 54.994, 54.476, 54.294, 55.658, 54.846, 55.312, 54.692, 53.84, 54.542, 55.158, 54.238, 54.374, 54.528, 55.188, 54.678, 55.154, 55.636, 55.19, 55.172, 55.308, 54.632, 55.334, 54.962, 54.402, 55.91, 54.924, 55.076, 54.202, 54.014, 54.406, 54.636, 54.364, 55.17, 54.504, 54.318, 54.23, 54.332, 54.548, 53.97, 55.472, 54.842, 54.818, 54.2, 54.848, 55.08, 54.692, 54.4, 54.926, 54.442, 54.924, 54.504, 55.424, 54.922, 54.748, 55.142, 54.63, 54.866, 54.992, 54.756, 55.324, 54.114, 55.14, 54.744, 54.308, 55.448, 54.998, 55.134, 55.53, 55.094, 54.71, 54.56, 55.442, 54.65, 54.998, 55.214, 54.578, 53.454, 53.866, 55.04, 54.176, 54.802, 54.88, 54.448, 54.65, 55.196, 54.88, 55.29, 54.216, 55.178, 55.688, 55.422, 55.188, 55.122, 54.288, 54.296, 54.862, 55.344, 54.296, 55.154, 54.438, 54.94, 54.632, 55.11, 55.478, 54.93, 55.216, 54.334, 54.358, 53.932, 55.604, 54.878, 54.386, 54.636, 55.648, 54.54, 55.04, 54.51, 54.74, 54.912, 55.686, 54.308, 55.032, 54.684, 53.958, 54.992, 54.806, 54.724, 54.746, 54.764, 54.762, 55.29, 53.944, 54.912, 54.534, 54.718, 55.816, 54.594, 54.86, 53.948, 54.736, 54.7, 55.542, 55.574, 55.174, 54.172, 54.566, 54.406, 55.366, 55.732, 54.264, 55.344, 54.994, 55.05, 55.124, 54.914, 54.492, 55.076, 55.48, 54.254, 54.066, 54.568, 54.808, 54.256, 54.932, 55.566, 54.772, 54.632, 54.26, 55.05, 54.562, 54.616, 55.352, 53.862, 54.84, 54.554, 54.16, 54.944, 54.978, 54.564, 55.094, 54.202, 54.974, 54.952, 55.224, 55.058, 54.912, 55.106, 55.47, 55.258, 54.402, 54.158, 54.15, 54.938, 55.086, 55.384, 54.514, 54.572, 54.534, 54.18, 55.062, 54.66, 54.302, 53.926, 54.544, 54.534, 54.658, 55.434, 54.506, 54.38, 54.658, 54.946, 55.78, 55.298, 54.394, 54.578, 54.536, 55.944, 55.32, 54.33, 54.656, 55.104, 54.752, 54.472, 54.556, 54.562, 54.246, 54.602, 53.878, 55.53, 54.488, 54.468, 54.476, 54.376, 54.552, 55.794, 55.58, 54.376, 55.266, 55.182, 54.268, 54.284, 54.504, 54.82, 54.628, 54.928, 54.822, 55.03, 54.53, 54.882, 54.656, 54.396, 54.444, 54.248, 55.472, 54.31, 55.956, 54.65, 54.204, 54.216, 55.292, 54.324, 55.234, 55.13, 54.55, 54.516, 54.188, 54.732, 55.172, 53.74, 54.766, 55.326, 54.418, 55.01, 54.134, 54.812, 55.01, 54.856, 54.8, 54.622, 54.288, 54.22, 55.254, 54.06, 55.376, 55.216, 55.166, 55.48, 55.164, 54.208, 55.032, 54.1, 54.946, 55.284, 55.484, 54.618, 55.176, 54.31, 54.458, 54.514, 56.184, 54.23, 54.788, 55.202, 54.922, 54.652, 55.53, 55.4, 55.336, 54.826, 53.912, 54.874, 55.224, 54.966, 54.67, 54.634, 55.09, 55.024, 55.332, 55.588, 54.464, 55.1, 55.128, 54.358, 54.524, 54.972, 54.48, 53.572, 55.04, 55.594, 54.564, 54.846, 55.084, 55.052, 54.652, 55.134, 54.39, 54.642, 54.204, 54.654, 55.068, 54.764, 54.768, 55.498, 54.824, 54.292, 54.17, 54.76, 54.744, 54.224, 55.052, 55.046, 55.118, 54.884, 55.15, 55.42, 54.424, 54.6, 54.59, 54.756, 55.794, 54.666, 55.74, 54.448, 54.696, 54.612, 54.102, 55.276, 54.234, 53.482, 55.086, 55.568, 55.51, 55.078, 55.008, 54.992, 54.31, 53.758, 55.368, 55.452, 55.43, 54.63, 54.836, 54.116, 53.952, 55.144, 55.022, 55.024, 54.852, 54.458, 55.042, 54.682, 54.208, 54.614, 54.886, 55.308, 55.022, 55.52, 55.318, 54.974, 54.67, 54.728, 55.194, 54.046, 54.532, 55.334, 55.274, 55.138, 54.726, 54.794, 54.588, 54.988, 54.938, 54.956, 55.408, 54.748, 55.456, 54.8, 54.758, 55.222, 54.694, 54.512, 54.522, 55.292, 54.752, 54.256, 54.256, 55.336, 54.92, 55.076, 54.366, 55.646, 55.222, 54.666, 54.406, 54.94, 55.168, 54.718, 53.932, 54.684, 54.684, 54.944, 54.456, 55.204, 54.6, 55.612, 55.348, 55.204, 55.06, 55.456, 55.056, 54.582, 54.62, 54.822, 54.718, 55.026, 54.592, 55.376, 54.664, 55.112, 54.456, 55.328, 54.25, 55.53, 54.248, 53.998, 54.352, 54.746, 55.114, 55.184, 54.56, 55.26, 55.742, 55.77, 54.984, 54.55, 55.338, 54.774, 54.64, 55.366, 54.578, 54.556, 54.068, 54.344, 55.42, 54.256, 54.818, 54.218, 53.896, 55.316, 54.112, 54.824, 53.96, 54.532, 54.348, 54.692, 54.888, 54.708, 54.75, 55.19, 55.05, 54.02, 53.454, 54.652, 54.236, 54.776, 54.164, 54.656, 54.268, 54.668, 55.066, 54.582, 55.07, 54.628, 54.512, 55.508, 54.494, 54.808, 55.178, 54.578, 55.036, 55.404, 54.568, 54.072, 55.492, 54.704, 53.828, 54.272, 54.988, 54.314, 54.77, 54.73, 54.762, 54.262, 54.962, 54.47, 53.942, 54.032, 54.206, 54.772, 55.626, 55.124, 54.8, 54.954, 55.918, 55.308, 54.774, 54.876, 54.43, 54.84, 54.774, 54.676, 54.512, 54.424, 53.504, 54.128, 54.764, 53.968, 54.658, 54.62, 54.964, 54.968, 55.386, 55.056, 54.75, 54.67, 55.31, 55.218, 54.412, 54.14, 55.03, 55.418, 55.03, 54.638, 54.856, 55.256, 55.134, 54.8, 54.822, 54.83, 55.076, 55.394, 54.462, 54.568, 55.062, 55.156, 54.42, 55.662, 55.898, 54.104, 54.72, 54.462, 55.052, 54.634, 55.794, 55.314, 54.642, 54.492, 53.924, 54.974, 54.998, 55.438, 55.03, 54.69, 56.058, 54.68, 55.278, 55.044, 55.094, 54.848, 54.552, 55.318, 55.142, 54.87, 54.518, 54.944, 54.418, 55.032, 54.394, 54.966, 56.086, 54.9, 55.176, 55.036, 54.448, 54.68, 54.048, 54.79, 53.532, 55.08, 54.734, 54.208, 54.566, 55.21, 54.468, 55.046, 53.594, 54.476, 54.856, 54.312, 55.012, 55.4, 54.978, 54.55, 54.418, 54.36, 54.99, 54.516, 55.368, 54.034, 54.96, 54.888, 55.122, 55.51, 54.614, 54.838, 55.184, 54.526, 54.868, 54.744]
-    [55.334, 54.016, 54.922, 54.828, 54.22, 54.956, 54.462, 54.648, 54.802, 54.346, 55.306, 54.686, 53.932, 55.546, 55.056, 54.598, 54.084, 55.308, 55.362, 55.26, 54.122, 53.75, 54.862, 55.548, 54.714, 54.376, 54.3, 54.944, 54.726, 54.448, 54.6, 54.776, 53.822, 54.282, 55.236, 54.944, 54.96, 54.322, 53.832, 54.862, 53.84, 55.94, 54.718, 55.166, 54.898, 55.214, 54.56, 55.1, 54.258, 54.49, 54.822, 55.748, 54.712, 54.83, 55.268, 54.308, 54.868, 54.664, 53.84, 54.876, 54.826, 54.726, 54.696, 55.048, 53.982, 54.77, 55.042, 54.672, 53.85, 56.19, 54.912, 54.312, 54.72, 54.344, 55.206, 54.476, 54.558, 54.612, 54.51, 54.87, 54.466, 54.432, 55.044, 54.404, 54.784, 54.608, 55.232, 54.684, 54.998, 54.79, 55.17, 55.18, 54.222, 54.51, 55.064, 54.318, 54.94, 54.742, 55.136, 55.018, 55.024, 55.172, 53.98, 54.108, 55.054, 54.576, 54.96, 54.556, 55.208, 54.308, 55.736, 55.008, 55.042, 54.814, 54.578, 54.834, 55.25, 54.968, 54.79, 54.568, 54.964, 55.082, 54.482, 54.984, 54.918, 54.282, 54.094, 54.04, 54.756, 54.852, 54.472, 54.514, 54.422, 54.546, 55.006, 54.38, 54.736, 54.99, 55.688, 54.634, 55.618, 55.14, 54.976, 54.572, 55.01, 54.922, 55.116, 54.056, 55.31, 54.026, 54.512, 54.888, 55.466, 54.326, 54.006, 55.258, 55.39, 54.586, 54.858, 54.04, 54.448, 55.156, 55.638, 54.322, 55.66, 55.02, 54.092, 54.826, 55.348, 55.29, 54.76, 54.426, 55.29, 54.982, 54.314, 54.594, 54.54, 54.452, 54.658, 54.52, 54.662, 55.428, 54.034, 55.402, 54.092, 54.23, 53.956, 55.49, 54.878, 55.926, 54.56, 54.568, 55.23, 55.29, 54.976, 54.576, 54.32, 55.866, 54.966, 54.868, 54.59, 55.458, 55.06, 54.074, 54.16, 54.816, 54.268, 54.622, 54.634, 53.854, 54.976, 54.2, 55.168, 54.882, 53.834, 54.968, 55.058, 54.424, 54.456, 54.39, 55.014, 54.536, 53.802, 54.57, 54.188, 54.742, 54.86, 54.968, 54.448, 55.33, 54.312, 54.388, 55.158, 54.312, 54.116, 54.682, 54.594, 54.724, 55.076, 55.458, 55.326, 54.714, 54.898, 54.41, 54.228, 54.7, 55.046, 55.178, 54.11, 54.756, 54.374, 54.286, 55.292, 54.604, 54.232, 54.764, 55.216, 54.588, 54.75, 54.42, 55.106, 55.326, 55.046, 54.468, 54.6, 54.628, 53.654, 55.202, 53.328, 55.662, 54.25, 55.22, 55.228, 54.87, 55.856, 54.672, 55.382, 54.32, 54.678, 54.912, 54.216, 54.538, 54.376, 54.974, 53.76, 54.894, 54.772, 54.34, 54.872, 54.864, 54.332, 54.036, 54.626, 54.93, 55.082, 54.776, 54.292, 53.876, 54.748, 55.032, 54.196, 55.182, 54.67, 54.738, 54.068, 54.528, 55.118, 54.836, 54.828, 54.996, 54.604, 54.894, 54.528, 54.732, 55.232, 54.598, 54.852, 54.802, 54.572, 54.698, 54.532, 55.028, 54.504, 54.912, 54.534, 54.296, 54.484, 55.022, 55.198, 54.72, 54.358, 54.608, 54.254, 54.904, 54.764, 53.918, 55.146, 54.838, 54.9, 54.982, 55.132, 54.868, 54.592, 54.672, 54.72, 54.906, 54.474, 54.73, 55.38, 55.64, 55.428, 54.832, 54.68, 54.716, 54.714, 54.538, 54.352, 54.486, 55.066, 53.74, 55.246, 54.568, 54.24, 54.716, 54.714, 55.324, 55.092, 54.416, 55.074, 54.586, 54.038, 54.826, 54.844, 54.79, 54.304, 55.232, 54.586, 54.936, 54.538, 54.606, 55.072, 55.286, 54.612, 54.49, 54.308, 54.492, 54.62, 55.054, 54.728, 54.438, 54.546, 54.098, 54.004, 54.378, 55.148, 54.226, 54.84, 55.04, 55.392, 54.532, 54.988, 54.712, 54.49, 54.972, 54.326, 55.002, 54.01, 54.734, 55.12, 54.466, 54.48, 54.648, 55.2, 55.03, 55.592, 53.954, 54.58, 55.218, 55.506, 55.028, 54.474, 54.856, 55.296, 54.404, 53.606, 54.904, 53.964, 54.502, 54.104, 55.102, 54.324, 54.334, 55.016, 54.852, 54.592, 54.84, 53.944, 55.528, 54.18, 54.446, 54.354, 54.606, 54.798, 54.394, 54.52, 53.984, 54.926, 54.908, 54.858, 54.058, 55.156, 54.81, 54.698, 54.608, 54.332, 54.874, 54.388, 55.226, 54.558, 54.866, 54.608, 55.618, 55.054, 54.188, 55.364, 54.804, 54.702, 54.558, 54.692, 54.082, 54.336, 54.798, 55.32, 54.582, 54.338, 55.126, 54.84, 54.912, 54.82, 54.21, 54.36, 54.67, 54.98, 54.202, 54.774, 54.664, 54.638, 55.108, 55.064, 54.554, 54.23, 54.276, 54.726, 55.176, 55.082, 54.414, 54.412, 55.466, 55.58, 54.838, 54.868, 54.464, 55.214, 54.974, 55.006, 54.948, 55.15, 54.694, 55.324, 54.894, 54.554, 54.072, 54.402, 55.024, 54.186, 53.95, 54.932, 54.422, 54.614, 55.368, 54.952, 54.348, 54.828, 54.488, 54.634, 54.916, 54.692, 54.826, 54.532, 54.698, 55.15, 55.46, 54.894, 54.962, 54.56, 54.994, 55.174, 55.328, 55.36, 53.84, 54.964, 54.94, 55.816, 55.096, 55.05, 55.528, 55.236, 54.482, 54.276, 55.822, 54.926, 54.96, 55.324, 54.572, 54.192, 53.848, 54.284, 54.462, 54.608, 55.012, 53.97, 54.364, 54.872, 54.696, 54.308, 55.632, 54.264, 54.678, 55.352, 54.522, 54.338, 54.704, 54.976, 54.162, 55.14, 55.08, 55.192, 55.508, 54.424, 54.532, 54.522, 54.406, 54.694, 54.638, 53.776, 53.798, 54.824, 54.264, 54.67, 54.836, 54.362, 54.32, 55.114, 54.532, 54.746, 54.452, 55.494, 54.484, 54.484, 54.172, 54.88, 54.236, 54.526, 54.542, 54.908, 55.344, 54.68, 54.808, 54.86, 54.992, 54.008, 55.448, 54.662, 54.878, 55.058, 54.082, 54.4, 54.302, 54.084, 55.076, 54.62, 54.58, 55.438, 54.714, 54.508, 54.746, 54.002, 54.63, 54.08, 54.19, 56.178, 55.054, 54.776, 54.144, 54.7, 54.256, 54.71, 54.672, 54.186, 54.716, 55.014, 55.206, 55.512, 54.37, 54.516, 54.334, 54.426, 55.372, 54.63, 54.114, 53.778, 55.274, 54.96, 54.568, 54.314, 54.45, 55.188, 54.546, 54.756, 55.038, 54.416, 55.21, 54.86, 54.498, 55.236, 54.594, 53.952, 55.082, 54.922, 54.688, 55.282, 54.796, 54.776, 53.994, 55.596, 55.126, 54.544, 55.41, 55.198, 55.11, 54.672, 54.65, 53.848, 54.852, 54.794, 54.744, 54.73, 53.658, 54.88, 54.24, 54.3, 54.002, 55.064, 55.39, 54.34, 54.928, 54.294, 54.8, 54.898, 54.68, 54.54, 54.554, 54.002, 54.35, 54.648, 54.2, 54.458, 55.092, 55.21, 55.01, 54.914, 54.31, 54.246, 54.654, 55.586, 53.78, 55.17, 54.942, 55.78, 54.706, 54.742, 54.914, 54.63, 54.8, 55.368, 54.324, 54.966, 55.088, 54.794, 54.942, 55.452, 54.554, 55.06, 55.162, 54.106, 54.642, 54.474, 54.098, 54.944, 54.694, 54.068, 54.206, 55.216, 54.548, 54.796, 54.83, 55.034, 55.296, 55.806, 54.034, 55.366, 54.88, 54.624, 54.148, 54.308, 55.116, 54.508, 54.938, 55.308, 54.382, 54.98, 54.408, 54.47, 54.39, 54.732, 54.74, 55.364, 54.094, 54.062, 54.54, 55.278, 54.028, 54.85, 55.186, 53.896, 54.196, 54.814, 54.128, 54.07, 54.704, 55.074, 54.088, 54.596, 53.524, 55.072, 54.9, 55.874, 54.926, 54.762, 55.28, 55.18, 55.494, 55.132, 53.634, 55.086, 55.006, 55.398, 54.814, 54.334, 54.024, 54.794, 54.908, 54.346, 54.93, 54.182, 54.498, 54.576, 54.268, 55.22, 54.894, 54.558, 54.306, 54.498, 54.976, 54.126, 54.468, 54.582, 54.612, 55.034, 54.874, 54.49, 54.152, 55.154, 55.08, 54.44, 54.526, 54.054, 54.998, 56.216, 54.864, 55.174, 55.494, 54.702, 53.742, 54.508, 53.866, 54.844, 54.766, 54.502, 54.768, 54.156, 55.076, 54.95, 54.478, 54.158, 55.208, 55.148, 54.658, 54.654, 55.262, 54.924, 54.396, 54.262, 54.592, 54.886, 54.432, 54.482, 55.112, 54.752, 54.054, 54.374, 53.766, 54.362, 54.844, 54.406, 54.328, 54.864, 55.032, 54.582, 54.618, 54.932, 55.55, 55.406, 54.1, 55.424, 54.976, 54.018, 53.942, 54.054, 54.586, 54.652, 55.344, 54.394, 54.136, 54.698, 54.324, 54.738, 54.832, 54.372, 54.152, 54.224, 54.664, 54.216, 54.932, 54.794, 54.372, 55.016, 54.264, 54.982, 54.196, 55.132, 55.298, 55.046, 54.272, 54.346, 55.004, 54.168, 55.21, 53.758, 55.438, 54.41, 55.01, 55.168, 55.28, 54.604, 55.326, 54.69, 55.364, 54.588, 54.67, 54.528, 54.914, 55.688, 54.656, 55.054, 55.884, 55.438, 54.526, 54.564, 54.208, 54.354, 54.894, 53.872, 55.162, 55.036, 53.964, 53.772, 54.632, 54.86, 54.61, 54.512, 53.92, 54.644, 54.706, 55.002, 55.302, 54.754, 54.802, 54.914, 55.086, 54.466, 54.658, 54.796, 54.87, 54.816, 54.456, 54.76, 54.096, 55.008, 54.474, 54.968, 55.072, 55.166, 54.31, 54.738, 54.472, 55.194, 54.062, 54.918, 54.44, 55.354, 54.664, 55.226, 54.33, 55.156, 54.652, 54.652, 55.334, 54.604, 54.786, 54.256, 54.664, 54.308, 54.946, 54.91, 54.632, 54.44, 55.686, 54.608, 54.484, 55.068, 54.872, 54.576, 54.298, 54.158, 54.538, 54.042, 54.752, 54.412, 54.66, 53.588, 54.512, 54.922, 54.462, 54.622, 54.51, 54.354, 55.126, 54.314, 55.322, 54.514, 55.51, 53.974, 54.42, 54.504, 55.518, 54.824, 54.838, 54.754, 54.702, 54.562, 54.908, 54.576, 54.4, 54.942, 54.026, 53.934, 54.64, 54.642, 54.398, 54.622, 55.438, 54.966, 54.55, 54.884, 55.752, 54.694, 54.844, 54.842, 54.856, 55.35, 54.884, 53.584, 55.092, 55.336, 54.952, 55.838, 55.03, 54.948, 55.022, 54.068, 54.372, 54.584, 54.314, 54.346, 54.944, 55.646, 55.234, 55.076, 54.926, 55.05, 54.91, 54.754, 54.584, 55.1, 54.222, 54.296, 54.322, 54.77, 55.172, 54.924, 54.7, 55.258, 54.778, 54.0, 54.446, 55.28, 54.772, 55.144, 55.102, 54.622, 54.55, 55.072, 54.55, 54.452, 54.59, 55.036, 55.33, 53.744, 55.148, 54.78, 54.558, 55.07, 54.31, 53.97, 54.25, 54.394, 54.962, 54.29, 55.062, 54.268, 54.746, 54.752, 54.446, 55.324, 54.208, 54.854, 54.928, 54.744, 54.528, 54.948, 54.794, 54.432, 54.796, 54.424, 54.74, 55.292, 54.392, 55.228, 54.806, 55.466, 54.724, 54.574, 54.544, 54.924, 53.922, 55.26, 54.216, 54.504, 54.816, 54.574, 54.304, 54.652, 54.54, 54.578, 54.408, 54.982, 54.866, 55.158, 55.156, 54.438, 55.204, 54.668, 54.478, 54.224, 55.052, 54.358, 54.888, 54.754, 55.24, 54.874, 54.554, 54.782, 54.43, 53.914, 54.882, 54.75, 54.524, 55.158, 54.292, 54.66, 54.712, 54.952, 54.764, 54.522, 55.05, 55.166, 54.416, 54.676, 54.308, 54.754, 54.89, 54.906, 55.148, 54.618, 54.068, 54.702, 55.336, 54.914, 54.248, 54.734, 54.44, 54.852, 54.98, 54.636, 54.31, 54.298, 55.408, 54.71, 54.65, 54.112, 54.806, 54.08, 55.074, 55.042, 54.876, 54.376, 54.47, 54.574, 54.66, 54.822, 54.868, 55.136, 54.776, 54.97, 54.19, 54.122, 55.132, 54.392, 54.42, 54.654, 54.312, 54.786, 55.316, 54.708, 54.448, 55.108, 54.642, 54.374, 55.524, 54.964, 54.628, 55.048, 54.372, 54.142, 54.468, 54.538, 54.724, 54.472, 54.022, 55.632, 54.888, 54.632, 54.448, 53.816, 54.678, 55.024, 54.738, 55.64, 54.698, 54.904, 54.38, 54.554, 54.116, 54.146, 54.992, 54.472, 55.786, 55.436, 55.112, 55.112, 54.67, 54.388, 55.386, 54.582, 54.634, 54.768, 54.596, 54.102, 54.946, 54.788, 54.748, 55.048, 54.468, 55.434, 55.674, 54.992, 55.146, 55.208, 54.834, 55.236, 55.322, 54.934, 54.18, 54.58, 55.038, 54.978, 55.664, 54.138, 54.406, 54.71, 54.232, 53.854, 54.066, 54.756, 55.132, 54.234, 53.798, 54.45, 54.806, 55.162, 54.478, 54.77, 55.174, 54.446, 54.84, 55.454, 54.666, 54.884, 54.036, 54.284, 54.084, 54.938, 54.28, 55.042, 54.37, 54.156, 54.876, 54.432, 55.02, 54.85, 54.054, 54.786, 55.524, 55.564, 54.722, 54.544, 54.668, 54.842, 54.39, 54.434, 53.828, 54.276, 54.59, 54.548, 55.434, 53.966, 54.918, 55.512, 54.564, 54.182, 54.344, 55.508, 54.044, 55.498, 55.352, 53.906, 54.992, 54.692, 55.124, 54.228, 54.528, 54.872, 55.336, 55.084, 54.726, 54.658, 54.25, 54.868, 55.39, 55.224, 55.724, 55.168, 54.862, 55.156, 55.18, 54.206, 55.072, 54.566, 55.038, 54.414, 54.112, 54.422, 54.232, 54.84, 54.508, 54.204, 55.178, 55.036, 53.45, 55.01, 55.16, 55.036, 54.958, 54.054, 54.96, 55.038, 54.47, 54.602, 54.562, 55.058, 53.772, 54.846, 54.464, 54.186, 55.402, 55.116, 54.14, 54.84, 55.198, 54.688, 55.214, 54.41, 54.378, 54.34, 54.422, 54.248, 54.3, 55.338, 54.55, 54.382, 54.99, 54.294, 54.486, 55.024, 54.482, 54.682, 54.358, 54.66, 54.782, 54.914, 53.21, 54.034, 54.052, 54.268, 54.94, 54.604, 54.384, 54.716, 54.524, 53.946, 55.232, 55.192, 54.938, 54.872, 54.198, 54.544, 53.872, 54.546, 55.224, 55.664, 54.756, 54.622, 54.33, 54.452, 54.494, 54.974, 54.298, 54.802, 54.374, 54.134, 55.34, 55.476, 54.68, 54.292, 53.936, 54.702, 54.578, 55.404, 55.05, 54.728, 54.956, 54.938, 55.306, 54.888, 53.664, 55.524, 54.556, 54.68, 54.366, 54.998, 54.598, 54.602, 54.808, 53.712, 55.13, 54.558, 54.45, 54.11, 54.948, 54.396, 55.126, 54.672, 54.612, 54.34, 54.868, 54.882, 54.474, 55.192, 53.81, 54.93, 54.398, 54.29, 54.446, 54.398, 55.146, 54.842, 54.238, 54.054, 54.64, 55.068, 54.084, 54.292, 54.062, 54.902, 54.846, 55.748, 54.23, 54.354, 54.148, 54.23, 54.488, 54.826, 54.566, 55.034, 54.8, 55.152, 54.794, 54.862, 54.288, 54.832, 54.816, 54.096, 54.628, 54.996, 55.404, 54.238, 54.638, 54.502, 54.046, 55.11, 55.478, 54.688, 55.084, 54.648, 54.6, 54.444, 54.698, 54.4, 53.376, 54.372, 55.34, 55.272, 54.524, 54.814, 54.276, 55.122, 54.328, 54.112, 54.656, 55.194, 55.346, 54.722, 55.168, 54.508, 54.742, 54.622, 53.976, 54.62, 54.52, 55.01, 54.644, 54.326, 54.614, 54.716, 54.02, 54.032, 54.472, 54.472, 54.882, 54.494, 55.81, 54.34, 54.088, 54.754, 54.628, 54.986, 55.228, 54.348, 54.572, 54.648, 55.29, 54.724, 55.058, 55.002, 54.344, 54.636, 55.428, 54.782, 54.046, 55.024, 55.082, 53.868, 54.808, 55.268, 54.714, 54.17, 54.844, 55.012, 54.558, 54.964, 55.016, 55.372, 54.95, 54.388, 54.512, 55.166, 54.646, 54.596, 55.33, 54.522, 54.804, 54.232, 54.33, 55.304, 53.676, 54.836, 53.694, 55.244, 55.084, 54.396, 54.898, 54.79, 54.274, 54.718, 54.998, 55.034, 54.81, 54.482, 54.848, 55.274, 54.826, 54.68, 54.404, 54.418, 53.954, 55.402, 54.99, 55.32, 54.898, 54.94, 54.932, 54.58, 54.506, 55.468, 55.112, 55.28, 53.866, 54.69, 55.008, 53.948, 54.644, 54.5, 53.97, 55.06, 54.156, 54.252, 54.904, 54.516, 55.008, 54.682, 55.102, 55.176, 55.92, 54.54, 54.618, 54.704, 55.066, 54.822, 55.126, 54.57, 53.918, 54.682, 54.534, 55.128, 54.476, 54.396, 54.912, 55.344, 54.18, 55.202, 55.096, 54.158, 54.69, 55.038, 55.24, 54.454, 54.688, 54.382, 54.764, 54.268, 54.712, 54.542, 54.746, 55.396, 54.488, 54.536, 55.79, 54.926, 55.404, 55.092, 55.19, 55.222, 54.764, 54.678, 54.436, 54.568, 55.404, 54.322, 54.334, 55.03, 55.05, 54.72, 54.632, 55.36, 54.668, 54.916, 54.708, 54.298, 54.642, 54.816, 55.408, 54.286, 53.898, 54.964, 55.606, 54.724, 54.472, 55.184, 55.018, 54.978, 53.994, 54.538, 54.954, 54.92, 54.934, 54.362, 54.258, 55.334, 54.758, 54.608, 55.254, 54.268, 54.362, 54.684, 55.486, 55.628, 54.454, 54.68, 54.958, 54.374, 54.438, 54.712, 54.762, 54.906, 54.48, 54.418, 54.396, 55.674, 55.64, 55.566, 54.718, 54.892, 54.516, 54.602, 54.62, 54.614, 54.782, 54.272, 54.82, 53.978, 54.346, 54.466, 54.94, 54.8, 55.394, 54.026, 54.128, 54.596, 54.97, 54.922, 54.79, 55.134, 55.464, 54.33, 54.23, 55.026, 55.46, 54.68, 55.098, 54.342, 54.778, 54.388, 55.134, 54.558, 54.396, 54.208, 54.256, 54.76, 55.104, 54.78, 54.906, 55.272, 54.59, 55.136, 54.612, 55.128, 54.728, 55.228, 54.976, 54.742, 55.404, 54.46, 54.626, 54.974, 54.754, 54.596, 54.324, 54.574, 55.492, 54.368, 55.214, 54.334, 54.308, 54.366, 53.856, 55.31, 55.228, 54.618, 55.008, 54.688, 54.876, 55.4, 53.522, 54.69, 54.84, 54.612, 54.376, 55.184, 55.178, 54.318, 54.272, 53.954, 54.576, 53.948, 54.48, 54.742, 54.476, 54.728, 54.284, 54.164, 54.604, 54.39, 54.668, 53.732, 53.808, 54.506, 54.126, 54.766, 56.18, 55.36, 55.184, 54.786, 54.74, 54.444, 54.366, 54.5, 54.462, 54.286, 54.546, 54.47, 54.434, 54.212, 54.592, 54.712, 55.052, 55.014, 54.562, 54.612, 55.77, 54.506, 55.428, 55.126, 54.992, 54.316, 54.626, 54.584, 53.986, 54.514, 54.86, 54.976, 54.814, 55.232, 54.534, 54.628, 54.702, 54.572, 55.0, 54.722, 54.844, 54.942, 53.972, 55.296, 54.826, 54.742, 55.244, 54.322, 54.582, 54.794, 54.444, 55.214, 55.432, 54.718, 54.758, 54.416, 54.854, 55.126, 54.418, 54.372, 54.832, 55.256, 54.504, 54.88, 54.648, 54.054, 54.886, 54.13, 54.596, 54.272, 54.88, 54.14, 54.8, 54.83, 54.782, 54.936, 54.948, 55.1, 54.596, 53.628, 55.638, 54.83, 54.112, 54.538, 54.372, 54.874, 54.568, 54.974, 54.652, 55.318, 54.374, 54.262, 54.124, 56.004, 54.27, 54.622, 54.36, 54.476, 55.506, 54.492, 54.158, 55.218, 54.38, 55.356, 55.106, 53.78, 54.96, 55.21, 54.964, 54.672, 54.008, 55.078, 54.95, 55.236, 54.428, 55.182, 54.648, 54.35, 54.792, 55.138, 54.598, 55.772, 54.86, 55.046, 54.96, 55.35, 54.418, 54.672, 54.658, 55.028, 54.61, 54.266, 54.168, 54.008, 53.988, 55.012, 54.786, 54.966, 54.82, 54.944, 54.722, 54.85, 54.52, 54.656, 54.448, 54.104, 54.434, 54.94, 54.588, 54.442, 54.362]
+    [55.046, 54.702, 54.438, 55.026, 54.644, 55.558, 55.514, 54.494, 55.908, 54.686, 55.028, 53.936, 55.326, 55.25, 55.378, 55.116, 53.982, 54.42, 55.18, 55.04, 55.012, 54.724, 54.278, 54.604, 54.682, 54.662, 54.292, 54.158, 55.424, 55.238, 53.84, 54.728, 54.082, 54.882, 54.986, 54.83, 55.302, 54.438, 54.082, 55.426, 55.048, 55.592, 54.828, 54.992, 54.286, 54.69, 54.368, 54.582, 55.284, 55.844, 56.126, 54.132, 55.458, 55.492, 54.436, 54.286, 54.764, 54.928, 54.504, 55.182, 54.682, 54.482, 55.6, 54.048, 54.52, 54.064, 54.844, 56.312, 54.424, 55.034, 55.134, 54.464, 55.62, 55.068, 55.212, 55.656, 54.432, 54.398, 54.38, 55.14, 55.022, 54.552, 55.526, 54.414, 54.54, 54.94, 55.11, 54.662, 55.276, 56.318, 55.124, 54.624, 54.55, 54.79, 55.266, 54.842, 55.292, 54.524, 54.224, 54.42, 55.522, 55.086, 55.474, 55.172, 54.778, 55.624, 53.984, 55.144, 54.682, 54.568, 55.542, 54.916, 54.642, 55.082, 54.722, 54.756, 55.114, 54.464, 53.98, 54.8, 54.392, 54.726, 55.188, 55.062, 54.816, 54.316, 53.87, 55.418, 54.024, 55.22, 54.704, 54.686, 55.606, 54.848, 54.372, 55.756, 54.946, 54.244, 54.394, 54.754, 55.088, 54.51, 54.476, 55.654, 55.192, 54.272, 55.13, 54.818, 55.356, 55.084, 54.656, 54.73, 55.454, 54.742, 54.88, 54.072, 54.578, 54.588, 54.478, 54.724, 55.1, 55.184, 54.262, 54.474, 54.268, 54.938, 55.096, 54.594, 54.212, 54.742, 54.592, 55.434, 55.324, 55.048, 54.632, 54.61, 54.974, 54.994, 55.45, 55.23, 55.348, 55.048, 54.824, 55.184, 54.738, 54.678, 54.462, 54.62, 54.906, 54.726, 55.882, 55.47, 55.9, 54.0, 53.398, 54.776, 54.682, 54.416, 54.9, 55.104, 54.166, 54.296, 54.742, 55.104, 55.072, 54.208, 54.66, 54.62, 54.704, 54.934, 54.706, 54.46, 55.212, 54.684, 54.62, 54.576, 55.112, 55.152, 55.034, 54.966, 54.63, 54.42, 54.178, 55.1, 55.584, 53.986, 55.468, 55.108, 55.092, 54.412, 54.436, 54.36, 54.52, 54.764, 53.89, 53.924, 54.456, 54.956, 54.79, 54.692, 54.958, 54.788, 54.554, 55.496, 54.826, 54.576, 54.358, 55.04, 55.026, 54.252, 54.352, 54.914, 53.882, 54.33, 55.084, 54.638, 55.154, 54.572, 54.638, 54.812, 55.43, 55.28, 54.656, 53.962, 55.204, 55.108, 54.85, 54.652, 55.424, 54.658, 55.272, 55.248, 54.78, 55.212, 54.466, 54.724, 55.47, 55.096, 55.036, 55.47, 55.06, 54.894, 54.912, 54.758, 55.064, 55.282, 54.484, 54.608, 55.462, 55.364, 54.812, 54.826, 54.584, 55.052, 54.9, 54.638, 55.63, 54.982, 54.062, 54.738, 54.226, 54.654, 54.422, 54.652, 55.194, 54.616, 54.016, 55.098, 54.34, 54.554, 55.714, 55.866, 55.644, 54.954, 54.274, 55.09, 54.576, 55.038, 55.448, 54.648, 56.142, 55.246, 54.838, 55.572, 54.606, 53.848, 55.05, 54.814, 54.464, 54.9, 54.872, 56.0, 54.19, 54.33, 54.892, 54.466, 55.132, 54.484, 54.792, 55.462, 54.012, 55.902, 54.196, 54.578, 54.622, 55.574, 55.2, 55.478, 55.02, 54.608, 55.224, 55.24, 54.746, 55.382, 55.188, 55.198, 55.236, 54.338, 55.022, 54.724, 53.894, 54.746, 55.202, 55.572, 54.666, 55.046, 54.384, 54.592, 55.712, 54.25, 55.86, 55.518, 54.366, 54.576, 55.01, 54.638, 54.236, 54.388, 54.332, 54.948, 54.962, 54.9, 54.584, 54.636, 54.682, 55.082, 55.402, 53.636, 54.31, 54.482, 53.954, 55.446, 55.42, 54.822, 55.32, 54.048, 55.358, 54.884, 55.212, 55.816, 56.076, 54.572, 55.0, 54.308, 54.392, 54.844, 55.208, 55.076, 54.69, 55.328, 54.33, 54.416, 54.908, 53.842, 53.962, 54.946, 55.174, 54.34, 54.486, 54.506, 53.688, 54.442, 55.148, 55.374, 55.314, 55.898, 55.176, 54.712, 55.094, 53.836, 54.756, 54.544, 54.56, 55.258, 54.642, 55.314, 54.198, 54.856, 55.874, 54.644, 54.818, 54.268, 54.576, 54.316, 54.494, 55.318, 54.338, 54.728, 53.58, 55.864, 54.43, 55.89, 54.612, 55.124, 56.31, 55.334, 54.57, 54.3, 55.232, 54.156, 54.532, 54.682, 54.338, 54.906, 54.666, 54.604, 54.074, 54.948, 53.8, 55.26, 54.308, 55.222, 54.522, 54.53, 55.294, 55.628, 54.598, 55.024, 55.498, 55.1, 54.972, 54.778, 54.996, 56.006, 54.778, 54.222, 54.906, 54.782, 55.148, 55.086, 54.658, 55.05, 54.974, 54.896, 54.738, 55.624, 54.006, 54.734, 54.876, 54.946, 54.362, 55.49, 54.38, 54.5, 55.094, 55.11, 54.748, 54.728, 55.102, 54.952, 54.764, 54.472, 53.626, 54.896, 55.348, 54.944, 54.794, 55.396, 54.192, 54.162, 54.872, 54.626, 54.688, 54.344, 55.608, 54.104, 54.766, 54.436, 54.54, 54.428, 55.138, 55.464, 55.57, 55.276, 53.958, 54.568, 54.858, 55.434, 53.884, 55.092, 54.206, 55.986, 55.152, 53.918, 54.884, 56.03, 55.184, 54.894, 55.214, 54.796, 54.602, 55.24, 55.564, 55.742, 54.77, 54.348, 55.218, 54.246, 54.45, 55.42, 54.234, 54.286, 54.792, 55.604, 55.41, 54.68, 54.5, 54.226, 54.596, 54.522, 54.574, 54.936, 54.322, 54.706, 54.132, 54.944, 54.896, 55.482, 54.554, 54.572, 55.102, 55.006, 54.982, 54.626, 54.106, 54.608, 55.096, 55.412, 55.46, 55.348, 54.246, 55.174, 55.156, 54.87, 55.22, 54.064, 55.178, 54.626, 55.442, 54.538, 55.198, 55.238, 55.504, 54.328, 55.434, 54.536, 54.754, 54.866, 55.002, 55.114, 54.416, 54.944, 54.914, 54.67, 55.678, 55.024, 54.006, 54.086, 55.092, 55.59, 55.072, 53.944, 55.142, 55.46, 54.998, 55.07, 54.32, 54.926, 55.634, 54.17, 55.196, 54.692, 54.788, 54.276, 55.734, 54.932, 54.536, 55.438, 55.244, 54.19, 54.388, 54.832, 54.374, 54.55, 54.632, 55.702, 54.7, 55.224, 54.742, 54.16, 55.46, 54.416, 55.212, 55.118, 54.05, 54.25, 54.852, 54.62, 55.49, 55.274, 55.72, 54.056, 55.444, 54.456, 55.336, 54.67, 53.56, 54.948, 54.792, 55.19, 54.67, 54.5, 55.226, 55.218, 54.458, 55.016, 55.052, 55.084, 55.08, 55.236, 54.226, 54.752, 55.114, 55.162, 54.598, 55.838, 55.308, 54.75, 55.198, 54.73, 55.13, 55.538, 53.952, 54.736, 54.978, 54.79, 54.692, 54.87, 54.608, 55.158, 54.326, 55.336, 54.892, 54.6, 54.27, 55.152, 54.412, 55.216, 54.838, 55.476, 55.312, 55.51, 54.83, 54.92, 54.524, 54.154, 54.48, 55.072, 55.354, 54.18, 55.414, 54.762, 54.592, 54.476, 55.386, 55.082, 55.184, 54.074, 54.026, 55.006, 55.026, 53.942, 54.282, 54.488, 55.466, 54.576, 54.548, 55.666, 55.002, 53.876, 55.708, 54.784, 54.428, 54.83, 55.03, 54.99, 54.576, 55.344, 55.546, 55.048, 55.336, 55.106, 54.894, 55.562, 54.928, 54.446, 54.692, 54.776, 54.42, 54.446, 54.882, 55.53, 54.908, 54.494, 54.826, 54.826, 55.174, 53.9, 54.512, 56.152, 54.954, 55.524, 55.202, 55.066, 53.934, 54.996, 54.848, 53.734, 54.86, 53.95, 55.572, 55.164, 53.386, 54.98, 54.798, 55.186, 55.022, 55.36, 54.864, 54.892, 54.372, 53.786, 54.936, 54.548, 55.128, 55.65, 56.014, 55.018, 54.644, 54.37, 54.268, 55.074, 54.598, 54.816, 53.752, 54.79, 55.656, 54.888, 54.112, 55.042, 55.088, 54.132, 54.894, 54.19, 54.438, 54.866, 55.69, 54.814, 55.042, 55.06, 55.08, 55.566, 54.322, 54.292, 54.792, 55.768, 54.916, 54.658, 53.974, 54.79, 54.648, 55.368, 55.216, 55.212, 55.476, 55.408, 54.666, 55.67, 54.432, 54.24, 53.852, 55.186, 54.822, 55.212, 54.526, 54.514, 54.884, 54.054, 54.822, 55.698, 54.722, 54.61, 55.23, 54.91, 55.24, 54.72, 54.422, 55.204, 55.098, 55.656, 55.472, 54.536, 54.642, 53.78, 54.692, 54.392, 55.112, 55.002, 54.604, 54.938, 53.982, 55.442, 55.05, 55.156, 55.362, 55.128, 54.718, 54.298, 55.298, 55.144, 54.956, 54.184, 55.056, 54.928, 55.254, 54.636, 54.944, 54.934, 54.528, 53.5, 54.494, 55.392, 54.986, 54.882, 55.8, 55.194, 54.828, 54.57, 54.284, 55.164, 55.558, 54.988, 54.818, 54.958, 54.334, 55.052, 54.302, 54.988, 55.224, 54.756, 53.96, 54.992, 54.854, 55.554, 53.76, 55.042, 54.414, 55.468, 54.968, 54.136, 55.144, 53.854, 54.538, 55.31, 55.278, 54.804, 54.686, 54.11, 55.072, 55.246, 54.99, 54.746, 55.052, 54.712, 54.574, 54.628, 54.384, 54.696, 55.03, 55.212, 54.498, 55.42, 54.882, 56.162, 55.472, 54.192, 54.578, 54.168, 54.472, 55.182, 55.31, 53.974, 54.384, 54.95, 53.928, 54.67, 54.85, 54.49, 54.26, 55.438, 54.192, 55.008, 54.664, 54.696, 54.434, 54.568, 54.516, 55.18, 55.068, 54.834, 55.172, 54.878, 54.916, 54.222, 54.064, 55.338, 55.068, 54.324, 54.064, 55.324, 54.336, 54.478, 54.878, 55.772, 55.11, 53.938, 54.864, 54.832, 55.166, 55.352, 54.962, 55.528, 55.286, 54.094, 55.098, 54.468, 54.442, 54.974, 54.526, 54.638, 55.03, 54.694, 54.314, 55.108, 54.87, 54.026, 55.012, 55.284, 54.868, 54.524, 55.172, 54.58, 55.18, 55.44, 54.23, 54.194, 54.99, 55.4, 54.634, 54.568, 54.97, 54.328, 53.508, 54.938, 55.376, 54.864, 54.704, 54.062, 54.406, 54.25, 55.406, 54.656, 55.422, 54.896, 55.27, 54.856, 55.762, 55.28, 55.748, 54.708, 54.426, 54.508, 54.408, 54.858, 54.516, 54.002, 54.792, 55.248, 55.56, 54.348, 54.576, 54.696, 54.836, 54.348, 54.638, 54.534, 54.498, 53.994, 54.494, 54.994, 54.526, 53.98, 54.754, 54.064, 54.906, 55.552, 54.988, 55.23, 55.102, 54.698, 54.394, 54.398, 54.436, 55.642, 54.368, 54.686, 54.174, 53.7, 54.42, 55.058, 54.888, 55.696, 54.92, 54.092, 54.362, 54.916, 54.442, 54.606, 55.002, 53.994, 54.896, 54.592, 54.666, 54.818, 55.172, 54.442, 55.558, 54.65, 54.76, 54.228, 54.822, 55.11, 55.3, 55.654, 54.64, 55.01, 54.454, 55.218, 54.678, 55.002, 55.228, 54.892, 54.404, 54.996, 54.658, 55.378, 55.582, 54.678, 55.596, 55.104, 54.846, 54.422, 54.86, 55.276, 55.098, 54.48, 55.19, 55.754, 55.166, 55.356, 54.458, 55.32, 55.84, 55.488, 53.854, 55.148, 54.56, 54.67, 55.336, 54.276, 55.12, 53.97, 54.764, 55.124, 54.65, 54.476, 53.738, 54.826, 54.96, 54.508, 54.952, 54.734, 55.598, 54.268, 54.938, 54.84, 54.376, 54.944, 55.43, 54.252, 53.834, 54.29, 55.078, 54.43, 54.336, 54.648, 54.878, 54.212, 54.798, 54.462, 54.666, 55.88, 54.548, 54.668, 55.476, 55.232, 54.802, 56.304, 55.11, 54.402, 55.454, 54.362, 54.634, 54.63, 54.984, 55.114, 55.322, 54.394, 54.352, 54.764, 54.344, 55.082, 54.27, 54.59, 54.714, 55.136, 55.006, 54.8, 54.624, 54.546, 54.114, 54.868, 54.436, 54.614, 56.086, 54.38, 55.792, 54.2, 54.202, 54.512, 54.654, 54.922, 54.838, 54.53, 53.938, 54.006, 54.332, 54.224, 55.374, 54.698, 55.112, 55.628, 54.716, 54.594, 55.174, 54.94, 55.598, 54.814, 54.454, 55.146, 55.33, 55.016, 54.962, 55.174, 54.58, 54.456, 54.518, 53.996, 55.314, 54.896, 54.662, 54.448, 54.704, 54.386, 54.774, 54.594, 54.182, 55.664, 53.974, 54.042, 54.364, 54.558, 54.104, 54.77, 54.956, 54.2, 53.998, 54.266, 54.306, 54.214, 55.632, 55.216, 54.924, 54.698, 54.466, 55.254, 54.48, 54.282, 55.116, 55.17, 54.672, 56.122, 54.554, 54.324, 53.438, 55.572, 55.484, 54.746, 56.358, 54.692, 54.306, 54.75, 53.792, 55.026, 53.994, 54.778, 54.63, 54.716, 54.654, 54.944, 55.778, 55.498, 54.608, 54.864, 55.344, 55.728, 54.304, 55.084, 55.024, 54.742, 54.538, 53.894, 54.352, 54.314, 55.86, 55.148, 54.208, 55.672, 54.958, 54.518, 55.018, 54.848, 54.812, 55.174, 54.092, 54.784, 54.884, 55.772, 55.248, 54.218, 53.876, 55.226, 56.04, 55.098, 54.362, 54.35, 55.4, 55.116, 54.74, 54.894, 55.062, 54.476, 55.016, 54.992, 55.42, 54.14, 54.736, 53.9, 54.886, 53.982, 55.384, 54.82, 54.98, 54.732, 54.634, 54.78, 54.482, 54.374, 54.52, 54.436, 54.89, 55.322, 55.0, 54.546, 54.564, 55.426, 54.324, 55.264, 54.532, 55.208, 55.784, 54.284, 54.404, 54.368, 54.88, 54.658, 55.6, 55.152, 54.392, 54.764, 54.864, 54.762, 55.042, 54.512, 54.386, 54.456, 55.39, 55.18, 55.23, 55.036, 54.288, 54.414, 53.682, 54.932, 55.032, 54.81, 54.864, 54.758, 54.818, 54.572, 54.54, 55.752, 55.638, 54.568, 53.992, 54.884, 54.688, 54.436, 54.866, 54.414, 54.97, 54.784, 54.908, 54.764, 55.088, 54.508, 54.582, 55.124, 55.002, 53.65, 54.452, 54.602, 55.1, 54.264, 54.368, 54.61, 54.726, 55.114, 54.136, 54.734, 55.784, 54.984, 55.272, 54.93, 54.27, 54.52, 54.788, 54.592, 54.836, 55.33, 54.206, 54.452, 55.258, 55.042, 54.522, 55.076, 55.444, 55.0, 55.098, 54.702, 55.372, 54.472, 54.552, 54.558, 54.77, 54.518, 54.988, 55.046, 55.72, 54.698, 54.336, 55.376, 54.64, 54.974, 54.46, 55.234, 54.866, 54.836, 54.758, 54.794, 54.776, 55.362, 55.252, 55.202, 53.966, 54.906, 55.468, 55.564, 54.168, 54.96, 54.916, 54.602, 54.394, 54.696, 54.962, 54.898, 54.468, 55.166, 55.444, 54.28, 55.198, 54.864, 54.288, 55.174, 55.464, 54.736, 54.636, 54.546, 53.778, 54.852, 54.242, 54.838, 54.832, 55.402, 54.096, 54.772, 55.434, 54.808, 54.352, 54.632, 55.288, 54.544, 54.214, 55.07, 53.748, 55.318, 55.346, 54.312, 55.444, 54.412, 54.406, 55.474, 54.944, 55.114, 55.148, 54.662, 54.068, 55.12, 55.566, 54.588, 54.772, 54.336, 55.228, 55.218, 54.502, 53.8, 55.076, 54.874, 54.51, 55.234, 54.844, 55.484, 55.112, 53.83, 54.902, 55.516, 54.912, 55.08, 55.6, 53.742, 55.124, 54.196, 54.884, 54.99, 55.064, 55.332, 55.578, 55.144, 54.562, 54.884, 54.888, 54.732, 55.136, 55.296, 54.188, 54.232, 55.306, 54.164, 53.962, 55.496, 54.966, 54.608, 54.486, 55.272, 54.208, 55.316, 54.662, 55.396, 55.776, 55.3, 54.934, 55.764, 54.17, 55.374, 54.754, 54.838, 54.816, 55.004, 55.41, 55.25, 55.36, 54.882, 54.384, 54.948, 54.742, 55.334, 54.588, 55.472, 55.03, 53.334, 54.752, 54.8, 55.348, 55.006, 55.344, 54.64, 54.898, 55.73, 54.948, 53.986, 54.978, 54.286, 54.768, 55.44, 54.83, 54.888, 53.862, 54.096, 55.472, 55.224, 54.876, 55.334, 53.55, 54.878, 55.67, 54.724, 55.256, 54.498, 55.014, 55.092, 55.154, 54.584, 55.39, 54.89, 54.806, 55.8, 54.936, 54.798, 55.268, 55.4, 54.484, 54.836, 55.04, 54.13, 54.842, 54.504, 54.94, 55.12, 55.136, 55.944, 55.6, 54.508, 54.506, 55.29, 54.578, 54.634, 55.056, 54.682, 55.166, 54.83, 56.116, 55.29, 55.264, 54.88, 55.294, 54.24, 54.778, 55.27, 54.58, 53.978, 54.466, 54.424, 54.738, 55.53, 54.424, 54.16, 54.326, 54.352, 55.074, 54.342, 55.434, 54.24, 55.222, 54.11, 54.344, 54.758, 54.25, 53.67, 54.956, 54.572, 54.14, 54.418, 54.71, 53.78, 55.284, 55.14, 54.66, 54.428, 55.468, 54.952, 54.388, 54.866, 54.41, 54.978, 54.596, 54.664, 54.996, 54.86, 54.052, 55.902, 55.014, 54.886, 54.986, 55.642, 53.918, 54.748, 54.93, 54.314, 54.924, 55.322, 54.2, 55.352, 54.298, 55.786, 54.224, 53.806, 53.526, 54.25, 55.59, 54.886, 55.428, 55.412, 55.056, 54.836, 55.43, 54.612, 54.222, 55.296, 54.308, 54.94, 55.0, 54.928, 55.03, 55.03, 55.508, 54.404, 54.634, 55.222, 54.958, 54.43, 55.136, 54.108, 55.462, 54.446, 55.024, 54.098, 55.69, 53.682, 55.022, 54.132, 54.704, 54.448, 54.828, 55.172, 54.108, 54.72, 55.094, 53.846, 55.028, 54.802, 54.512, 54.726, 54.732, 55.088, 55.174, 55.362, 54.738, 54.714, 54.194, 55.778, 54.498, 55.422, 54.562, 55.312, 55.044, 54.248, 54.332, 55.012, 55.032, 54.058, 53.93, 54.774, 54.8, 54.958, 55.488, 54.472, 54.472, 54.526, 54.522, 55.016, 54.434, 54.506, 55.246, 54.586, 53.944, 54.048, 55.488, 54.718, 54.338, 54.908, 55.19, 54.484, 55.06, 54.538, 55.002, 54.636, 55.494, 55.512, 54.582, 55.454, 54.676, 54.776, 55.392, 54.45, 54.744, 54.586, 55.026, 54.488, 55.934, 54.418, 54.874, 55.296, 54.854, 55.156, 55.254, 54.164, 55.244, 54.894, 54.57, 54.498, 54.948, 54.376, 55.216, 54.488, 54.882, 55.224, 54.024, 54.024, 54.528, 54.558, 55.306, 54.592, 55.226, 54.472, 54.084, 54.37, 55.256, 55.256, 55.412, 54.738, 54.818, 55.242, 54.594, 54.618, 54.786, 54.708, 54.642, 55.242, 54.482, 54.19, 54.856, 55.208, 54.68, 55.102, 55.046, 55.208, 54.57, 55.438, 54.164, 54.524, 54.422, 54.514, 55.332, 54.912, 54.466, 54.666, 54.88, 55.348, 54.718, 54.662, 54.976, 55.01, 54.936, 54.77, 55.304, 54.544, 55.336, 55.232, 54.634, 54.766, 54.822, 53.874, 54.846, 55.358, 55.084, 54.65, 54.522, 55.262, 54.364, 54.266, 55.18, 55.082, 54.728, 54.406, 55.446, 54.78, 54.29, 55.336, 55.764, 55.422, 54.746, 55.228, 54.938, 55.218, 54.74, 55.448, 55.38, 54.238, 55.612, 55.606, 53.954, 54.598, 53.398, 54.624, 55.02, 54.506, 55.182, 55.358, 54.822, 55.172, 55.71, 54.892, 53.99, 54.768, 54.906, 54.674, 55.378, 54.148, 54.394, 55.174, 56.746, 53.98, 54.374, 54.996, 54.684, 54.536, 53.5, 53.714, 55.19, 54.874, 54.75, 54.722, 55.668, 53.95, 54.632, 54.526, 54.296, 55.048, 54.214, 54.878, 54.626, 54.37, 55.228, 54.55, 54.572, 55.312, 54.494, 54.268, 55.186, 55.16, 54.934, 55.06, 55.192, 55.222, 54.472, 55.046, 54.94, 54.766, 54.414, 53.962, 53.838, 54.478, 55.522, 55.274, 54.33, 55.026, 54.522, 54.508, 55.034, 54.622, 54.088, 55.232, 54.198, 54.996, 54.744, 54.398, 55.37, 55.51, 54.924, 55.022]
+    [55.004, 54.386, 54.192, 54.254, 55.276, 55.098, 54.576, 54.106, 54.842, 54.204, 54.782, 55.108, 54.388, 54.044, 53.966, 55.932, 55.39, 55.286, 54.756, 55.054, 54.786, 55.244, 54.622, 54.284, 55.258, 54.894, 55.056, 54.89, 54.892, 54.336, 53.996, 55.054, 54.672, 55.794, 54.396, 54.696, 54.74, 54.808, 54.15, 55.032, 55.862, 55.112, 53.55, 54.714, 54.96, 54.672, 54.528, 55.394, 55.038, 55.576, 54.69, 55.484, 54.386, 55.024, 54.562, 54.806, 53.734, 55.232, 55.036, 55.516, 54.418, 54.22, 55.044, 55.986, 55.558, 55.512, 55.424, 54.584, 54.834, 55.746, 55.092, 55.574, 55.242, 54.84, 55.234, 55.274, 55.26, 54.864, 54.652, 54.778, 54.426, 56.15, 54.256, 54.888, 55.004, 55.968, 54.618, 54.382, 54.262, 54.586, 54.788, 54.872, 54.732, 54.956, 54.724, 55.034, 54.638, 54.45, 54.824, 55.636, 55.21, 55.554, 55.496, 55.58, 54.31, 54.852, 55.012, 54.878, 54.712, 54.98, 54.292, 55.162, 55.116, 54.394, 54.552, 54.412, 54.692, 54.728, 55.782, 55.394, 55.184, 55.212, 54.43, 54.496, 55.324, 54.924, 55.284, 55.416, 55.366, 54.64, 54.764, 54.826, 54.666, 54.702, 55.392, 55.562, 55.704, 55.312, 54.654, 55.132, 55.286, 55.596, 55.516, 55.186, 53.99, 54.172, 54.914, 54.308, 55.632, 55.412, 54.812, 55.306, 55.596, 54.89, 55.72, 54.88, 54.162, 53.972, 55.458, 56.152, 54.97, 53.958, 54.894, 54.03, 54.492, 54.864, 54.262, 54.194, 54.83, 55.536, 55.104, 55.42, 55.348, 55.196, 54.862, 54.766, 54.93, 55.374, 55.01, 54.926, 54.462, 55.72, 55.182, 54.438, 55.058, 55.58, 54.816, 54.506, 55.754, 54.262, 54.938, 55.058, 54.942, 54.756, 54.49, 55.162, 54.698, 54.832, 55.702, 54.826, 55.45, 54.862, 54.434, 54.952, 55.11, 54.61, 55.93, 55.104, 54.858, 54.502, 54.624, 55.018, 54.854, 54.338, 55.528, 54.732, 54.624, 54.704, 53.7, 55.742, 54.474, 54.708, 55.21, 54.772, 55.414, 54.63, 55.182, 55.202, 55.026, 54.46, 55.47, 54.02, 54.894, 55.198, 55.674, 55.472, 54.412, 54.644, 55.036, 54.974, 53.194, 54.188, 54.694, 54.93, 55.064, 55.074, 54.196, 55.158, 54.65, 54.304, 54.474, 54.984, 54.78, 54.508, 54.728, 54.8, 55.438, 54.55, 56.01, 55.33, 55.532, 54.086, 55.432, 54.48, 55.536, 54.532, 55.328, 54.936, 54.924, 54.578, 54.48, 54.776, 54.428, 55.126, 54.772, 55.062, 54.488, 54.71, 54.582, 54.574, 54.866, 54.732, 54.824, 54.646, 55.04, 54.058, 54.118, 54.962, 55.41, 54.226, 55.016, 54.738, 54.588, 55.51, 54.724, 55.228, 54.746, 55.768, 54.872, 54.32, 53.962, 54.176, 55.262, 54.218, 54.382, 55.244, 55.098, 55.336, 54.99, 54.93, 55.738, 54.606, 55.426, 55.03, 54.022, 55.118, 55.414, 54.912, 54.704, 54.962, 55.35, 55.228, 54.18, 55.06, 54.95, 55.512, 55.09, 54.804, 55.08, 55.04, 55.484, 55.144, 54.04, 54.48, 55.396, 54.476, 54.326, 55.064, 54.794, 54.938, 53.956, 55.432, 55.502, 55.498, 55.228, 55.502, 55.3, 55.436, 54.836, 54.586, 55.496, 53.984, 55.276, 54.89, 53.822, 55.28, 54.786, 55.052, 54.354, 55.542, 55.056, 54.62, 54.676, 55.588, 55.528, 55.458, 54.212, 55.684, 55.378, 55.166, 54.972, 54.408, 55.708, 54.96, 55.038, 54.322, 55.406, 55.136, 54.056, 55.548, 55.672, 54.792, 55.674, 54.514, 55.322, 55.448, 55.252, 54.364, 55.042, 54.716, 55.032, 54.608, 55.536, 55.564, 55.0, 54.654, 54.972, 54.148, 54.876, 55.082, 54.378, 54.188, 54.936, 54.684, 54.544, 55.25, 54.85, 55.114, 54.932, 55.194, 54.992, 54.538, 55.518, 55.46, 54.736, 54.868, 54.52, 54.816, 55.74, 55.056, 54.952, 54.792, 54.622, 54.288, 54.952, 55.118, 55.598, 55.298, 54.498, 54.642, 53.996, 54.744, 54.464, 54.968, 54.576, 54.26, 55.284, 55.29, 55.244, 54.316, 55.258, 55.172, 54.32, 55.248, 55.384, 55.884, 55.114, 54.582, 54.466, 54.162, 55.078, 55.08, 55.024, 54.858, 54.786, 55.52, 54.498, 54.374, 55.124, 54.776, 54.724, 54.518, 54.374, 55.466, 53.616, 55.508, 54.422, 54.452, 55.052, 54.566, 54.284, 55.914, 54.86, 55.18, 54.028, 54.696, 54.924, 54.588, 54.668, 54.966, 55.05, 54.744, 54.312, 55.302, 55.64, 55.282, 55.832, 53.774, 54.696, 55.024, 54.862, 55.85, 54.398, 55.812, 54.802, 55.062, 55.198, 54.75, 55.962, 54.972, 55.8, 54.034, 55.036, 55.522, 55.172, 55.052, 54.828, 54.86, 54.016, 54.706, 54.81, 54.988, 54.852, 55.462, 54.176, 55.364, 55.18, 55.33, 55.83, 55.662, 55.248, 54.784, 54.992, 55.47, 54.248, 55.078, 55.242, 54.608, 54.39, 54.496, 54.382, 54.74, 54.688, 54.672, 55.132, 54.312, 54.95, 54.306, 53.96, 54.458, 54.304, 54.362, 55.91, 54.382, 55.618, 54.624, 55.02, 54.788, 55.042, 54.622, 54.8, 54.408, 55.168, 56.008, 55.06, 55.126, 55.428, 55.37, 54.702, 55.406, 54.676, 55.026, 54.794, 54.206, 54.904, 55.31, 54.128, 54.918, 55.708, 55.136, 54.538, 54.986, 55.004, 55.342, 54.502, 54.688, 54.034, 54.238, 55.466, 55.146, 55.472, 54.744, 55.096, 55.49, 54.732, 54.382, 54.674, 54.69, 54.996, 54.086, 53.882, 54.846, 55.234, 55.3, 54.416, 54.986, 54.608, 54.752, 54.748, 54.902, 55.092, 55.204, 55.4, 55.104, 54.866, 54.118, 55.332, 54.858, 54.796, 55.052, 54.182, 54.238, 54.074, 54.45, 55.052, 54.726, 54.588, 55.132, 55.006, 55.438, 55.26, 54.552, 54.456, 54.424, 55.29, 54.636, 55.278, 53.682, 55.46, 54.794, 55.392, 54.912, 54.906, 54.954, 54.826, 54.678, 55.254, 55.02, 54.468, 54.644, 55.118, 55.11, 54.598, 56.344, 55.736, 54.134, 55.01, 54.032, 54.844, 55.032, 54.596, 55.592, 54.67, 54.938, 55.582, 54.658, 53.848, 54.036, 54.744, 54.616, 55.116, 55.162, 55.49, 54.69, 55.292, 55.316, 54.054, 54.45, 54.95, 54.254, 55.324, 54.954, 55.524, 55.382, 55.236, 54.458, 54.796, 54.914, 54.618, 54.716, 54.772, 55.24, 55.036, 55.85, 54.7, 55.38, 55.076, 53.926, 55.448, 55.112, 55.182, 54.066, 54.914, 54.594, 55.524, 54.622, 55.052, 55.336, 54.546, 54.668, 54.904, 54.378, 55.558, 53.832, 55.092, 54.518, 54.932, 54.568, 55.914, 55.92, 54.336, 54.632, 55.04, 54.354, 55.34, 55.34, 55.516, 54.49, 55.428, 55.506, 54.972, 55.102, 55.22, 54.698, 55.572, 54.238, 55.038, 54.946, 53.594, 55.908, 54.57, 54.468, 54.952, 54.918, 54.798, 54.356, 55.386, 54.888, 54.418, 54.094, 55.906, 54.326, 54.8, 54.186, 54.914, 54.802, 55.046, 55.588, 54.164, 55.322, 55.182, 54.308, 54.764, 54.972, 54.792, 55.766, 54.27, 55.184, 55.132, 54.292, 55.454, 54.728, 54.196, 55.096, 54.99, 54.496, 54.844, 54.77, 54.74, 54.328, 54.862, 54.682, 55.158, 55.172, 55.064, 55.9, 54.744, 54.592, 54.918, 54.868, 55.524, 55.858, 54.794, 55.324, 54.21, 55.112, 54.744, 55.352, 55.236, 55.022, 54.912, 54.678, 53.542, 53.808, 54.98, 54.272, 54.622, 54.86, 54.516, 54.706, 55.088, 54.88, 55.334, 54.902, 55.046, 54.516, 54.69, 55.222, 54.792, 54.446, 55.216, 55.03, 54.706, 53.734, 54.194, 55.042, 55.156, 54.972, 54.388, 54.762, 55.06, 55.75, 55.188, 54.788, 55.786, 55.578, 55.254, 55.338, 55.758, 55.234, 55.072, 54.738, 54.86, 55.298, 54.89, 54.906, 54.582, 53.688, 54.578, 55.004, 54.138, 55.268, 54.304, 54.67, 54.462, 55.442, 54.796, 55.716, 54.526, 54.968, 54.52, 54.22, 55.34, 54.704, 54.852, 54.716, 54.962, 54.44, 55.432, 54.484, 54.864, 55.582, 55.242, 55.194, 55.116, 54.236, 55.586, 55.554, 54.66, 54.45, 54.726, 55.196, 54.586, 55.224, 55.116, 55.22, 54.508, 54.484, 55.95, 55.336, 55.11, 55.056, 55.152, 54.794, 54.94, 55.368, 55.97, 56.004, 54.954, 55.004, 54.274, 55.13, 54.062, 55.142, 54.49, 54.714, 54.456, 54.982, 54.594, 55.036, 55.176, 54.806, 54.688, 54.202, 54.666, 55.106, 55.266, 55.158, 55.096, 54.254, 54.354, 54.578, 54.694, 54.594, 54.636, 54.78, 54.456, 54.992, 55.122, 55.248, 53.972, 55.002, 54.156, 54.89, 54.988, 55.4, 54.67, 54.834, 55.128, 55.918, 55.148, 54.782, 54.718, 55.016, 55.63, 54.4, 54.64, 55.598, 55.19, 55.814, 54.362, 55.468, 53.776, 55.58, 54.098, 55.054, 54.286, 54.166, 55.558, 55.506, 55.6, 54.42, 55.244, 54.0, 55.456, 54.71, 54.956, 55.416, 54.582, 55.504, 54.51, 54.024, 54.788, 55.294, 54.754, 55.33, 54.894, 54.384, 54.59, 55.12, 55.076, 54.726, 55.376, 55.054, 54.566, 55.974, 55.89, 55.378, 54.812, 55.874, 54.542, 54.47, 54.356, 54.388, 54.934, 54.396, 54.93, 55.576, 55.39, 54.59, 55.764, 54.77, 54.43, 54.966, 54.836, 54.772, 55.242, 55.356, 55.1, 55.182, 54.986, 54.354, 54.734, 54.208, 54.224, 54.918, 54.192, 54.652, 54.622, 54.744, 54.702, 55.67, 55.43, 54.514, 55.2, 55.208, 55.812, 53.994, 53.69, 54.652, 54.484, 54.612, 54.638, 54.158, 55.362, 55.404, 54.738, 55.276, 54.164, 55.22, 54.7, 54.594, 55.512, 55.568, 55.48, 55.072, 55.094, 54.714, 54.164, 53.674, 55.7, 54.524, 54.614, 54.642, 54.604, 55.466, 55.342, 54.884, 55.074, 55.522, 54.924, 53.884, 54.73, 54.904, 56.14, 54.322, 54.832, 55.286, 54.426, 54.578, 55.92, 55.076, 54.494, 54.994, 54.722, 54.896, 55.428, 55.2, 54.358, 54.874, 53.88, 54.704, 55.732, 54.966, 55.01, 55.356, 55.508, 54.338, 54.278, 53.496, 54.968, 54.184, 54.84, 55.37, 54.166, 55.684, 55.116, 54.48, 54.824, 54.794, 55.258, 54.468, 56.004, 55.424, 55.926, 55.102, 53.434, 55.752, 54.888, 55.334, 54.646, 55.05, 54.164, 54.526, 54.292, 55.126, 55.386, 54.854, 54.342, 54.866, 54.912, 54.982, 54.696, 54.904, 53.978, 54.602, 54.57, 54.864, 54.974, 54.732, 55.872, 55.16, 55.318, 54.996, 55.14, 55.24, 55.3, 55.028, 54.416, 55.882, 54.536, 55.198, 53.882, 55.16, 54.564, 54.88, 55.214, 54.054, 54.954, 54.706, 54.79, 54.632, 54.452, 54.936, 54.696, 55.734, 55.138, 54.528, 55.314, 55.562, 54.734, 55.368, 54.692, 54.54, 54.814, 55.58, 55.444, 55.496, 54.514, 55.216, 55.146, 54.258, 55.046, 54.008, 55.454, 55.086, 54.424, 56.096, 54.41, 54.622, 55.22, 54.776, 54.85, 55.418, 55.116, 54.476, 54.402, 54.524, 54.972, 55.312, 55.556, 54.838, 54.71, 54.67, 55.506, 54.94, 54.796, 55.282, 54.962, 54.092, 55.556, 54.408, 55.186, 55.188, 55.214, 55.796, 54.622, 54.892, 55.478, 54.056, 54.842, 54.378, 54.888, 54.882, 55.146, 54.528, 54.294, 54.91, 54.954, 54.764, 55.118, 55.598, 55.032, 54.66, 54.53, 54.284, 55.132, 55.22, 54.944, 54.956, 55.052, 54.92, 55.584, 54.624, 55.928, 54.652, 55.232, 55.1, 54.834, 55.766, 55.324, 54.598, 53.844, 54.502, 54.97, 54.94, 55.118, 54.918, 54.71, 54.726, 54.354, 53.878, 55.076, 54.654, 54.622, 54.288, 55.216, 54.448, 54.838, 54.948, 54.582, 53.964, 54.48, 55.232, 54.678, 55.404, 54.37, 55.252, 55.704, 55.844, 54.682, 54.392, 55.112, 54.276, 55.096, 54.972, 55.298, 54.62, 54.284, 55.054, 55.084, 54.664, 54.926, 54.838, 55.468, 55.058, 55.116, 55.502, 55.144, 55.332, 55.048, 55.654, 54.702, 54.738, 54.594, 54.728, 54.376, 55.174, 54.592, 54.752, 54.77, 54.5, 53.542, 55.092, 53.704, 55.144, 54.98, 55.01, 54.368, 55.544, 55.984, 54.714, 54.814, 55.294, 55.294, 55.842, 55.104, 55.034, 54.304, 55.274, 54.86, 55.494, 55.662, 55.148, 54.676, 54.57, 55.902, 55.41, 54.822, 55.846, 55.094, 54.56, 55.272, 55.288, 55.516, 54.68, 54.97, 55.2, 54.976, 55.226, 55.442, 55.778, 55.084, 54.488, 54.444, 55.408, 55.378, 54.59, 54.77, 55.202, 54.54, 55.402, 55.14, 54.418, 54.932, 54.374, 54.406, 54.776, 54.776, 55.448, 55.96, 54.728, 54.75, 54.722, 55.242, 55.886, 55.084, 54.878, 54.93, 54.906, 54.634, 54.742, 53.758, 55.762, 53.946, 55.05, 54.434, 55.128, 54.822, 54.254, 55.258, 55.718, 55.202, 54.88, 54.766, 55.04, 54.97, 54.712, 55.102, 54.928, 54.688, 55.686, 55.136, 54.512, 54.408, 55.514, 55.078, 55.34, 54.97, 54.63, 54.426, 55.162, 54.988, 55.214, 54.662, 55.182, 55.54, 54.35, 54.62, 54.902, 54.862, 54.954, 54.706, 55.116, 54.396, 54.63, 55.742, 55.25, 54.728, 55.248, 54.482, 55.076, 53.96, 54.666, 54.646, 54.984, 55.254, 54.468, 54.482, 55.154, 54.12, 54.904, 55.156, 55.384, 54.776, 53.956, 54.75, 54.534, 54.378, 55.212, 54.79, 54.85, 54.738, 54.706, 56.28, 53.818, 55.116, 54.904, 53.84, 55.158, 55.47, 55.634, 54.67, 54.526, 54.912, 55.716, 54.784, 54.814, 55.092, 55.426, 55.374, 55.394, 55.266, 55.298, 56.21, 54.09, 55.442, 53.646, 55.562, 55.808, 55.088, 55.808, 55.054, 55.326, 54.58, 55.452, 55.084, 54.364, 55.682, 55.66, 54.73, 54.716, 54.276, 55.11, 54.192, 53.81, 54.514, 54.986, 54.14, 55.266, 54.718, 54.658, 55.744, 54.544, 55.486, 54.502, 54.708, 54.604, 54.66, 55.506, 54.448, 54.472, 55.208, 55.178, 54.874, 55.216, 54.742, 53.796, 54.62, 55.29, 55.396, 55.438, 54.31, 54.42, 55.548, 54.952, 53.876, 54.802, 56.22, 54.68, 54.986, 54.304, 54.628, 54.87, 54.302, 54.992, 54.862, 54.666, 55.176, 55.284, 55.218, 54.584, 54.098, 54.9, 54.94, 55.428, 54.078, 54.196, 55.178, 55.97, 53.926, 55.542, 55.424, 55.054, 55.622, 55.838, 55.374, 54.436, 55.774, 54.986, 54.996, 53.602, 54.55, 55.094, 54.998, 54.374, 54.58, 55.464, 54.878, 55.15, 55.14, 54.706, 55.808, 55.684, 55.696, 54.84, 54.27, 54.518, 54.864, 55.16, 55.146, 54.124, 54.824, 55.094, 54.87, 54.898, 55.09, 54.704, 54.962, 54.114, 55.346, 55.678, 55.016, 55.198, 54.32, 54.46, 55.258, 55.198, 54.984, 54.76, 55.266, 55.208, 54.57, 54.74, 54.882, 55.776, 54.538, 54.822, 54.702, 54.454, 55.792, 54.446, 55.136, 54.182, 54.408, 55.276, 55.056, 55.074, 55.47, 54.492, 55.04, 55.592, 54.766, 54.564, 54.84, 55.112, 54.83, 54.066, 54.602, 53.874, 54.444, 54.12, 55.398, 54.382, 55.228, 54.714, 55.184, 54.722, 55.252, 54.028, 54.388, 55.15, 55.416, 54.778, 54.664, 54.514, 54.68, 54.898, 55.322, 54.274, 54.834, 54.878, 54.226, 54.904, 54.656, 55.13, 54.538, 55.564, 54.508, 54.17, 55.192, 55.018, 55.622, 55.312, 54.37, 54.698, 54.686, 54.204, 54.738, 55.244, 54.822, 54.988, 54.994, 54.492, 55.416, 55.326, 55.348, 54.488, 55.426, 54.284, 55.148, 54.218, 54.534, 54.464, 54.6, 55.278, 54.97, 55.834, 55.524, 55.114, 55.152, 54.61, 54.39, 55.43, 55.014, 54.668, 54.544, 54.568, 54.468, 55.402, 54.524, 54.978, 54.608, 54.846, 54.372, 54.838, 54.748, 54.712, 55.018, 54.658, 53.738, 55.182, 55.156, 54.42, 55.324, 55.036, 54.568, 55.194, 56.26, 54.408, 54.572, 54.68, 54.928, 55.02, 54.18, 55.674, 55.408, 54.756, 54.854, 55.096, 54.72, 54.292, 54.948, 55.694, 52.964, 55.136, 55.642, 55.564, 55.158, 54.93, 55.392, 54.412, 54.86, 54.706, 55.138, 54.6, 54.94, 53.946, 55.368, 55.636, 54.54, 54.722, 55.134, 54.326, 55.582, 54.954, 55.506, 54.36, 55.352, 54.236, 54.148, 55.304, 55.412, 54.728, 54.752, 54.532, 54.908, 54.866, 54.972, 54.662, 55.402, 54.876, 55.01, 55.072, 54.754, 55.654, 53.992, 56.288, 54.224, 54.338, 54.88, 55.424, 54.934, 54.65, 55.246, 54.396, 55.096, 54.818, 54.996, 53.864, 55.304, 54.864, 54.586, 54.192, 55.6, 55.616, 55.182, 54.35, 54.714, 55.124, 55.554, 54.19, 55.17, 54.54, 55.064, 53.848, 54.954, 54.978, 55.882, 54.758, 55.132, 54.78, 54.23, 55.134, 54.942, 55.202, 54.392, 55.66, 54.724, 54.842, 54.572, 54.624, 55.472, 55.054, 55.11, 54.214, 54.836, 55.142, 55.254, 54.82, 55.744, 55.396, 53.968, 54.42, 55.802, 54.798, 54.24, 56.466, 55.56, 55.324, 54.682, 55.324, 54.836, 54.932, 54.24, 55.902, 54.822, 54.67, 54.596, 54.97, 54.576, 54.604, 54.616, 54.38, 54.394, 55.272, 54.46, 54.414, 54.196, 55.908, 54.802, 55.43, 54.868, 54.57, 54.692, 54.45, 55.914, 55.008, 54.952, 54.782, 55.232, 54.418, 55.31, 54.298, 55.268, 54.668, 54.484, 55.056, 55.548, 55.242, 55.496, 55.074, 54.75, 55.402, 54.892, 54.238, 54.478, 55.026, 54.492, 55.704, 54.332, 54.678, 54.858, 54.424, 54.818, 54.244, 54.852, 54.838, 54.22, 55.038, 55.192, 54.226, 55.584, 54.732, 55.346, 54.794, 55.558, 55.488, 55.44, 54.848, 54.426, 53.9, 54.516, 54.996, 54.48, 54.392, 55.122, 54.934, 54.178, 55.394, 55.506, 54.69, 54.722, 55.476, 55.048, 54.852, 54.572, 55.206, 54.472, 54.708, 53.99, 55.412, 55.638, 55.54, 55.382, 54.516, 54.95, 55.626, 55.506, 55.446, 54.732, 55.194, 54.384, 54.13, 54.668, 54.656, 55.776, 54.914, 55.094, 54.986, 54.194, 55.18, 56.102, 55.884, 54.272, 54.426, 54.044, 55.446, 55.36, 54.444, 55.152, 54.92, 55.53, 55.688, 54.778, 55.158, 54.95, 54.824, 54.942, 54.822, 54.778, 54.738, 54.728, 54.872, 54.866, 54.818, 54.792, 55.056, 55.318, 54.66, 54.938, 55.172, 54.678, 54.568, 55.112, 54.44, 54.668, 54.834, 54.294, 55.13, 55.514, 55.286, 54.494, 55.702, 55.76, 53.714, 54.778, 54.756, 54.552, 54.584, 54.36, 54.506, 55.348, 54.668, 55.408, 55.344, 54.52, 54.152, 55.0, 54.54, 54.306, 55.098, 55.054, 54.17, 54.474, 55.264, 54.82, 55.344, 55.032, 55.55]
 
 ### Compare sampling and bootstrap means
 
@@ -2184,7 +2186,7 @@ boot_distn_mean = np.mean(bootstrap_distribution)
 print([pop_mean, samp_mean, samp_distn_mean, boot_distn_mean])
 ```
 
-    [54.837142308430955, 54.692, 54.833814399999994, 54.684377200000014]
+    [54.837142308430955, 54.896, 54.8391872, 54.8951956]
 
 ### Compare sampling and bootstrap standard deviations
 
@@ -2245,7 +2247,7 @@ print([pop_sd, samp_sd, samp_distn_sd, boot_distn_sd])
 
 ```
 
-    [10.880065274257536, 10.796522031543098, 10.023475480366539, 10.96154681272463]
+    [10.880065274257536, 11.124775194341003, 10.065837217676954, 11.098028092809901]
 
 ### Calculating confidence intervals
 
@@ -2312,5 +2314,5 @@ print((lower_se, upper_se))
 
 ```
 
-    (54.746785, 55.348015)
-    (54.74828152702914, 55.355947512970864)
+    (54.329995, 54.942634999999996)
+    (54.321025328468686, 54.9362573115313)
